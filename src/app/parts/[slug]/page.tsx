@@ -23,7 +23,14 @@ export async function generateMetadata({
 
   return {
     title: `${part.oemBrand} ${part.oemPartNumber} Aftermarket Equivalent & Specs | NoWrongPart`,
-    description: `Exact dimensions and aftermarket equivalents for ${part.oemBrand} OEM #${part.oemPartNumber}.`,
+    description: `Exact dimensions and aftermarket equivalents (Stens, Oregon, Gates) for ${part.oemBrand} OEM part #${part.oemPartNumber} (${part.partType}).`,
+    openGraph: {
+      title: `${part.oemBrand} #${part.oemPartNumber} ${part.partType} Specs`,
+      description: `Verified aftermarket cross-references and dimensions for ${part.oemBrand} ${part.oemPartNumber}.`,
+      url: `https://nowrongpart.com/parts/${part.slug}`,
+      siteName: "NoWrongPart",
+      type: "website",
+    },
   };
 }
 
@@ -37,8 +44,28 @@ export default async function PartDetailPage({
 
   if (!part) return notFound();
 
+  // Structured schema markup for Google Rich Results
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": `${part.oemBrand} OEM #${part.oemPartNumber} ${part.partType}`,
+    "description": `OEM technical specifications and aftermarket cross-reference equivalents for ${part.oemBrand} ${part.oemPartNumber}.`,
+    "brand": {
+      "@type": "Brand",
+      "name": part.oemBrand,
+    },
+    "sku": part.oemPartNumber,
+    "mpn": part.oemPartNumber,
+    "category": part.partType,
+  };
+
   return (
     <div className="min-h-screen bg-slate-50 text-slate-900 flex flex-col justify-between font-sans">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+
       <header className="border-b border-slate-200 bg-white sticky top-0 z-10 shadow-sm">
         <div className="max-w-4xl mx-auto px-4 py-3 flex items-center justify-between">
           <Link href="/" className="text-xl font-black tracking-tight text-slate-900">
@@ -46,7 +73,7 @@ export default async function PartDetailPage({
           </Link>
           <Link
             href="/"
-            className="inline-flex items-center gap-1.5 text-xs font-semibold text-slate-600 hover:text-slate-900 bg-slate-100 px-3 py-1.5 rounded-md transition"
+            className="inline-flex items-center gap-1.5 text-xs font-semibold text-slate-600 hover:text-slate-900 bg-slate-100 hover:bg-slate-200 px-3 py-1.5 rounded-md transition"
           >
             <ArrowLeft className="h-3.5 w-3.5" /> Back to Search
           </Link>
@@ -101,7 +128,7 @@ export default async function PartDetailPage({
                 </div>
 
                 <a
-                  href={`/api/out?q=${encodeURIComponent(`${cross.brand} ${cross.partNumber}${part.partType}`)}`}
+                  href={`/api/out?q=${encodeURIComponent(`${cross.brand} ${cross.partNumber} ${part.partType}`)}`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-amber-500 hover:bg-amber-600 text-slate-950 text-xs font-bold rounded-lg shadow-sm transition active:scale-95"
