@@ -1,7 +1,7 @@
 import partsData from "@/data/parts.json";
 import { notFound } from "next/navigation";
 import Link from "next/link";
-import { ExternalLink, CheckCircle2, ShieldCheck, ArrowLeft, ArrowRight } from "lucide-react";
+import { ExternalLink, CheckCircle2, ShieldCheck, ArrowLeft, ArrowRight, ChevronRight, Home } from "lucide-react";
 import type { Metadata } from "next";
 import { PartRecord } from "@/types/part";
 
@@ -45,7 +45,7 @@ export default async function PartDetailPage({
 
   if (!part) return notFound();
 
-  // Day 2 Internal Linking: Find sibling parts from same brand (excluding current part)
+  // Internal Linking: Find sibling parts from same brand (excluding current part)
   let relatedParts = allParts.filter(
     (p) => p.oemBrand.toLowerCase() === part.oemBrand.toLowerCase() && p.slug !== part.slug
   );
@@ -60,8 +60,10 @@ export default async function PartDetailPage({
     relatedParts = relatedParts.slice(0, 4);
   }
 
-  // Structured schema markup for Google Rich Results
-  const jsonLd = {
+  const baseUrl = "https://nowrongpart.com";
+
+  // Product Schema Markup
+  const productJsonLd = {
     "@context": "https://schema.org",
     "@type": "Product",
     "name": `${part.oemBrand} OEM #${part.oemPartNumber} ${part.partType}`,
@@ -75,14 +77,44 @@ export default async function PartDetailPage({
     "category": part.partType,
   };
 
+  // Day 4: BreadcrumbList Schema for Google Rich Snippets
+  const breadcrumbJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": baseUrl,
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": part.oemBrand,
+        "item": `${baseUrl}/?brand=${encodeURIComponent(part.oemBrand.toLowerCase())}`,
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": `${part.oemBrand} #${part.oemPartNumber}`,
+        "item": `${baseUrl}/parts/${part.slug}`,
+      },
+    ],
+  };
+
   return (
     <div className="min-h-screen bg-slate-50 text-slate-900 flex flex-col justify-between font-sans">
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(productJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
       />
 
-      <header className="border-b border-slate-200 bg-white sticky top-0 z-10 shadow-sm">
+      <header className="border-b border-slate-200 bg-white sticky top-0 z-10 shadow-xs">
         <div className="max-w-4xl mx-auto px-4 py-3 flex items-center justify-between">
           <Link href="/" className="text-xl font-black tracking-tight text-slate-900">
             NoWrongPart<span className="text-amber-500">.com</span>
@@ -96,9 +128,29 @@ export default async function PartDetailPage({
         </div>
       </header>
 
-      <main className="max-w-4xl mx-auto px-4 py-8 sm:py-10 flex-1 w-full">
+      <main className="max-w-4xl mx-auto px-4 py-6 sm:py-8 flex-1 w-full">
+        {/* Visible Breadcrumb Trail */}
+        <nav aria-label="Breadcrumb" className="mb-4">
+          <ol className="flex items-center gap-1.5 text-xs text-slate-500">
+            <li>
+              <Link href="/" className="hover:text-slate-900 inline-flex items-center gap-1">
+                <Home className="h-3 w-3" />
+                <span>Home</span>
+              </Link>
+            </li>
+            <ChevronRight className="h-3 w-3 text-slate-300 flex-shrink-0" />
+            <li>
+              <span className="font-medium text-slate-700">{part.oemBrand}</span>
+            </li>
+            <ChevronRight className="h-3 w-3 text-slate-300 flex-shrink-0" />
+            <li>
+              <span className="font-semibold text-slate-900 truncate">#{part.oemPartNumber}</span>
+            </li>
+          </ol>
+        </nav>
+
         {/* Core Technical Specification Card */}
-        <div className="bg-white border border-slate-200 rounded-xl p-6 sm:p-8 shadow-sm">
+        <div className="bg-white border border-slate-200 rounded-xl p-6 sm:p-8 shadow-xs">
           <div className="flex items-center gap-2">
             <span className="px-2.5 py-0.5 rounded-full text-xs font-bold uppercase tracking-wider bg-amber-50 text-amber-700 border border-amber-200">
               {part.oemBrand} OEM Spec
@@ -148,7 +200,7 @@ export default async function PartDetailPage({
                   href={`/api/out?q=${encodeURIComponent(`${cross.brand} ${cross.partNumber}${part.partType}`)}`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-amber-500 hover:bg-amber-600 text-slate-950 text-xs font-bold rounded-lg shadow-sm transition active:scale-95"
+                  className="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-amber-500 hover:bg-amber-600 text-slate-950 text-xs font-bold rounded-lg shadow-xs transition active:scale-95"
                 >
                   Check In-Stock on Amazon
                   <ExternalLink className="h-3.5 w-3.5" />
@@ -158,7 +210,7 @@ export default async function PartDetailPage({
           </div>
 
           <h3 className="text-sm sm:text-base font-bold text-slate-900 mb-2">Confirmed Model Compatibility</h3>
-          <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+          <ul className="grid grid-cols-1 gap-2">
             {part.compatibleModels.map((model, idx) => (
               <li key={idx} className="flex items-center gap-2 text-xs sm:text-sm text-slate-600 bg-slate-50 p-2.5 rounded border border-slate-100">
                 <CheckCircle2 className="h-4 w-4 text-emerald-600 flex-shrink-0" />
@@ -168,7 +220,7 @@ export default async function PartDetailPage({
           </ul>
         </div>
 
-        {/* Day 2: Internal Linking Card Grid */}
+        {/* Related Parts Linking Grid */}
         {relatedParts.length > 0 && (
           <section className="mt-10">
             <div className="flex items-center justify-between mb-4">
