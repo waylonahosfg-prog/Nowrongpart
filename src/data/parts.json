@@ -1,0 +1,101 @@
+[
+  {
+    "slug": "scag-48265",
+    "oemBrand": "Scag",
+    "oemPartNumber": "48265",
+    "partType": "Cutter Deck Belt",
+    "specs": {
+      "length": "135.5 in",
+      "width": "5/8 in",
+      "material": "Aramid / Kevlar Cord"
+    },
+    "compatibleModels": [
+      "Scag Turf Tiger (61\" Advantage Deck)",
+      "Scag Cheetah (61\" Cutter Deck)",
+      "Scag Wildcat (61\" Deck)"
+    ],
+    "crossReferences": [
+      { "brand": "Stens", "partNumber": "265-247", "notes": "OEM spec aramid cord" },
+      { "brand": "Oregon", "partNumber": "75-297", "notes": "Heavy-duty commercial grade" },
+      { "brand": "Rotary", "partNumber": "12488", "notes": "Direct replacement" }
+    ]
+  },
+  {
+    "slug": "exmark-109-8073",
+    "oemBrand": "Exmark",
+    "oemPartNumber": "109-8073",
+    "partType": "Hydro Drive Belt",
+    "specs": {
+      "length": "66.5 in",
+      "width": "1/2 in",
+      "material": "Aramid Cord"
+    },
+    "compatibleModels": [
+      "Exmark Lazer Z AS (48\", 52\", 60\")",
+      "Exmark Lazer Z AC (48\", 52\", 60\")"
+    ],
+    "crossReferences": [
+      { "brand": "Stens", "partNumber": "265-430", "notes": "Standard hydro belt replacement" },
+      { "brand": "Oregon", "partNumber": "75-812", "notes": "Synthetic elastomer compound" }
+    ]
+  },
+  {
+    "slug": "toro-119-8819",
+    "oemBrand": "Toro",
+    "oemPartNumber": "119-8819",
+    "partType": "Deck Drive Belt",
+    "specs": {
+      "length": "141.5 in",
+      "width": "1/2 in",
+      "material": "Double-wrapped Kevlar"
+    },
+    "compatibleModels": [
+      "Toro TimeCutter SS 5000",
+      "Toro TimeCutter MX 5060",
+      "Toro Titan 50\""
+    ],
+    "crossReferences": [
+      { "brand": "Stens", "partNumber": "265-310", "notes": "Direct replacement belt" },
+      { "brand": "Oregon", "partNumber": "75-032", "notes": "Reinforced cord construction" }
+    ]
+  },
+  {
+    "slug": "hustler-601408",
+    "oemBrand": "Hustler",
+    "oemPartNumber": "601408",
+    "partType": "Deck Drive Belt",
+    "specs": {
+      "length": "143.0 in",
+      "width": "1/2 in",
+      "material": "Raw Edge Aramid"
+    },
+    "compatibleModels": [
+      "Hustler Raptor 52\"",
+      "Hustler Raptor Limited 52\""
+    ],
+    "crossReferences": [
+      { "brand": "Stens", "partNumber": "265-538", "notes": "Heavy-duty deck belt" },
+      { "brand": "Oregon", "partNumber": "75-928", "notes": "Exact length aftermarket" }
+    ]
+  },
+  {
+    "slug": "john-deere-m154296",
+    "oemBrand": "John Deere",
+    "oemPartNumber": "M154296",
+    "partType": "Deck Drive Belt",
+    "specs": {
+      "length": "151.7 in",
+      "width": "1/2 in",
+      "material": "Kevlar Cord Construction"
+    },
+    "compatibleModels": [
+      "John Deere X300 (42\" Edge Deck)",
+      "John Deere X304 (42\" Edge Deck)",
+      "John Deere X310 (42\" Deck)"
+    ],
+    "crossReferences": [
+      { "brand": "Stens", "partNumber": "265-834", "notes": "Direct replacement belt" },
+      { "brand": "Oregon", "partNumber": "75-816", "notes": "Premium aftermarket" }
+    ]
+  }
+]
