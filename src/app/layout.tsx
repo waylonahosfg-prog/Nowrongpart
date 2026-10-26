@@ -1,9 +1,25 @@
 import type { Metadata } from "next";
+import { SITE_URL } from "@/lib/site";
 import "./globals.css";
 
+const siteTitle = "NoWrongPart | Mower Part Lookup & Cross-References";
+const siteDescription =
+  "Search OEM and aftermarket part references, listed measurements, and mower model links. Confirm the correct year, deck, and serial range with the manufacturer’s manual before ordering.";
+
 export const metadata: Metadata = {
-  title: "NoWrongPart | Commercial Mower Spec & Cross-Reference Engine",
-  description: "Instant OEM-to-aftermarket cross-referencing and exact belt dimensions for commercial zero-turn mowers.",
+  metadataBase: new URL(SITE_URL),
+  title: siteTitle,
+  description: siteDescription,
+  alternates: {
+    canonical: "/",
+  },
+  openGraph: {
+    type: "website",
+    url: SITE_URL,
+    siteName: "NoWrongPart",
+    title: siteTitle,
+    description: siteDescription,
+  },
 };
 
 export default function RootLayout({
