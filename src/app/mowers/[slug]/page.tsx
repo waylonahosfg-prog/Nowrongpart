@@ -16,6 +16,8 @@ import {
 } from "lucide-react";
 import type { Metadata } from "next";
 import { ModelHubRecord } from "@/types/part";
+import AffiliateDisclosure from "@/components/AffiliateDisclosure";
+import { SITE_URL } from "@/lib/site";
 
 export async function generateStaticParams() {
   const models: ModelHubRecord[] = modelsData as ModelHubRecord[];
@@ -34,12 +36,15 @@ export async function generateMetadata({
   if (!model) return { title: "Mower Model Not Found" };
 
   return {
-    title: `${model.brand} ${model.modelName} Belt Size, Blades & Filter Specs | NoWrongPart`,
-    description: `Complete maintenance spec sheet for ${model.brand} ${model.modelName}: OEM deck belt #${model.deckBeltOem} (${model.deckBeltDimensions}), ${model.bladeSpecs.length} blades (#${model.bladeSpecs.oemPartNumber}), and hydro filter cross-reference.`,
+    title: `${model.brand} ${model.modelName} Listed Belt, Blade & Filter References | NoWrongPart`,
+    description: `Current NoWrongPart record for ${model.brand} ${model.modelName}: listed deck-belt number #${model.deckBeltOem}, measurements, blade, and filter references. Check the exact year, deck, and serial range against the manufacturer’s parts catalog.`,
+    alternates: {
+      canonical: `/mowers/${model.slug}`,
+    },
     openGraph: {
       title: `${model.brand} ${model.modelName} Maintenance & Fitment Chart`,
-      description: `Exact belt dimensions, blade specs, and aftermarket equivalents for ${model.brand} ${model.modelName}.`,
-      url: `https://nowrongpart.com/mowers/${model.slug}`,
+      description: `Listed belt measurements and mower-part references for ${model.brand} ${model.modelName}; verify the exact configuration before ordering.`,
+      url: `${SITE_URL}/mowers/${model.slug}`,
       siteName: "NoWrongPart",
       type: "website",
     },
@@ -70,7 +75,7 @@ export default async function MowerModelPage({
     relatedModels = relatedModels.slice(0, 4);
   }
 
-  const baseUrl = "https://nowrongpart.com";
+  const baseUrl = SITE_URL;
 
   // 1. BreadcrumbList Schema
   const breadcrumbJsonLd = {
@@ -86,8 +91,8 @@ export default async function MowerModelPage({
       {
         "@type": "ListItem",
         "position": 2,
-        "name": `${model.brand} Mowers`,
-        "item": `${baseUrl}/?brand=${encodeURIComponent(model.brand)}`,
+        "name": "Mower Models",
+        "item": `${baseUrl}/mowers`,
       },
       {
         "@type": "ListItem",
@@ -108,7 +113,7 @@ export default async function MowerModelPage({
         "name": `What size deck belt does a ${model.brand} ${model.modelName} use?`,
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": `The ${model.brand} ${model.modelName} (${model.deckSize}) uses OEM cutter deck belt #${model.deckBeltOem}, which measures ${model.deckBeltDimensions}.`,
+          "text": `The current NoWrongPart record lists OEM deck-belt number #${model.deckBeltOem} and measurements of ${model.deckBeltDimensions} for ${model.brand} ${model.modelName} (${model.deckSize}). Verify the exact configuration in the manufacturer’s parts catalog or manual.`,
         },
       },
       {
@@ -116,7 +121,7 @@ export default async function MowerModelPage({
         "name": `What size blades fit the ${model.brand} ${model.modelName}?`,
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": `It requires ${model.bladeSpecs.quantityRequired} blades measuring ${model.bladeSpecs.length} in length with a ${model.bladeSpecs.centerHole} center hole (OEM #${model.bladeSpecs.oemPartNumber}, aftermarket ${model.bladeSpecs.aftermarketCross}).`,
+          "text": `The current NoWrongPart record lists ${model.bladeSpecs.quantityRequired} blades measuring ${model.bladeSpecs.length} with a ${model.bladeSpecs.centerHole} center hole (OEM reference #${model.bladeSpecs.oemPartNumber}; cross-reference ${model.bladeSpecs.aftermarketCross}). Verify the correct deck and serial range before ordering.`,
         },
       },
     ],
@@ -159,7 +164,7 @@ export default async function MowerModelPage({
             </li>
             <ChevronRight className="h-3 w-3 text-slate-300 shrink-0" />
             <li>
-              <span className="font-medium text-slate-700">{model.brand} Hubs</span>
+              <span className="font-medium text-slate-700">Mower Models</span>
             </li>
             <ChevronRight className="h-3 w-3 text-slate-300 shrink-0" />
             <li>
@@ -183,7 +188,7 @@ export default async function MowerModelPage({
           </h1>
 
           <p className="text-xs sm:text-sm text-slate-600 mt-2">
-            Factory Engine Configurations: <strong>{model.engineOptions.join(" / ")}</strong>
+            Engine options in the current record: <strong>{model.engineOptions.join(" / ")}</strong>
           </p>
 
           {/* Mechanic's Shop Note */}
@@ -192,9 +197,14 @@ export default async function MowerModelPage({
             <div className="text-xs sm:text-sm text-slate-800">
               <strong className="font-bold text-slate-900 block mb-0.5">Mechanic&apos;s Fitment Note:</strong>
               {model.maintenanceNotes}
+              <p className="mt-2 text-xs text-slate-700">
+                This record does not include a source, model-year, or serial-range history. Verify the exact machine and deck against the manufacturer’s parts catalog or manual before ordering.
+              </p>
             </div>
           </div>
         </div>
+
+        <AffiliateDisclosure />
 
         {/* Complete Wear-Parts Matrix */}
         <div className="space-y-4">
@@ -209,7 +219,7 @@ export default async function MowerModelPage({
                   OEM #{model.deckBeltOem}
                 </h2>
                 <p className="text-sm text-slate-600 mt-0.5">
-                  Exact Belt Dimensions: <strong className="text-slate-900">{model.deckBeltDimensions}</strong> (Aramid / Kevlar Cord)
+                  Listed belt dimensions: <strong className="text-slate-900">{model.deckBeltDimensions}</strong>
                 </p>
               </div>
               <div className="flex flex-wrap items-center gap-2">
@@ -222,10 +232,10 @@ export default async function MowerModelPage({
                 <a
                   href={`/api/out?q=${encodeURIComponent(`${model.brand} ${model.deckBeltOem} kevlar deck belt`)}`}
                   target="_blank"
-                  rel="noopener noreferrer"
+                  rel="sponsored noopener noreferrer"
                   className="inline-flex items-center gap-1.5 px-4 py-2.5 bg-amber-500 hover:bg-amber-600 text-slate-950 text-xs font-bold rounded-lg shadow-xs transition"
                 >
-                  Check Deck Belt on Amazon
+                  Search Amazon for This Belt
                   <ExternalLink className="h-3.5 w-3.5" />
                 </a>
               </div>
@@ -244,7 +254,7 @@ export default async function MowerModelPage({
                     OEM #{model.pumpBeltOem}
                   </h2>
                   <p className="text-sm text-slate-600 mt-0.5">
-                    Exact Belt Dimensions: <strong className="text-slate-900">{model.pumpBeltDimensions}</strong>
+                    Listed belt dimensions: <strong className="text-slate-900">{model.pumpBeltDimensions}</strong>
                   </p>
                 </div>
                 <div className="flex flex-wrap items-center gap-2">
@@ -259,10 +269,10 @@ export default async function MowerModelPage({
                   <a
                     href={`/api/out?q=${encodeURIComponent(`${model.brand} ${model.pumpBeltOem} drive belt`)}`}
                     target="_blank"
-                    rel="noopener noreferrer"
+                    rel="sponsored noopener noreferrer"
                     className="inline-flex items-center gap-1.5 px-4 py-2.5 bg-amber-500 hover:bg-amber-600 text-slate-950 text-xs font-bold rounded-lg shadow-xs transition"
                   >
-                    Check Drive Belt on Amazon
+                    Search Amazon for This Belt
                     <ExternalLink className="h-3.5 w-3.5" />
                   </a>
                 </div>
@@ -281,7 +291,7 @@ export default async function MowerModelPage({
                   OEM Blade #{model.bladeSpecs.oemPartNumber}
                 </h2>
                 <p className="text-xs text-slate-500 mt-0.5">
-                  Verified Equivalents: <strong>{model.bladeSpecs.aftermarketCross}</strong>
+                  Cross-references in the current record: <strong>{model.bladeSpecs.aftermarketCross}</strong>
                 </p>
                 <div className="flex flex-wrap gap-x-4 gap-y-1 text-xs text-slate-700 mt-2">
                   <span>Length: <strong>{model.bladeSpecs.length}</strong></span>
@@ -293,10 +303,10 @@ export default async function MowerModelPage({
               <a
                 href={`/api/out?q=${encodeURIComponent(`${model.brand} ${model.bladeSpecs.oemPartNumber} blades ${model.bladeSpecs.quantityRequired} pack`)}`}
                 target="_blank"
-                rel="noopener noreferrer"
+                rel="sponsored noopener noreferrer"
                 className="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-amber-500 hover:bg-amber-600 text-slate-950 text-xs font-bold rounded-lg shadow-xs transition shrink-0"
               >
-                Check {model.bladeSpecs.quantityRequired}-Pack Blades on Amazon
+                Search Amazon for This Blade Reference
                 <ExternalLink className="h-3.5 w-3.5" />
               </a>
             </div>
@@ -320,10 +330,10 @@ export default async function MowerModelPage({
                 <a
                   href={`/api/out?q=${encodeURIComponent(`${model.brand} ${model.modelName} tune up maintenance kit`)}`}
                   target="_blank"
-                  rel="noopener noreferrer"
+                  rel="sponsored noopener noreferrer"
                   className="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-slate-900 hover:bg-slate-800 text-white text-xs font-bold rounded-lg transition shrink-0"
                 >
-                  View Full Engine Tune-Up Kit
+                  Search Amazon for an Engine Service Kit
                   <ExternalLink className="h-3.5 w-3.5" />
                 </a>
               </div>
@@ -343,7 +353,7 @@ export default async function MowerModelPage({
                 What size deck belt does a {model.brand} {model.modelName} take?
               </h3>
               <p className="text-slate-600 mt-1">
-                The {model.brand} {model.modelName} ({model.deckSize}) uses OEM part number <strong>#{model.deckBeltOem}</strong>, which measures <strong>{model.deckBeltDimensions}</strong>. Always use a Kevlar/Aramid cord belt to prevent stretching under PTO engagement.
+                The current NoWrongPart record lists OEM deck-belt number <strong>#{model.deckBeltOem}</strong> and measurements of <strong>{model.deckBeltDimensions}</strong> for {model.brand} {model.modelName} ({model.deckSize}). Confirm the exact configuration and replacement requirements in the manufacturer’s parts catalog or manual.
               </p>
             </div>
             <div className="pt-3 border-t border-slate-100">
@@ -351,7 +361,7 @@ export default async function MowerModelPage({
                 What blades fit the {model.brand} {model.modelName}?
               </h3>
               <p className="text-slate-600 mt-1">
-                This deck requires <strong>{model.bladeSpecs.quantityRequired} blades</strong> measuring <strong>{model.bladeSpecs.length}</strong> long with a <strong>{model.bladeSpecs.centerHole}</strong> center mounting hole. It cross-references directly to OEM <strong>#{model.bladeSpecs.oemPartNumber}</strong> and <strong>{model.bladeSpecs.aftermarketCross}</strong>.
+                The current record lists <strong>{model.bladeSpecs.quantityRequired} blades</strong> measuring <strong>{model.bladeSpecs.length}</strong> long with a <strong>{model.bladeSpecs.centerHole}</strong> center hole, with OEM reference <strong>#{model.bladeSpecs.oemPartNumber}</strong> and cross-reference <strong>{model.bladeSpecs.aftermarketCross}</strong>. Verify the correct deck and serial range before ordering.
               </p>
             </div>
           </div>
