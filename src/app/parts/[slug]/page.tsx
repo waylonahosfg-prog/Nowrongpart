@@ -2,10 +2,9 @@ import partsData from "@/data/parts.json";
 import modelsData from "@/data/models.json";
 import { notFound } from "next/navigation";
 import Link from "next/link";
+import AffiliateDisclosure from "@/components/AffiliateDisclosure";
 import {
   ExternalLink,
-  CheckCircle2,
-  ShieldCheck,
   ArrowLeft,
   ArrowRight,
   ChevronRight,
@@ -14,6 +13,7 @@ import {
 } from "lucide-react";
 import type { Metadata } from "next";
 import { PartRecord, ModelHubRecord } from "@/types/part";
+import { SITE_URL } from "@/lib/site";
 
 export async function generateStaticParams() {
   const parts: PartRecord[] = partsData;
@@ -32,12 +32,15 @@ export async function generateMetadata({
   if (!part) return { title: "Part Not Found" };
 
   return {
-    title: `${part.oemBrand} ${part.oemPartNumber} Aftermarket Equivalent & Specs | NoWrongPart`,
-    description: `Exact dimensions (${part.specs.length} x ${part.specs.width}) and aftermarket equivalents (Stens, Oregon, Gates) for ${part.oemBrand} OEM part #${part.oemPartNumber} (${part.partType}).`,
+    title: `${part.oemBrand} ${part.oemPartNumber} Cross-References & Measurements | NoWrongPart`,
+    description: `Listed measurements (${part.specs.length} x ${part.specs.width}) and current cross-references for ${part.oemBrand} part #${part.oemPartNumber} (${part.partType}). Verify fitment against the exact machine and parts manual before ordering.`,
+    alternates: {
+      canonical: `/parts/${part.slug}`,
+    },
     openGraph: {
       title: `${part.oemBrand} #${part.oemPartNumber} ${part.partType} Specs`,
-      description: `Verified aftermarket cross-references and dimensions for ${part.oemBrand} ${part.oemPartNumber}.`,
-      url: `https://nowrongpart.com/parts/${part.slug}`,
+      description: `Current database cross-references and listed measurements for ${part.oemBrand} ${part.oemPartNumber}.`,
+      url: `${SITE_URL}/parts/${part.slug}`,
       siteName: "NoWrongPart",
       type: "website",
     },
@@ -56,13 +59,11 @@ export default async function PartDetailPage({
 
   if (!part) return notFound();
 
-  // Day 10: Bi-directional Model-to-Part Cross-Linking
-  // Find any Mower Hub that uses this part as its deck belt or pump belt, or matches brand
+  // Only link mower records that explicitly reference this part as a deck or pump belt.
   const matchingMowerHubs = allModels.filter(
     (m) =>
       m.deckBeltSlug === part.slug ||
-      m.pumpBeltSlug === part.slug ||
-      m.brand.toLowerCase() === part.oemBrand.toLowerCase()
+      m.pumpBeltSlug === part.slug
   );
 
   // Sibling parts from the same brand
@@ -82,13 +83,13 @@ export default async function PartDetailPage({
     relatedParts = relatedParts.slice(0, 4);
   }
 
-  const baseUrl = "https://nowrongpart.com";
+  const baseUrl = SITE_URL;
 
   const productJsonLd = {
     "@context": "https://schema.org",
     "@type": "Product",
     "name": `${part.oemBrand} OEM #${part.oemPartNumber} ${part.partType}`,
-    "description": `OEM technical specifications and aftermarket cross-reference equivalents for ${part.oemBrand} ${part.oemPartNumber}.`,
+    "description": `Part reference and cross-reference information currently listed for ${part.oemBrand} ${part.oemPartNumber}.`,
     "brand": {
       "@type": "Brand",
       "name": part.oemBrand,
@@ -173,7 +174,7 @@ export default async function PartDetailPage({
         <div className="bg-white border border-slate-200 rounded-xl p-6 sm:p-8 shadow-xs">
           <div className="flex items-center gap-2">
             <span className="px-2.5 py-0.5 rounded-full text-xs font-bold uppercase tracking-wider bg-amber-50 text-amber-700 border border-amber-200">
-              {part.oemBrand} OEM Spec
+              {part.oemBrand} Part Reference
             </span>
             <span className="text-slate-300">•</span>
             <span className="text-xs font-medium text-slate-500">{part.partType}</span>
@@ -198,9 +199,10 @@ export default async function PartDetailPage({
             </div>
           </div>
 
+          <AffiliateDisclosure />
           <h2 className="text-base sm:text-lg font-bold text-slate-900 mb-3 flex items-center gap-2">
-            <ShieldCheck className="h-5 w-5 text-emerald-600" />
-            Verified Aftermarket Replacements
+            <ArrowRight className="h-5 w-5 text-slate-500" />
+            Cross-References in the Current Database
           </h2>
 
           <div className="space-y-3 mb-8">
@@ -219,21 +221,24 @@ export default async function PartDetailPage({
                 <a
                   href={`/api/out?q=${encodeURIComponent(`${cross.brand} ${cross.partNumber} ${part.partType}`)}`}
                   target="_blank"
-                  rel="noopener noreferrer"
+                  rel="sponsored noopener noreferrer"
                   className="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-amber-500 hover:bg-amber-600 text-slate-950 text-xs font-bold rounded-lg shadow-xs transition active:scale-95"
                 >
-                  Check In-Stock on Amazon
+                  Search Amazon for This Reference
                   <ExternalLink className="h-3.5 w-3.5" />
                 </a>
               </div>
             ))}
           </div>
 
-          <h3 className="text-sm sm:text-base font-bold text-slate-900 mb-2">Confirmed Model Compatibility</h3>
+          <h3 className="text-sm sm:text-base font-bold text-slate-900 mb-2">Model Names in This Part Record</h3>
+          <p className="text-xs text-slate-600 mb-3">
+            These names are listed in the current site data; year, deck, and serial-range sources are not recorded for every entry. Confirm the exact machine in the manufacturer’s parts catalog or manual before ordering.
+          </p>
           <ul className="grid grid-cols-1 gap-2">
             {part.compatibleModels.map((model, idx) => (
               <li key={idx} className="flex items-center gap-2 text-xs sm:text-sm text-slate-600 bg-slate-50 p-2.5 rounded border border-slate-100">
-                <CheckCircle2 className="h-4 w-4 text-emerald-600 shrink-0" />
+                <span aria-hidden="true" className="h-1.5 w-1.5 rounded-full bg-slate-400 shrink-0" />
                 <span>{model}</span>
               </li>
             ))}
@@ -245,10 +250,10 @@ export default async function PartDetailPage({
           <section className="mt-8 bg-amber-50/70 border border-amber-200 rounded-xl p-5 sm:p-6">
             <div className="flex items-center gap-2 text-amber-800 font-bold text-xs uppercase tracking-wider mb-2">
               <Tractor className="h-4 w-4 text-amber-600" />
-              Complete Machine Maintenance Charts (Blades, Filters & Belts)
+              Mower Model Records That Reference This Part
             </div>
             <p className="text-xs text-slate-600 mb-4">
-              Need matching high-lift mower blades or hydro transmission filter numbers for your {part.oemBrand}? View the full model spec sheet:
+              These model records explicitly list this part as a deck belt or pump-drive belt in the current site data. Other machines from the same brand are not shown here as fitment matches.
             </p>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
               {matchingMowerHubs.slice(0, 4).map((hub) => (
@@ -262,7 +267,11 @@ export default async function PartDetailPage({
                       {hub.brand} {hub.modelName}
                     </div>
                     <div className="text-[11px] text-slate-500 mt-0.5">
-                      Blades: #{hub.bladeSpecs.oemPartNumber} ({hub.bladeSpecs.length}) • Deck: #{hub.deckBeltOem}
+                      Listed as {hub.deckBeltSlug === part.slug && hub.pumpBeltSlug === part.slug
+                        ? "deck and pump-drive belt references"
+                        : hub.deckBeltSlug === part.slug
+                          ? "a deck-belt reference"
+                          : "a pump-drive-belt reference"}
                     </div>
                   </div>
                   <ArrowRight className="h-4 w-4 text-amber-600 shrink-0 group-hover:translate-x-0.5 transition" />
@@ -277,9 +286,9 @@ export default async function PartDetailPage({
           <section className="mt-8">
             <div className="flex items-center justify-between mb-4">
               <h2 className="text-lg font-bold text-slate-900">
-                Other {part.oemBrand} Belt & Part Specifications
+                Other {part.oemBrand} Part References
               </h2>
-              <span className="text-xs text-slate-400 font-medium">Internal Reference Index</span>
+              <span className="text-xs text-slate-400 font-medium">Not fitment matches for this part</span>
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
