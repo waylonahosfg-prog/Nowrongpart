@@ -1,9 +1,19 @@
 import partsData from "@/data/parts.json";
+import modelsData from "@/data/models.json";
 import { notFound } from "next/navigation";
 import Link from "next/link";
-import { ExternalLink, CheckCircle2, ShieldCheck, ArrowLeft, ArrowRight, ChevronRight, Home } from "lucide-react";
+import {
+  ExternalLink,
+  CheckCircle2,
+  ShieldCheck,
+  ArrowLeft,
+  ArrowRight,
+  ChevronRight,
+  Home,
+  Tractor,
+} from "lucide-react";
 import type { Metadata } from "next";
-import { PartRecord } from "@/types/part";
+import { PartRecord, ModelHubRecord } from "@/types/part";
 
 export async function generateStaticParams() {
   const parts: PartRecord[] = partsData;
@@ -23,7 +33,7 @@ export async function generateMetadata({
 
   return {
     title: `${part.oemBrand} ${part.oemPartNumber} Aftermarket Equivalent & Specs | NoWrongPart`,
-    description: `Exact dimensions and aftermarket equivalents (Stens, Oregon, Gates) for ${part.oemBrand} OEM part #${part.oemPartNumber} (${part.partType}).`,
+    description: `Exact dimensions (${part.specs.length} x ${part.specs.width}) and aftermarket equivalents (Stens, Oregon, Gates) for ${part.oemBrand} OEM part #${part.oemPartNumber} (${part.partType}).`,
     openGraph: {
       title: `${part.oemBrand} #${part.oemPartNumber} ${part.partType} Specs`,
       description: `Verified aftermarket cross-references and dimensions for ${part.oemBrand} ${part.oemPartNumber}.`,
@@ -41,19 +51,31 @@ export default async function PartDetailPage({
 }) {
   const { slug } = await params;
   const allParts = partsData as PartRecord[];
+  const allModels = modelsData as ModelHubRecord[];
   const part = allParts.find((p) => p.slug === slug);
 
   if (!part) return notFound();
 
-  // Internal Linking: Find sibling parts from same brand (excluding current part)
+  // Day 10: Bi-directional Model-to-Part Cross-Linking
+  // Find any Mower Hub that uses this part as its deck belt or pump belt, or matches brand
+  const matchingMowerHubs = allModels.filter(
+    (m) =>
+      m.deckBeltSlug === part.slug ||
+      m.pumpBeltSlug === part.slug ||
+      m.brand.toLowerCase() === part.oemBrand.toLowerCase()
+  );
+
+  // Sibling parts from the same brand
   let relatedParts = allParts.filter(
     (p) => p.oemBrand.toLowerCase() === part.oemBrand.toLowerCase() && p.slug !== part.slug
   );
 
-  // If brand has fewer than 3 sibling parts, backfill with same partType
   if (relatedParts.length < 3) {
     const additional = allParts.filter(
-      (p) => p.partType === part.partType && p.slug !== part.slug && !relatedParts.some((r) => r.slug === p.slug)
+      (p) =>
+        p.partType === part.partType &&
+        p.slug !== part.slug &&
+        !relatedParts.some((r) => r.slug === p.slug)
     );
     relatedParts = [...relatedParts, ...additional].slice(0, 4);
   } else {
@@ -62,7 +84,6 @@ export default async function PartDetailPage({
 
   const baseUrl = "https://nowrongpart.com";
 
-  // Product Schema Markup
   const productJsonLd = {
     "@context": "https://schema.org",
     "@type": "Product",
@@ -77,7 +98,6 @@ export default async function PartDetailPage({
     "category": part.partType,
   };
 
-  // Day 4: BreadcrumbList Schema for Google Rich Snippets
   const breadcrumbJsonLd = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
@@ -138,11 +158,11 @@ export default async function PartDetailPage({
                 <span>Home</span>
               </Link>
             </li>
-            <ChevronRight className="h-3 w-3 text-slate-300 flex-shrink-0" />
+            <ChevronRight className="h-3 w-3 text-slate-300 shrink-0" />
             <li>
               <span className="font-medium text-slate-700">{part.oemBrand}</span>
             </li>
-            <ChevronRight className="h-3 w-3 text-slate-300 flex-shrink-0" />
+            <ChevronRight className="h-3 w-3 text-slate-300 shrink-0" />
             <li>
               <span className="font-semibold text-slate-900 truncate">#{part.oemPartNumber}</span>
             </li>
@@ -197,7 +217,7 @@ export default async function PartDetailPage({
                 </div>
 
                 <a
-                  href={`/api/out?q=${encodeURIComponent(`${cross.brand} ${cross.partNumber}${part.partType}`)}`}
+                  href={`/api/out?q=${encodeURIComponent(`${cross.brand} ${cross.partNumber} ${part.partType}`)}`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-amber-500 hover:bg-amber-600 text-slate-950 text-xs font-bold rounded-lg shadow-xs transition active:scale-95"
@@ -213,19 +233,51 @@ export default async function PartDetailPage({
           <ul className="grid grid-cols-1 gap-2">
             {part.compatibleModels.map((model, idx) => (
               <li key={idx} className="flex items-center gap-2 text-xs sm:text-sm text-slate-600 bg-slate-50 p-2.5 rounded border border-slate-100">
-                <CheckCircle2 className="h-4 w-4 text-emerald-600 flex-shrink-0" />
+                <CheckCircle2 className="h-4 w-4 text-emerald-600 shrink-0" />
                 <span>{model}</span>
               </li>
             ))}
           </ul>
         </div>
 
-        {/* Related Parts Linking Grid */}
+        {/* Day 10: Bi-Directional Model Hub Cross-Links */}
+        {matchingMowerHubs.length > 0 && (
+          <section className="mt-8 bg-amber-50/70 border border-amber-200 rounded-xl p-5 sm:p-6">
+            <div className="flex items-center gap-2 text-amber-800 font-bold text-xs uppercase tracking-wider mb-2">
+              <Tractor className="h-4 w-4 text-amber-600" />
+              Complete Machine Maintenance Charts (Blades, Filters & Belts)
+            </div>
+            <p className="text-xs text-slate-600 mb-4">
+              Need matching high-lift mower blades or hydro transmission filter numbers for your {part.oemBrand}? View the full model spec sheet:
+            </p>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+              {matchingMowerHubs.slice(0, 4).map((hub) => (
+                <Link
+                  key={hub.slug}
+                  href={`/mowers/${hub.slug}`}
+                  className="bg-white border border-amber-200 hover:border-amber-500 p-3.5 rounded-lg shadow-2xs transition flex items-center justify-between group"
+                >
+                  <div>
+                    <div className="text-xs font-extrabold text-slate-900 group-hover:text-amber-600 transition">
+                      {hub.brand} {hub.modelName}
+                    </div>
+                    <div className="text-[11px] text-slate-500 mt-0.5">
+                      Blades: #{hub.bladeSpecs.oemPartNumber} ({hub.bladeSpecs.length}) • Deck: #{hub.deckBeltOem}
+                    </div>
+                  </div>
+                  <ArrowRight className="h-4 w-4 text-amber-600 shrink-0 group-hover:translate-x-0.5 transition" />
+                </Link>
+              ))}
+            </div>
+          </section>
+        )}
+
+        {/* Sibling Part Cross-Links */}
         {relatedParts.length > 0 && (
-          <section className="mt-10">
+          <section className="mt-8">
             <div className="flex items-center justify-between mb-4">
               <h2 className="text-lg font-bold text-slate-900">
-                Related {part.oemBrand} Fitments & Belts
+                Other {part.oemBrand} Belt & Part Specifications
               </h2>
               <span className="text-xs text-slate-400 font-medium">Internal Reference Index</span>
             </div>
@@ -258,7 +310,7 @@ export default async function PartDetailPage({
         )}
       </main>
 
-      <footer className="border-t border-slate-200 bg-white py-6">
+      <footer className="border-t border-slate-200 bg-white py-6 mt-12">
         <div className="max-w-4xl mx-auto px-4 text-center text-xs text-slate-500 space-y-1">
           <p>As an Amazon Associate I earn from qualifying purchases.</p>
           <p>© 2026 NoWrongPart.com. Independent equipment compatibility reference.</p>
