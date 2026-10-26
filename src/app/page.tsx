@@ -14,7 +14,6 @@ export default function HomePage() {
   const parts: PartRecord[] = partsData;
   const models: ModelHubRecord[] = modelsData as ModelHubRecord[];
 
-  // Extract unique brands for quick filter pills
   const brands = ["All", ...Array.from(new Set(parts.map((p) => p.oemBrand)))];
 
   const filteredParts = parts.filter((part) => {
@@ -54,7 +53,6 @@ export default function HomePage() {
 
   return (
     <div className="min-h-screen bg-slate-50 text-slate-900 flex flex-col justify-between font-sans">
-      {/* Sticky Top Header */}
       <header className="border-b border-slate-200 bg-white sticky top-0 z-20 shadow-xs">
         <div className="max-w-5xl mx-auto px-4 py-3.5 flex items-center justify-between gap-2">
           <Link href="/" className="text-xl font-black tracking-tight text-slate-900">
@@ -63,7 +61,7 @@ export default function HomePage() {
 
           <div className="flex items-center gap-2 sm:gap-3">
             <span className="hidden md:inline-flex text-xs font-semibold px-2.5 py-1 bg-amber-50 text-amber-800 rounded-full border border-amber-200">
-              60+ Verified Turf Specs
+              100+ Verified Turf Specs
             </span>
             <Link
               href="/buyers-guide"
@@ -77,7 +75,6 @@ export default function HomePage() {
       </header>
 
       <main className="max-w-5xl mx-auto px-4 py-8 sm:py-12 flex-1 w-full">
-        {/* Hero Section */}
         <div className="text-center max-w-2xl mx-auto mb-8">
           <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-amber-100/80 text-amber-900 border border-amber-200 mb-3">
             <Wrench className="h-3.5 w-3.5 text-amber-600" />
@@ -91,7 +88,6 @@ export default function HomePage() {
           </p>
         </div>
 
-        {/* Search Input Bar */}
         <div className="relative max-w-2xl mx-auto mb-6">
           <div className="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none text-slate-400">
             <Search className="h-5 w-5" />
@@ -105,7 +101,6 @@ export default function HomePage() {
           />
         </div>
 
-        {/* Brand Quick-Filter Pills */}
         <div className="flex items-center gap-1.5 overflow-x-auto pb-3 mb-8 no-scrollbar justify-start sm:justify-center">
           {brands.map((brand) => {
             const active = selectedBrand === brand;
@@ -125,7 +120,6 @@ export default function HomePage() {
           })}
         </div>
 
-        {/* Buyer's Guide Promotional Callout */}
         <div className="mb-10 bg-gradient-to-r from-slate-900 to-slate-800 rounded-2xl p-5 sm:p-6 text-white shadow-sm flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
           <div>
             <div className="inline-flex items-center gap-1 text-xs font-bold uppercase tracking-wider text-amber-400 mb-1">
@@ -147,7 +141,6 @@ export default function HomePage() {
           </Link>
         </div>
 
-        {/* Section 1: Mower Model Maintenance Hubs */}
         {filteredModels.length > 0 && (
           <section className="mb-12">
             <div className="flex items-center justify-between mb-4">
@@ -166,7 +159,7 @@ export default function HomePage() {
               {filteredModels.slice(0, 6).map((m) => (
                 <Link
                   key={m.slug}
-                  href={`/mowers/{m.slug}}
+                  href={`/mowers/${m.slug}`}
                   className="bg-white border border-slate-200 hover:border-amber-400 rounded-xl p-4 shadow-xs transition flex flex-col justify-between group"
                 >
                   <div>
@@ -198,7 +191,6 @@ export default function HomePage() {
           </section>
         )}
 
-        {/* Section 2: Direct OEM Part Cross-Reference List */}
         <section className="space-y-3">
           <div className="flex items-center justify-between">
             <h2 className="text-xs font-bold uppercase tracking-wider text-slate-500">
@@ -256,7 +248,6 @@ export default function HomePage() {
         </section>
       </main>
 
-      {/* Footer */}
       <footer className="border-t border-slate-200 bg-white py-8 mt-12">
         <div className="max-w-5xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
           <div className="space-y-1 text-center sm:text-left">
