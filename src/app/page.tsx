@@ -166,7 +166,7 @@ export default function HomePage() {
               {filteredModels.slice(0, 6).map((m) => (
                 <Link
                   key={m.slug}
-                  href={`/parts/${m.deckBeltSlug}`}
+                  href={`/mowers/{m.slug}}
                   className="bg-white border border-slate-200 hover:border-amber-400 rounded-xl p-4 shadow-xs transition flex flex-col justify-between group"
                 >
                   <div>
