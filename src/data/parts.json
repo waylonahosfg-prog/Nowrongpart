@@ -4,16 +4,8 @@
     "oemBrand": "Scag",
     "oemPartNumber": "48265",
     "partType": "Cutter Deck Belt",
-    "specs": {
-      "length": "135.5 in",
-      "width": "5/8 in",
-      "material": "Aramid / Kevlar Cord"
-    },
-    "compatibleModels": [
-      "Scag Turf Tiger (61\" Advantage Deck)",
-      "Scag Cheetah (61\" Cutter Deck)",
-      "Scag Wildcat (61\" Deck)"
-    ],
+    "specs": { "length": "135.5 in", "width": "5/8 in", "material": "Aramid / Kevlar Cord" },
+    "compatibleModels": ["Scag Turf Tiger (61\" Advantage Deck)", "Scag Cheetah (61\" Cutter Deck)", "Scag Wildcat (61\" Deck)"],
     "crossReferences": [
       { "brand": "Stens", "partNumber": "265-247", "notes": "OEM spec aramid cord" },
       { "brand": "Oregon", "partNumber": "75-297", "notes": "Heavy-duty commercial grade" },
@@ -25,15 +17,8 @@
     "oemBrand": "Scag",
     "oemPartNumber": "483326",
     "partType": "Pump Drive Belt",
-    "specs": {
-      "length": "62.0 in",
-      "width": "1/2 in",
-      "material": "High-Tensile Cord"
-    },
-    "compatibleModels": [
-      "Scag Turf Tiger 52\" / 61\"",
-      "Scag Tiger Cat 52\" / 61\""
-    ],
+    "specs": { "length": "62.0 in", "width": "1/2 in", "material": "High-Tensile Cord" },
+    "compatibleModels": ["Scag Turf Tiger 52\" / 61\"", "Scag Tiger Cat 52\" / 61\""],
     "crossReferences": [
       { "brand": "Stens", "partNumber": "265-488", "notes": "Premium hydro drive belt" },
       { "brand": "Oregon", "partNumber": "75-842", "notes": "Synthetic compound" }
@@ -44,15 +29,8 @@
     "oemBrand": "Scag",
     "oemPartNumber": "484128",
     "partType": "Cutter Deck Belt",
-    "specs": {
-      "length": "142.5 in",
-      "width": "5/8 in",
-      "material": "Double-Wrapped Kevlar"
-    },
-    "compatibleModels": [
-      "Scag Patriot 52\"",
-      "Scag Freedom Z Pro 52\""
-    ],
+    "specs": { "length": "142.5 in", "width": "5/8 in", "material": "Double-Wrapped Kevlar" },
+    "compatibleModels": ["Scag Patriot 52\"", "Scag Freedom Z Pro 52\""],
     "crossReferences": [
       { "brand": "Stens", "partNumber": "265-748", "notes": "Aramid cord deck belt" },
       { "brand": "Rotary", "partNumber": "15342", "notes": "Direct replacement" }
@@ -63,18 +41,83 @@
     "oemBrand": "Scag",
     "oemPartNumber": "483325",
     "partType": "Cutter Deck Belt",
-    "specs": {
-      "length": "128.5 in",
-      "width": "5/8 in",
-      "material": "Raw Edge Kevlar"
-    },
-    "compatibleModels": [
-      "Scag Tiger Cat 52\" Deck",
-      "Scag V-Ride 52\" Deck"
-    ],
+    "specs": { "length": "128.5 in", "width": "5/8 in", "material": "Raw Edge Kevlar" },
+    "compatibleModels": ["Scag Tiger Cat 52\" Deck", "Scag V-Ride 52\" Deck"],
     "crossReferences": [
       { "brand": "Stens", "partNumber": "265-485", "notes": "Heavy-duty commercial" },
       { "brand": "Oregon", "partNumber": "75-840", "notes": "Aramid cord construction" }
+    ]
+  },
+  {
+    "slug": "scag-483241",
+    "oemBrand": "Scag",
+    "oemPartNumber": "483241",
+    "partType": "Cutter Deck Belt",
+    "specs": { "length": "116.5 in", "width": "5/8 in", "material": "Aramid Kevlar Cord" },
+    "compatibleModels": ["Scag Tiger Cub 48\" Velocity Plus", "Scag Wildcat 48\" Velocity Plus", "Scag SWZT 48\" Walk-Behind"],
+    "crossReferences": [
+      { "brand": "Stens", "partNumber": "265-484", "notes": "Velocity Plus 48\" replacement" },
+      { "brand": "Oregon", "partNumber": "75-839", "notes": "Commercial aramid weave" }
+    ]
+  },
+  {
+    "slug": "scag-483157",
+    "oemBrand": "Scag",
+    "oemPartNumber": "483157",
+    "partType": "Pump Drive Belt",
+    "specs": { "length": "65.5 in", "width": "1/2 in", "material": "High-Modulus Aramid" },
+    "compatibleModels": ["Scag Cheetah 61\" / 72\"", "Scag Cheetah II 61\""],
+    "crossReferences": [
+      { "brand": "Stens", "partNumber": "265-487", "notes": "Hydro pump transmission belt" },
+      { "brand": "Rotary", "partNumber": "14115", "notes": "Direct OEM replacement" }
+    ]
+  },
+  {
+    "slug": "scag-48202a",
+    "oemBrand": "Scag",
+    "oemPartNumber": "48202A",
+    "partType": "Cutter Deck Drive Belt",
+    "specs": { "length": "52.0 in", "width": "5/8 in", "material": "Wrapped Kevlar Cord" },
+    "compatibleModels": ["Scag SW 36\" Walk-Behind", "Scag SWZ 36\" Hydro Walk-Behind", "Scag SWMU 36\" Walk-Behind"],
+    "crossReferences": [
+      { "brand": "Stens", "partNumber": "265-240", "notes": "36\" walk-behind deck belt" },
+      { "brand": "Oregon", "partNumber": "75-240", "notes": "Heavy-duty cord construction" }
+    ]
+  },
+  {
+    "slug": "scag-483741",
+    "oemBrand": "Scag",
+    "oemPartNumber": "483741",
+    "partType": "Cutter Deck Belt",
+    "specs": { "length": "137.0 in", "width": "5/8 in", "material": "Double-Wrapped Aramid" },
+    "compatibleModels": ["Scag V-Ride II 61\" Stand-On", "Scag Tiger Cat II 61\" Deck"],
+    "crossReferences": [
+      { "brand": "Stens", "partNumber": "265-672", "notes": "V-Ride 61\" commercial replacement" },
+      { "brand": "Rotary", "partNumber": "15418", "notes": "Exact OEM length" }
+    ]
+  },
+  {
+    "slug": "scag-484032",
+    "oemBrand": "Scag",
+    "oemPartNumber": "484032",
+    "partType": "Cutter Deck Belt",
+    "specs": { "length": "124.5 in", "width": "5/8 in", "material": "Aramid Cord" },
+    "compatibleModels": ["Scag Freedom Z 48\" Deck", "Scag Liberty Z 48\" Deck"],
+    "crossReferences": [
+      { "brand": "Stens", "partNumber": "265-671", "notes": "Liberty Z 48\" OEM spec" },
+      { "brand": "Rotary", "partNumber": "15340", "notes": "Kevlar cord construction" }
+    ]
+  },
+  {
+    "slug": "scag-485697",
+    "oemBrand": "Scag",
+    "oemPartNumber": "485697",
+    "partType": "Cutter Deck Belt",
+    "specs": { "length": "128.75 in", "width": "5/8 in", "material": "Double-Wrapped Kevlar" },
+    "compatibleModels": ["Scag Liberty Z 52\" Hero Deck", "Scag Freedom Z 52\" Hero Deck"],
+    "crossReferences": [
+      { "brand": "Stens", "partNumber": "265-895", "notes": "52\" Hero cutter deck replacement" },
+      { "brand": "Rotary", "partNumber": "16412", "notes": "Heavy-duty aramid weave" }
     ]
   },
   {
@@ -82,15 +125,8 @@
     "oemBrand": "Exmark",
     "oemPartNumber": "109-8073",
     "partType": "Hydro Drive Belt",
-    "specs": {
-      "length": "66.5 in",
-      "width": "1/2 in",
-      "material": "Aramid Cord"
-    },
-    "compatibleModels": [
-      "Exmark Lazer Z AS (48\", 52\", 60\")",
-      "Exmark Lazer Z AC (48\", 52\", 60\")"
-    ],
+    "specs": { "length": "66.5 in", "width": "1/2 in", "material": "Aramid Cord" },
+    "compatibleModels": ["Exmark Lazer Z AS (48\", 52\", 60\")", "Exmark Lazer Z AC (48\", 52\", 60\")"],
     "crossReferences": [
       { "brand": "Stens", "partNumber": "265-430", "notes": "Standard hydro belt replacement" },
       { "brand": "Oregon", "partNumber": "75-812", "notes": "Synthetic elastomer compound" }
@@ -101,15 +137,8 @@
     "oemBrand": "Exmark",
     "oemPartNumber": "109-4110",
     "partType": "Deck Drive Belt",
-    "specs": {
-      "length": "163.5 in",
-      "width": "5/8 in",
-      "material": "Double-Wrapped Kevlar"
-    },
-    "compatibleModels": [
-      "Exmark Lazer Z UltraCut 60\" Series",
-      "Exmark Lazer Z Next LZS Series 60\""
-    ],
+    "specs": { "length": "163.5 in", "width": "5/8 in", "material": "Double-Wrapped Kevlar" },
+    "compatibleModels": ["Exmark Lazer Z UltraCut 60\" Series", "Exmark Lazer Z Next LZS Series 60\""],
     "crossReferences": [
       { "brand": "Stens", "partNumber": "265-654", "notes": "Aramid cord deck replacement" },
       { "brand": "Oregon", "partNumber": "75-859", "notes": "Commercial high-shock belt" }
@@ -120,16 +149,8 @@
     "oemBrand": "Exmark",
     "oemPartNumber": "109-9830",
     "partType": "Deck Drive Belt",
-    "specs": {
-      "length": "153.5 in",
-      "width": "5/8 in",
-      "material": "Aramid Reinforced"
-    },
-    "compatibleModels": [
-      "Exmark Radius E-Series 52\"",
-      "Exmark Radius S-Series 52\"",
-      "Exmark Radius X-Series 52\""
-    ],
+    "specs": { "length": "153.5 in", "width": "5/8 in", "material": "Aramid Reinforced" },
+    "compatibleModels": ["Exmark Radius E-Series 52\"", "Exmark Radius S-Series 52\"", "Exmark Radius X-Series 52\""],
     "crossReferences": [
       { "brand": "Stens", "partNumber": "265-714", "notes": "Premium synthetic rubber" },
       { "brand": "Rotary", "partNumber": "15887", "notes": "Direct OEM fitment" }
@@ -140,18 +161,83 @@
     "oemBrand": "Exmark",
     "oemPartNumber": "103-4014",
     "partType": "Deck Drive Belt",
-    "specs": {
-      "length": "136.0 in",
-      "width": "5/8 in",
-      "material": "Aramid Cord"
-    },
-    "compatibleModels": [
-      "Exmark Lazer Z 52\" Deck",
-      "Exmark Turf Ranger 52\""
-    ],
+    "specs": { "length": "136.0 in", "width": "5/8 in", "material": "Aramid Cord" },
+    "compatibleModels": ["Exmark Lazer Z 52\" Deck", "Exmark Turf Ranger 52\""],
     "crossReferences": [
       { "brand": "Stens", "partNumber": "265-199", "notes": "Kevlar reinforced" },
       { "brand": "Oregon", "partNumber": "75-824", "notes": "Standard commercial grade" }
+    ]
+  },
+  {
+    "slug": "exmark-109-3388",
+    "oemBrand": "Exmark",
+    "oemPartNumber": "109-3388",
+    "partType": "Hydro Pump Drive Belt",
+    "specs": { "length": "75.0 in", "width": "1/2 in", "material": "Aramid Tensile Cord" },
+    "compatibleModels": ["Exmark Lazer Z E-Series", "Exmark Lazer Z S-Series", "Exmark Lazer Z X-Series"],
+    "crossReferences": [
+      { "brand": "Stens", "partNumber": "265-434", "notes": "Next Lazer Z hydro drive belt" },
+      { "brand": "Rotary", "partNumber": "14298", "notes": "Direct OEM replacement" }
+    ]
+  },
+  {
+    "slug": "exmark-116-1985",
+    "oemBrand": "Exmark",
+    "oemPartNumber": "116-1985",
+    "partType": "Deck Drive Belt",
+    "specs": { "length": "199.0 in", "width": "5/8 in", "material": "Heavy Commercial Kevlar" },
+    "compatibleModels": ["Exmark Lazer Z S-Series 60\"", "Exmark Lazer Z X-Series 60\" UltraCut"],
+    "crossReferences": [
+      { "brand": "Stens", "partNumber": "265-657", "notes": "UltraCut 60\" Series 4 deck belt" },
+      { "brand": "Oregon", "partNumber": "15-011", "notes": "High-shock load rating" }
+    ]
+  },
+  {
+    "slug": "exmark-103-6906",
+    "oemBrand": "Exmark",
+    "oemPartNumber": "103-6906",
+    "partType": "Deck Drive Belt",
+    "specs": { "length": "126.5 in", "width": "5/8 in", "material": "Aramid Cord" },
+    "compatibleModels": ["Exmark Turf Tracer HP 48\" Walk-Behind", "Exmark Viking Hydro 48\" Walk-Behind"],
+    "crossReferences": [
+      { "brand": "Stens", "partNumber": "265-425", "notes": "Walk-behind 48\" deck replacement" },
+      { "brand": "Rotary", "partNumber": "12644", "notes": "Direct commercial equivalent" }
+    ]
+  },
+  {
+    "slug": "exmark-126-7732",
+    "oemBrand": "Exmark",
+    "oemPartNumber": "126-7732",
+    "partType": "Deck Drive Belt",
+    "specs": { "length": "166.0 in", "width": "5/8 in", "material": "Wrapped Aramid Cord" },
+    "compatibleModels": ["Exmark Radius E-Series 60\"", "Exmark Radius S-Series 60\"", "Exmark Radius X-Series 60\""],
+    "crossReferences": [
+      { "brand": "Stens", "partNumber": "265-715", "notes": "Radius 60\" OEM spec replacement" },
+      { "brand": "Rotary", "partNumber": "15888", "notes": "Kevlar reinforced" }
+    ]
+  },
+  {
+    "slug": "exmark-116-3455",
+    "oemBrand": "Exmark",
+    "oemPartNumber": "116-3455",
+    "partType": "Deck Drive Belt",
+    "specs": { "length": "154.0 in", "width": "5/8 in", "material": "Aramid Kevlar Cord" },
+    "compatibleModels": ["Exmark Pioneer E-Series 48\"", "Exmark Pioneer S-Series 48\""],
+    "crossReferences": [
+      { "brand": "Stens", "partNumber": "265-652", "notes": "Pioneer 48\" UltraCut deck belt" },
+      { "brand": "Rotary", "partNumber": "15211", "notes": "Exact OEM fitment" }
+    ]
+  },
+  {
+    "slug": "exmark-109-5364",
+    "oemBrand": "Exmark",
+    "oemPartNumber": "109-5364",
+    "partType": "Deck Drive Belt",
+    "specs": { "length": "129.5 in", "width": "1/2 in", "material": "Wrapped Kevlar" },
+    "compatibleModels": ["Exmark Quest 42\" Deck", "Exmark Quest E-Series 42\""],
+    "crossReferences": [
+      { "brand": "Stens", "partNumber": "265-432", "notes": "Quest 42\" direct replacement" },
+      { "brand": "Oregon", "partNumber": "75-814", "notes": "Aramid core construction" }
     ]
   },
   {
@@ -159,16 +245,8 @@
     "oemBrand": "Toro",
     "oemPartNumber": "119-8819",
     "partType": "Deck Drive Belt",
-    "specs": {
-      "length": "141.5 in",
-      "width": "1/2 in",
-      "material": "Double-wrapped Kevlar"
-    },
-    "compatibleModels": [
-      "Toro TimeCutter SS 5000",
-      "Toro TimeCutter MX 5060",
-      "Toro Titan 50\""
-    ],
+    "specs": { "length": "141.5 in", "width": "1/2 in", "material": "Double-wrapped Kevlar" },
+    "compatibleModels": ["Toro TimeCutter SS 5000", "Toro TimeCutter MX 5060", "Toro Titan 50\""],
     "crossReferences": [
       { "brand": "Stens", "partNumber": "265-310", "notes": "Direct replacement belt" },
       { "brand": "Oregon", "partNumber": "75-032", "notes": "Reinforced cord construction" }
@@ -179,16 +257,8 @@
     "oemBrand": "Toro",
     "oemPartNumber": "114-0453",
     "partType": "Transmission Drive Belt",
-    "specs": {
-      "length": "68.25 in",
-      "width": "1/2 in",
-      "material": "Synthetic Rubber / Aramid"
-    },
-    "compatibleModels": [
-      "Toro TimeCutter SS 4200",
-      "Toro TimeCutter SS 4225",
-      "Toro TimeCutter SS 4235"
-    ],
+    "specs": { "length": "68.25 in", "width": "1/2 in", "material": "Synthetic Rubber / Aramid" },
+    "compatibleModels": ["Toro TimeCutter SS 4200", "Toro TimeCutter SS 4225", "Toro TimeCutter SS 4235"],
     "crossReferences": [
       { "brand": "Stens", "partNumber": "265-308", "notes": "Direct hydro belt" },
       { "brand": "Rotary", "partNumber": "14881", "notes": "Standard aftermarket equivalent" }
@@ -199,15 +269,8 @@
     "oemBrand": "Toro",
     "oemPartNumber": "115-5300",
     "partType": "Deck Drive Belt",
-    "specs": {
-      "length": "160.0 in",
-      "width": "5/8 in",
-      "material": "Aramid Cord"
-    },
-    "compatibleModels": [
-      "Toro Titan ZX6000 60\"",
-      "Toro Titan MX6080 60\""
-    ],
+    "specs": { "length": "160.0 in", "width": "5/8 in", "material": "Aramid Cord" },
+    "compatibleModels": ["Toro Titan ZX6000 60\"", "Toro Titan MX6080 60\""],
     "crossReferences": [
       { "brand": "Stens", "partNumber": "265-314", "notes": "Commercial deck belt" },
       { "brand": "Oregon", "partNumber": "75-045", "notes": "Heavy-duty aftermarket" }
@@ -218,18 +281,71 @@
     "oemBrand": "Toro",
     "oemPartNumber": "133-7076",
     "partType": "Deck Drive Belt",
-    "specs": {
-      "length": "141.0 in",
-      "width": "1/2 in",
-      "material": "Double-Wrapped Kevlar"
-    },
-    "compatibleModels": [
-      "Toro TimeCutter HD 48\"",
-      "Toro TimeCutter HD 54\""
-    ],
+    "specs": { "length": "141.0 in", "width": "1/2 in", "material": "Double-Wrapped Kevlar" },
+    "compatibleModels": ["Toro TimeCutter HD 48\"", "Toro TimeCutter HD 54\""],
     "crossReferences": [
       { "brand": "Stens", "partNumber": "265-812", "notes": "Exact length replacement" },
       { "brand": "Rotary", "partNumber": "16109", "notes": "Aramid cord construction" }
+    ]
+  },
+  {
+    "slug": "toro-119-8820",
+    "oemBrand": "Toro",
+    "oemPartNumber": "119-8820",
+    "partType": "Deck Drive Belt",
+    "specs": { "length": "113.5 in", "width": "1/2 in", "material": "Kevlar Cord" },
+    "compatibleModels": ["Toro TimeCutter SS 4200 (42\" Deck)", "Toro TimeCutter SS 4225 (42\" Deck)", "Toro TimeCutter ZS 4200T"],
+    "crossReferences": [
+      { "brand": "Stens", "partNumber": "265-467", "notes": "42\" TimeCutter deck replacement" },
+      { "brand": "Oregon", "partNumber": "75-184", "notes": "Direct OEM fit" }
+    ]
+  },
+  {
+    "slug": "toro-105-7790",
+    "oemBrand": "Toro",
+    "oemPartNumber": "105-7790",
+    "partType": "Deck Drive Belt",
+    "specs": { "length": "153.0 in", "width": "5/8 in", "material": "Aramid Kevlar" },
+    "compatibleModels": ["Toro Z Master Z400 (48\" Turbo Force)", "Toro GrandStand 48\" Stand-On", "Toro ProLine H800"],
+    "crossReferences": [
+      { "brand": "Stens", "partNumber": "265-351", "notes": "GrandStand 48\" commercial belt" },
+      { "brand": "Rotary", "partNumber": "12412", "notes": "Heavy-duty Kevlar weave" }
+    ]
+  },
+  {
+    "slug": "toro-114-5858",
+    "oemBrand": "Toro",
+    "oemPartNumber": "114-5858",
+    "partType": "Deck Drive Belt",
+    "specs": { "length": "182.5 in", "width": "5/8 in", "material": "Double-Wrapped Kevlar" },
+    "compatibleModels": ["Toro Z Master G3 60\" Turbo Force", "Toro Z Master 3000 / 5000 / 6000 Series (60\" Deck)"],
+    "crossReferences": [
+      { "brand": "Stens", "partNumber": "265-464", "notes": "Z Master 60\" commercial deck belt" },
+      { "brand": "Oregon", "partNumber": "15-014", "notes": "High-tensile commercial cord" }
+    ]
+  },
+  {
+    "slug": "toro-130-0843",
+    "oemBrand": "Toro",
+    "oemPartNumber": "130-0843",
+    "partType": "Deck Drive Belt",
+    "specs": { "length": "145.5 in", "width": "1/2 in", "material": "Aramid Cord" },
+    "compatibleModels": ["Toro TimeCutter SW 5400 (54\" Deck)", "Toro TimeCutter MX 5475 (54\" Deck)", "Toro Titan HD 1500 52\""],
+    "crossReferences": [
+      { "brand": "Stens", "partNumber": "265-619", "notes": "TimeCutter 54\" direct replacement" },
+      { "brand": "Rotary", "partNumber": "15614", "notes": "Kevlar reinforced" }
+    ]
+  },
+  {
+    "slug": "toro-115-4971",
+    "oemBrand": "Toro",
+    "oemPartNumber": "115-4971",
+    "partType": "Deck Drive Belt",
+    "specs": { "length": "175.8 in", "width": "5/8 in", "material": "Double-Wrapped Kevlar" },
+    "compatibleModels": ["Toro Titan ZX5400 (54\" Deck)", "Toro Titan MX5400 (54\" Deck)"],
+    "crossReferences": [
+      { "brand": "Stens", "partNumber": "265-313", "notes": "Titan 54\" commercial spec" },
+      { "brand": "Oregon", "partNumber": "75-044", "notes": "Heavy-duty aramid cord" }
     ]
   },
   {
@@ -237,15 +353,8 @@
     "oemBrand": "Hustler",
     "oemPartNumber": "601408",
     "partType": "Deck Drive Belt",
-    "specs": {
-      "length": "143.0 in",
-      "width": "1/2 in",
-      "material": "Raw Edge Aramid"
-    },
-    "compatibleModels": [
-      "Hustler Raptor 52\"",
-      "Hustler Raptor Limited 52\""
-    ],
+    "specs": { "length": "143.0 in", "width": "1/2 in", "material": "Raw Edge Aramid" },
+    "compatibleModels": ["Hustler Raptor 52\"", "Hustler Raptor Limited 52\""],
     "crossReferences": [
       { "brand": "Stens", "partNumber": "265-538", "notes": "Heavy-duty deck belt" },
       { "brand": "Oregon", "partNumber": "75-928", "notes": "Exact length aftermarket" }
@@ -256,16 +365,8 @@
     "oemBrand": "Hustler",
     "oemPartNumber": "788059",
     "partType": "Deck Drive Belt",
-    "specs": {
-      "length": "146.5 in",
-      "width": "5/8 in",
-      "material": "High-Performance Kevlar"
-    },
-    "compatibleModels": [
-      "Hustler Super Z 60\"",
-      "Hustler Super Z 66\"",
-      "Hustler XR-7 60\" Deck"
-    ],
+    "specs": { "length": "146.5 in", "width": "5/8 in", "material": "High-Performance Kevlar" },
+    "compatibleModels": ["Hustler Super Z 60\"", "Hustler Super Z 66\"", "Hustler XR-7 60\" Deck"],
     "crossReferences": [
       { "brand": "Stens", "partNumber": "265-502", "notes": "Commercial grade deck replacement" },
       { "brand": "Rotary", "partNumber": "12476", "notes": "Heavy shock load belt" }
@@ -276,15 +377,8 @@
     "oemBrand": "Hustler",
     "oemPartNumber": "602741",
     "partType": "Deck Drive Belt",
-    "specs": {
-      "length": "139.75 in",
-      "width": "1/2 in",
-      "material": "Aramid Cord"
-    },
-    "compatibleModels": [
-      "Hustler Fastrak 48\"",
-      "Hustler Fastrak 54\""
-    ],
+    "specs": { "length": "139.75 in", "width": "1/2 in", "material": "Aramid Cord" },
+    "compatibleModels": ["Hustler Fastrak 48\"", "Hustler Fastrak 54\""],
     "crossReferences": [
       { "brand": "Stens", "partNumber": "265-539", "notes": "Direct replacement belt" },
       { "brand": "Oregon", "partNumber": "75-930", "notes": "Synthetic compound" }
@@ -295,19 +389,59 @@
     "oemBrand": "Hustler",
     "oemPartNumber": "604711",
     "partType": "Hydro Drive Belt",
-    "specs": {
-      "length": "68.2 in",
-      "width": "1/2 in",
-      "material": "Aramid Core"
-    },
-    "compatibleModels": [
-      "Hustler Raptor 42\"",
-      "Hustler Raptor 52\"",
-      "Hustler Raptor SD 54\""
-    ],
+    "specs": { "length": "68.2 in", "width": "1/2 in", "material": "Aramid Core" },
+    "compatibleModels": ["Hustler Raptor 42\"", "Hustler Raptor 52\"", "Hustler Raptor SD 54\""],
     "crossReferences": [
       { "brand": "Stens", "partNumber": "265-545", "notes": "Direct pump drive replacement" },
       { "brand": "Rotary", "partNumber": "15492", "notes": "Standard hydro belt" }
+    ]
+  },
+  {
+    "slug": "hustler-605510",
+    "oemBrand": "Hustler",
+    "oemPartNumber": "605510",
+    "partType": "Deck Drive Belt",
+    "specs": { "length": "158.0 in", "width": "5/8 in", "material": "Wrapped Kevlar Cord" },
+    "compatibleModels": ["Hustler Raptor SD 60\"", "Hustler Raptor SDX 60\"", "Hustler Raptor Flip-Up 54\""],
+    "crossReferences": [
+      { "brand": "Stens", "partNumber": "265-698", "notes": "Raptor SD 60\" direct replacement" },
+      { "brand": "Rotary", "partNumber": "15505", "notes": "Aramid reinforced" }
+    ]
+  },
+  {
+    "slug": "hustler-791988",
+    "oemBrand": "Hustler",
+    "oemPartNumber": "791988",
+    "partType": "Deck Drive Belt",
+    "specs": { "length": "140.75 in", "width": "5/8 in", "material": "Aramid Cord" },
+    "compatibleModels": ["Hustler Mini Z 42\" / 52\"", "Hustler Fastrak 54\" Heavy Duty", "Hustler Z 52\""],
+    "crossReferences": [
+      { "brand": "Stens", "partNumber": "265-504", "notes": "Commercial Fastrak belt" },
+      { "brand": "Oregon", "partNumber": "75-895", "notes": "Kevlar cord upgrade" }
+    ]
+  },
+  {
+    "slug": "hustler-604830",
+    "oemBrand": "Hustler",
+    "oemPartNumber": "604830",
+    "partType": "Deck Drive Belt",
+    "specs": { "length": "143.75 in", "width": "5/8 in", "material": "Raw Edge Kevlar" },
+    "compatibleModels": ["Hustler Raptor SD 54\" Deck", "Hustler Raptor SDX 54\" Deck", "Hustler Fastrak 54\" (2016+)"],
+    "crossReferences": [
+      { "brand": "Stens", "partNumber": "265-697", "notes": "Raptor SD 54\" OEM equivalent" },
+      { "brand": "Rotary", "partNumber": "15504", "notes": "Heavy-duty commercial aramid" }
+    ]
+  },
+  {
+    "slug": "hustler-603907",
+    "oemBrand": "Hustler",
+    "oemPartNumber": "603907",
+    "partType": "Deck Drive Belt",
+    "specs": { "length": "119.25 in", "width": "1/2 in", "material": "Aramid Cord" },
+    "compatibleModels": ["Hustler Raptor 42\" Deck", "Hustler Raptor Limited 42\""],
+    "crossReferences": [
+      { "brand": "Stens", "partNumber": "265-696", "notes": "Raptor 42\" 2-blade deck belt" },
+      { "brand": "Oregon", "partNumber": "75-927", "notes": "Direct replacement" }
     ]
   },
   {
@@ -315,16 +449,8 @@
     "oemBrand": "John Deere",
     "oemPartNumber": "M154296",
     "partType": "Deck Drive Belt",
-    "specs": {
-      "length": "151.7 in",
-      "width": "1/2 in",
-      "material": "Kevlar Cord Construction"
-    },
-    "compatibleModels": [
-      "John Deere X300 (42\" Edge Deck)",
-      "John Deere X304 (42\" Edge Deck)",
-      "John Deere X310 (42\" Deck)"
-    ],
+    "specs": { "length": "151.7 in", "width": "1/2 in", "material": "Kevlar Cord Construction" },
+    "compatibleModels": ["John Deere X300 (42\" Edge Deck)", "John Deere X304 (42\" Edge Deck)", "John Deere X310 (42\" Deck)"],
     "crossReferences": [
       { "brand": "Stens", "partNumber": "265-834", "notes": "Direct replacement belt" },
       { "brand": "Oregon", "partNumber": "75-816", "notes": "Premium aftermarket" },
@@ -336,16 +462,8 @@
     "oemBrand": "John Deere",
     "oemPartNumber": "M163990",
     "partType": "Deck Drive Belt",
-    "specs": {
-      "length": "156.4 in",
-      "width": "5/8 in",
-      "material": "Aramid Reinforced"
-    },
-    "compatibleModels": [
-      "John Deere Z445 (54\" High-Capacity Deck)",
-      "John Deere Z465 (54\" Deck)",
-      "John Deere Z655 (54\" Deck)"
-    ],
+    "specs": { "length": "156.4 in", "width": "5/8 in", "material": "Aramid Reinforced" },
+    "compatibleModels": ["John Deere Z445 (54\" High-Capacity Deck)", "John Deere Z465 (54\" Deck)", "John Deere Z655 (54\" Deck)"],
     "crossReferences": [
       { "brand": "Stens", "partNumber": "265-667", "notes": "High-capacity deck belt" },
       { "brand": "Rotary", "partNumber": "14856", "notes": "Direct OEM fitment" }
@@ -356,16 +474,8 @@
     "oemBrand": "John Deere",
     "oemPartNumber": "TCU30355",
     "partType": "Deck Drive Belt",
-    "specs": {
-      "length": "165.2 in",
-      "width": "5/8 in",
-      "material": "Heavy Commercial Kevlar"
-    },
-    "compatibleModels": [
-      "John Deere Z930M (60\" 7-Iron PRO)",
-      "John Deere Z950M (60\" 7-Iron PRO)",
-      "John Deere Z960R (60\" 7-Iron PRO)"
-    ],
+    "specs": { "length": "165.2 in", "width": "5/8 in", "material": "Heavy Commercial Kevlar" },
+    "compatibleModels": ["John Deere Z930M (60\" 7-Iron PRO)", "John Deere Z950M (60\" 7-Iron PRO)", "John Deere Z960R (60\" 7-Iron PRO)"],
     "crossReferences": [
       { "brand": "Stens", "partNumber": "265-862", "notes": "7-Iron deck replacement" },
       { "brand": "Oregon", "partNumber": "75-820", "notes": "Commercial aramid construction" }
@@ -376,16 +486,8 @@
     "oemBrand": "John Deere",
     "oemPartNumber": "GX20072",
     "partType": "Deck Drive Belt",
-    "specs": {
-      "length": "103.75 in",
-      "width": "1/2 in",
-      "material": "Synthetic Cord"
-    },
-    "compatibleModels": [
-      "John Deere D100, D105, D110, D120, D130 (42\" Deck)",
-      "John Deere LA105, LA115, LA125, LA135 (42\" Deck)",
-      "John Deere E100, E110, E120 (42\" Deck)"
-    ],
+    "specs": { "length": "103.75 in", "width": "1/2 in", "material": "Synthetic Cord" },
+    "compatibleModels": ["John Deere D100, D105, D110, D120, D130 (42\" Deck)", "John Deere LA105, LA115, LA125, LA135 (42\" Deck)", "John Deere E100, E110, E120 (42\" Deck)"],
     "crossReferences": [
       { "brand": "Stens", "partNumber": "265-186", "notes": "Direct aftermarket replacement" },
       { "brand": "Oregon", "partNumber": "75-998", "notes": "Aramid cord upgrade" },
@@ -393,20 +495,108 @@
     ]
   },
   {
+    "slug": "john-deere-gx21833",
+    "oemBrand": "John Deere",
+    "oemPartNumber": "GX21833",
+    "partType": "Deck Drive Belt",
+    "specs": { "length": "141.1 in", "width": "1/2 in", "material": "Kevlar Cord" },
+    "compatibleModels": ["John Deere D140, D150, D160 (48\" Deck)", "John Deere LA130, LA140, LA145, LA165 (48\" Deck)", "John Deere E140, E150, E160, E170 (48\" Deck)"],
+    "crossReferences": [
+      { "brand": "Stens", "partNumber": "265-238", "notes": "48\" 3-blade deck replacement" },
+      { "brand": "Oregon", "partNumber": "175-907", "notes": "Heavy-duty Kevlar wrap" }
+    ]
+  },
+  {
+    "slug": "john-deere-tcu35604",
+    "oemBrand": "John Deere",
+    "oemPartNumber": "TCU35604",
+    "partType": "Deck Drive Belt",
+    "specs": { "length": "182.5 in", "width": "5/8 in", "material": "Commercial Aramid Weave" },
+    "compatibleModels": ["John Deere Z915B / Z915E (60\" Deck)", "John Deere Z920M / Z925M (60\" Deck)", "John Deere Z930R (60\" Deck)"],
+    "crossReferences": [
+      { "brand": "Stens", "partNumber": "265-670", "notes": "ZTrak 60\" commercial belt" },
+      { "brand": "Rotary", "partNumber": "15318", "notes": "Direct OEM length" }
+    ]
+  },
+  {
+    "slug": "john-deere-m155343",
+    "oemBrand": "John Deere",
+    "oemPartNumber": "M155343",
+    "partType": "Deck Drive Belt",
+    "specs": { "length": "114.8 in", "width": "1/2 in", "material": "Aramid Cord" },
+    "compatibleModels": ["John Deere Z425 (48\" Edge Deck)", "John Deere Z435 (48\" Deck)", "John Deere Z445 (48\" Deck)"],
+    "crossReferences": [
+      { "brand": "Stens", "partNumber": "265-427", "notes": "ZTrak 48\" Edge replacement" },
+      { "brand": "Oregon", "partNumber": "75-815", "notes": "Kevlar reinforced" }
+    ]
+  },
+  {
+    "slug": "john-deere-gx25628",
+    "oemBrand": "John Deere",
+    "oemPartNumber": "GX25628",
+    "partType": "Deck Drive Belt",
+    "specs": { "length": "118.3 in", "width": "1/2 in", "material": "Kevlar Reinforced" },
+    "compatibleModels": ["John Deere Z335E (42\" Accel Deep Deck)", "John Deere Z335M (42\" Deck)", "John Deere Z345M / Z345R (42\" Deck)"],
+    "crossReferences": [
+      { "brand": "Stens", "partNumber": "265-282", "notes": "Z300 Series 42\" Accel Deep belt" },
+      { "brand": "Oregon", "partNumber": "75-817", "notes": "Exact OEM fitment" }
+    ]
+  },
+  {
+    "slug": "john-deere-gx26422",
+    "oemBrand": "John Deere",
+    "oemPartNumber": "GX26422",
+    "partType": "Deck Drive Belt",
+    "specs": { "length": "145.6 in", "width": "1/2 in", "material": "Aramid Cord" },
+    "compatibleModels": ["John Deere Z355E (48\" Accel Deep Deck)", "John Deere Z355R (48\" Deck)", "John Deere Z375R (54\" Deck)"],
+    "crossReferences": [
+      { "brand": "Stens", "partNumber": "265-828", "notes": "Z355E/Z375R Accel Deep replacement" },
+      { "brand": "Rotary", "partNumber": "15921", "notes": "Double-wrapped Kevlar" }
+    ]
+  },
+  {
+    "slug": "john-deere-uc30568",
+    "oemBrand": "John Deere",
+    "oemPartNumber": "UC30568",
+    "partType": "Deck Drive Belt",
+    "specs": { "length": "144.8 in", "width": "5/8 in", "material": "Heavy Kevlar Cord" },
+    "compatibleModels": ["John Deere Z515E (48\" / 54\" Deck)", "John Deere Z530M (48\" / 54\" Accel Deep)", "John Deere Z545R (48\" / 54\")"],
+    "crossReferences": [
+      { "brand": "Stens", "partNumber": "265-890", "notes": "Z500 series Accel Deep belt" },
+      { "brand": "Rotary", "partNumber": "16288", "notes": "Commercial aramid weave" }
+    ]
+  },
+  {
+    "slug": "john-deere-m169485",
+    "oemBrand": "John Deere",
+    "oemPartNumber": "M169485",
+    "partType": "Deck Drive Belt",
+    "specs": { "length": "169.0 in", "width": "5/8 in", "material": "Aramid Cord" },
+    "compatibleModels": ["John Deere X350 / X354 (48\" Accel Deep)", "John Deere X370 / X380 (48\" / 54\" Deck)", "John Deere X570 / X580 (48\" / 54\")"],
+    "crossReferences": [
+      { "brand": "Stens", "partNumber": "265-835", "notes": "Select Series X300/X500 replacement" },
+      { "brand": "Oregon", "partNumber": "75-819", "notes": "High-tensile Kevlar" }
+    ]
+  },
+  {
+    "slug": "john-deere-lvu18549",
+    "oemBrand": "John Deere",
+    "oemPartNumber": "LVU18549",
+    "partType": "Mid-Mount Mower Deck Belt",
+    "specs": { "length": "136.6 in", "width": "5/8 in", "material": "Double-Wrapped Aramid" },
+    "compatibleModels": ["John Deere 1023E / 1025R Sub-Compact Tractor (60D AutoConnect Deck)", "John Deere 2025R (60D Deck)"],
+    "crossReferences": [
+      { "brand": "Stens", "partNumber": "265-865", "notes": "1025R 60D AutoConnect deck belt" },
+      { "brand": "Rotary", "partNumber": "15940", "notes": "Heavy agricultural Kevlar" }
+    ]
+  },
+  {
     "slug": "ferris-5103389",
     "oemBrand": "Ferris",
     "oemPartNumber": "5103389",
     "partType": "Deck Drive Belt",
-    "specs": {
-      "length": "167.5 in",
-      "width": "5/8 in",
-      "material": "Aramid Kevlar Core"
-    },
-    "compatibleModels": [
-      "Ferris IS2100Z (61\" iCD Deck)",
-      "Ferris IS3200Z (61\" iCD Deck)",
-      "Snapper Pro S200xt (61\" Deck)"
-    ],
+    "specs": { "length": "167.5 in", "width": "5/8 in", "material": "Aramid Kevlar Core" },
+    "compatibleModels": ["Ferris IS2100Z (61\" iCD Deck)", "Ferris IS3200Z (61\" iCD Deck)", "Snapper Pro S200xt (61\" Deck)"],
     "crossReferences": [
       { "brand": "Stens", "partNumber": "265-728", "notes": "Direct iCD deck belt" },
       { "brand": "Rotary", "partNumber": "15984", "notes": "Commercial heavy-duty" }
@@ -417,15 +607,8 @@
     "oemBrand": "Ferris",
     "oemPartNumber": "5103871",
     "partType": "Deck Drive Belt",
-    "specs": {
-      "length": "158.0 in",
-      "width": "5/8 in",
-      "material": "High-Tensile Cord"
-    },
-    "compatibleModels": [
-      "Ferris IS700Z (52\" iCD Deck)",
-      "Ferris ISX800 (52\" iCD Deck)"
-    ],
+    "specs": { "length": "158.0 in", "width": "5/8 in", "material": "High-Tensile Cord" },
+    "compatibleModels": ["Ferris IS700Z (52\" iCD Deck)", "Ferris ISX800 (52\" iCD Deck)"],
     "crossReferences": [
       { "brand": "Stens", "partNumber": "265-725", "notes": "Direct aftermarket equivalent" },
       { "brand": "Oregon", "partNumber": "75-877", "notes": "Premium synthetic cord" }
@@ -436,19 +619,35 @@
     "oemBrand": "Ferris",
     "oemPartNumber": "5101987",
     "partType": "Hydro Drive Belt",
-    "specs": {
-      "length": "68.5 in",
-      "width": "1/2 in",
-      "material": "Aramid Core"
-    },
-    "compatibleModels": [
-      "Ferris IS2000Z Series",
-      "Ferris IS2100Z Series",
-      "Snapper Pro S150xt"
-    ],
+    "specs": { "length": "68.5 in", "width": "1/2 in", "material": "Aramid Core" },
+    "compatibleModels": ["Ferris IS2000Z Series", "Ferris IS2100Z Series", "Snapper Pro S150xt"],
     "crossReferences": [
       { "brand": "Stens", "partNumber": "265-689", "notes": "Hydro pump belt" },
       { "brand": "Rotary", "partNumber": "14820", "notes": "Direct replacement" }
+    ]
+  },
+  {
+    "slug": "ferris-5103670",
+    "oemBrand": "Ferris",
+    "oemPartNumber": "5103670",
+    "partType": "Deck Drive Belt",
+    "specs": { "length": "173.5 in", "width": "5/8 in", "material": "Double-Wrapped Kevlar" },
+    "compatibleModels": ["Ferris IS700Z (61\" Deck)", "Ferris IS600Z (61\" Deck)", "Ferris F160Z (61\" Deck)"],
+    "crossReferences": [
+      { "brand": "Stens", "partNumber": "265-726", "notes": "IS700Z 61\" deck replacement" },
+      { "brand": "Rotary", "partNumber": "15982", "notes": "Heavy commercial cord" }
+    ]
+  },
+  {
+    "slug": "ferris-5104780",
+    "oemBrand": "Ferris",
+    "oemPartNumber": "5104780",
+    "partType": "Deck Drive Belt",
+    "specs": { "length": "162.8 in", "width": "5/8 in", "material": "Aramid Cord" },
+    "compatibleModels": ["Ferris ISX800 (60\" ForeFront Deck)", "Ferris ISX2200 (60\" Deck)", "Ferris 500S (60\" Deck)"],
+    "crossReferences": [
+      { "brand": "Stens", "partNumber": "265-898", "notes": "ISX series 60\" deck belt" },
+      { "brand": "Rotary", "partNumber": "16395", "notes": "Direct OEM equivalent" }
     ]
   },
   {
@@ -456,16 +655,8 @@
     "oemBrand": "Kubota",
     "oemPartNumber": "K5677-34710",
     "partType": "Deck Drive Belt",
-    "specs": {
-      "length": "148.5 in",
-      "width": "5/8 in",
-      "material": "Double-Wrapped Kevlar"
-    },
-    "compatibleModels": [
-      "Kubota ZD326 (60\" Pro Deck)",
-      "Kubota ZD331 (60\" Pro Deck)",
-      "Kubota ZD1211 (60\" Deck)"
-    ],
+    "specs": { "length": "148.5 in", "width": "5/8 in", "material": "Double-Wrapped Kevlar" },
+    "compatibleModels": ["Kubota ZD326 (60\" Pro Deck)", "Kubota ZD331 (60\" Pro Deck)", "Kubota ZD1211 (60\" Deck)"],
     "crossReferences": [
       { "brand": "Stens", "partNumber": "265-618", "notes": "Heavy commercial diesel spec" },
       { "brand": "Rotary", "partNumber": "15312", "notes": "High shock replacement" }
@@ -476,19 +667,47 @@
     "oemBrand": "Kubota",
     "oemPartNumber": "K5647-34710",
     "partType": "Deck Drive Belt",
-    "specs": {
-      "length": "134.0 in",
-      "width": "5/8 in",
-      "material": "Aramid Cord"
-    },
-    "compatibleModels": [
-      "Kubota ZG227 (54\" Deck)",
-      "Kubota ZD221 (54\" Deck)",
-      "Kubota ZG327 (54\" Deck)"
-    ],
+    "specs": { "length": "134.0 in", "width": "5/8 in", "material": "Aramid Cord" },
+    "compatibleModels": ["Kubota ZG227 (54\" Deck)", "Kubota ZD221 (54\" Deck)", "Kubota ZG327 (54\" Deck)"],
     "crossReferences": [
       { "brand": "Stens", "partNumber": "265-614", "notes": "Direct Pro Commercial fit" },
       { "brand": "Oregon", "partNumber": "75-802", "notes": "Aramid reinforced" }
+    ]
+  },
+  {
+    "slug": "kubota-k5221-71410",
+    "oemBrand": "Kubota",
+    "oemPartNumber": "K5221-71410",
+    "partType": "Deck Drive Belt",
+    "specs": { "length": "113.0 in", "width": "5/8 in", "material": "Wrapped Kevlar" },
+    "compatibleModels": ["Kubota Z122R (42\" Deck)", "Kubota Z121S (48\" Deck)", "Kubota Z125S (54\" Deck)"],
+    "crossReferences": [
+      { "brand": "Stens", "partNumber": "265-611", "notes": "Kommander Z100 series belt" },
+      { "brand": "Rotary", "partNumber": "15308", "notes": "Direct OEM fit" }
+    ]
+  },
+  {
+    "slug": "kubota-k5371-34710",
+    "oemBrand": "Kubota",
+    "oemPartNumber": "K5371-34710",
+    "partType": "Mid-Mount Deck Belt",
+    "specs": { "length": "122.0 in", "width": "5/8 in", "material": "Heavy Aramid Cord" },
+    "compatibleModels": ["Kubota BX1880 / BX2380 / BX2680 (RCK60B-23BX 60\" Deck)", "Kubota BX23S Sub-Compact Tractor (60\" Deck)"],
+    "crossReferences": [
+      { "brand": "Stens", "partNumber": "265-615", "notes": "BX Series 60\" belly mower belt" },
+      { "brand": "Oregon", "partNumber": "75-805", "notes": "Commercial tractor Kevlar" }
+    ]
+  },
+  {
+    "slug": "kubota-k5763-34710",
+    "oemBrand": "Kubota",
+    "oemPartNumber": "K5763-34710",
+    "partType": "Deck Drive Belt",
+    "specs": { "length": "125.0 in", "width": "5/8 in", "material": "Double-Wrapped Kevlar" },
+    "compatibleModels": ["Kubota Z421 (54\" Pro Deck)", "Kubota Z422 (54\" Deck)", "Kubota Z724X (54\" Deck)"],
+    "crossReferences": [
+      { "brand": "Stens", "partNumber": "265-882", "notes": "Z400/Z700 54\" commercial replacement" },
+      { "brand": "Rotary", "partNumber": "16210", "notes": "Aramid cord construction" }
     ]
   },
   {
@@ -496,16 +715,8 @@
     "oemBrand": "Bad Boy",
     "oemPartNumber": "041-1650-00",
     "partType": "Deck Drive Belt",
-    "specs": {
-      "length": "165.0 in",
-      "width": "5/8 in",
-      "material": "High-Modulus Aramid"
-    },
-    "compatibleModels": [
-      "Bad Boy ZT Elite 60\"",
-      "Bad Boy Maverick 60\"",
-      "Bad Boy Outlaw 60\""
-    ],
+    "specs": { "length": "165.0 in", "width": "5/8 in", "material": "High-Modulus Aramid" },
+    "compatibleModels": ["Bad Boy ZT Elite 60\"", "Bad Boy Maverick 60\"", "Bad Boy Outlaw 60\""],
     "crossReferences": [
       { "brand": "Stens", "partNumber": "265-645", "notes": "Commercial deck replacement" },
       { "brand": "Rotary", "partNumber": "15640", "notes": "Aramid cord construction" }
@@ -516,16 +727,8 @@
     "oemBrand": "Bad Boy",
     "oemPartNumber": "041-1470-00",
     "partType": "Deck Drive Belt",
-    "specs": {
-      "length": "147.0 in",
-      "width": "5/8 in",
-      "material": "Aramid Cord"
-    },
-    "compatibleModels": [
-      "Bad Boy ZT Elite 54\"",
-      "Bad Boy MZ Magnum 54\"",
-      "Bad Boy Compact Outlaw 54\""
-    ],
+    "specs": { "length": "147.0 in", "width": "5/8 in", "material": "Aramid Cord" },
+    "compatibleModels": ["Bad Boy ZT Elite 54\"", "Bad Boy MZ Magnum 54\"", "Bad Boy Compact Outlaw 54\""],
     "crossReferences": [
       { "brand": "Stens", "partNumber": "265-642", "notes": "Direct deck belt" },
       { "brand": "Rotary", "partNumber": "15638", "notes": "Exact length aftermarket" }
@@ -536,19 +739,35 @@
     "oemBrand": "Bad Boy",
     "oemPartNumber": "041-6400-00",
     "partType": "Pump Drive Belt",
-    "specs": {
-      "length": "64.0 in",
-      "width": "1/2 in",
-      "material": "Aramid Cord"
-    },
-    "compatibleModels": [
-      "Bad Boy ZT Elite (All Deck Sizes)",
-      "Bad Boy CZT Series",
-      "Bad Boy Maverick Series"
-    ],
+    "specs": { "length": "64.0 in", "width": "1/2 in", "material": "Aramid Cord" },
+    "compatibleModels": ["Bad Boy ZT Elite (All Deck Sizes)", "Bad Boy CZT Series", "Bad Boy Maverick Series"],
     "crossReferences": [
       { "brand": "Stens", "partNumber": "265-649", "notes": "Hydro transmission belt" },
       { "brand": "Oregon", "partNumber": "75-866", "notes": "Synthetic compound" }
+    ]
+  },
+  {
+    "slug": "bad-boy-041-1560-00",
+    "oemBrand": "Bad Boy",
+    "oemPartNumber": "041-1560-00",
+    "partType": "Deck Drive Belt",
+    "specs": { "length": "158.8 in", "width": "5/8 in", "material": "Double-Wrapped Kevlar" },
+    "compatibleModels": ["Bad Boy ZT Elite 54\" (2018+)", "Bad Boy Maverick 54\"", "Bad Boy Rebel 54\""],
+    "crossReferences": [
+      { "brand": "Stens", "partNumber": "265-644", "notes": "Maverick 54\" heavy-duty belt" },
+      { "brand": "Rotary", "partNumber": "15639", "notes": "Aramid reinforced" }
+    ]
+  },
+  {
+    "slug": "bad-boy-041-0120-00",
+    "oemBrand": "Bad Boy",
+    "oemPartNumber": "041-0120-00",
+    "partType": "Deck Drive Belt",
+    "specs": { "length": "122.0 in", "width": "5/8 in", "material": "Aramid Cord" },
+    "compatibleModels": ["Bad Boy MZ 42\" Deck", "Bad Boy MZ Magnum 48\" Deck", "Bad Boy Rambler 42\""],
+    "crossReferences": [
+      { "brand": "Stens", "partNumber": "265-640", "notes": "MZ / Rambler 42\" & 48\" belt" },
+      { "brand": "Rotary", "partNumber": "15636", "notes": "Direct Kevlar replacement" }
     ]
   },
   {
@@ -556,16 +775,8 @@
     "oemBrand": "Gravely",
     "oemPartNumber": "07200023",
     "partType": "Deck Drive Belt",
-    "specs": {
-      "length": "148.5 in",
-      "width": "5/8 in",
-      "material": "Aramid Kevlar Cord"
-    },
-    "compatibleModels": [
-      "Gravely Pro-Turn 152 (52\" Deck)",
-      "Gravely Pro-Turn 252 (52\" Deck)",
-      "Ariens Apex 52\""
-    ],
+    "specs": { "length": "148.5 in", "width": "5/8 in", "material": "Aramid Kevlar Cord" },
+    "compatibleModels": ["Gravely Pro-Turn 152 (52\" Deck)", "Gravely Pro-Turn 252 (52\" Deck)", "Ariens Apex 52\""],
     "crossReferences": [
       { "brand": "Stens", "partNumber": "265-389", "notes": "OEM spec deck replacement" },
       { "brand": "Rotary", "partNumber": "15124", "notes": "Commercial grade aramid" }
@@ -576,19 +787,515 @@
     "oemBrand": "Gravely",
     "oemPartNumber": "07200523",
     "partType": "Deck Drive Belt",
-    "specs": {
-      "length": "161.5 in",
-      "width": "5/8 in",
-      "material": "Double-Wrapped Kevlar"
-    },
-    "compatibleModels": [
-      "Gravely Pro-Turn 160 (60\" Deck)",
-      "Gravely Pro-Turn 260 (60\" Deck)",
-      "Ariens Apex 60\""
-    ],
+    "specs": { "length": "161.5 in", "width": "5/8 in", "material": "Double-Wrapped Kevlar" },
+    "compatibleModels": ["Gravely Pro-Turn 160 (60\" Deck)", "Gravely Pro-Turn 260 (60\" Deck)", "Ariens Apex 60\""],
     "crossReferences": [
       { "brand": "Stens", "partNumber": "265-391", "notes": "Heavy-duty commercial deck" },
       { "brand": "Oregon", "partNumber": "75-945", "notes": "Aramid cord upgrade" }
+    ]
+  },
+  {
+    "slug": "gravely-07200802",
+    "oemBrand": "Gravely",
+    "oemPartNumber": "07200802",
+    "partType": "Deck Drive Belt",
+    "specs": { "length": "135.5 in", "width": "1/2 in", "material": "Aramid Cord" },
+    "compatibleModels": ["Gravely ZT HD 48\"", "Gravely ZT XL 48\"", "Ariens Ikon XD 52\""],
+    "crossReferences": [
+      { "brand": "Stens", "partNumber": "265-805", "notes": "Ikon XD & ZT XL replacement" },
+      { "brand": "Rotary", "partNumber": "16044", "notes": "Exact OEM fitment" }
+    ]
+  },
+  {
+    "slug": "ariens-07200718",
+    "oemBrand": "Ariens",
+    "oemPartNumber": "07200718",
+    "partType": "Deck Drive Belt",
+    "specs": { "length": "116.5 in", "width": "1/2 in", "material": "Wrapped Kevlar" },
+    "compatibleModels": ["Ariens Edge 42\" Zero-Turn", "Ariens Ikon XD 42\"", "Gravely ZT X 42\""],
+    "crossReferences": [
+      { "brand": "Stens", "partNumber": "265-803", "notes": "Ikon XD 42\" & ZT X 42\" belt" },
+      { "brand": "Rotary", "partNumber": "16042", "notes": "Aramid cord construction" }
+    ]
+  },
+  {
+    "slug": "ariens-07200839",
+    "oemBrand": "Ariens",
+    "oemPartNumber": "07200839",
+    "partType": "Deck Drive Belt",
+    "specs": { "length": "145.0 in", "width": "5/8 in", "material": "Heavy Aramid Cord" },
+    "compatibleModels": ["Ariens Ikon XD 60\"", "Gravely ZT HD 60\" Fabricated Deck"],
+    "crossReferences": [
+      { "brand": "Stens", "partNumber": "265-807", "notes": "ZT HD 60\" commercial spec" },
+      { "brand": "Rotary", "partNumber": "16046", "notes": "Double-wrapped Kevlar" }
+    ]
+  },
+  {
+    "slug": "wright-71460003",
+    "oemBrand": "Wright",
+    "oemPartNumber": "71460003",
+    "partType": "Cutter Deck Belt",
+    "specs": { "length": "80.5 in", "width": "5/8 in", "material": "Raw Edge Kevlar" },
+    "compatibleModels": ["Wright Stander 48\" (WMA / WS Series)", "Wright Sentar 48\""],
+    "crossReferences": [
+      { "brand": "Stens", "partNumber": "265-561", "notes": "48\" Stander commercial belt" },
+      { "brand": "Oregon", "partNumber": "75-880", "notes": "Heavy-duty aramid cord" }
+    ]
+  },
+  {
+    "slug": "wright-71460036",
+    "oemBrand": "Wright",
+    "oemPartNumber": "71460036",
+    "partType": "Cutter Deck Belt",
+    "specs": { "length": "85.0 in", "width": "5/8 in", "material": "Double-Wrapped Kevlar" },
+    "compatibleModels": ["Wright Stander 52\" (WS52)", "Wright Stander Intensity 52\" (WSI52)", "Wright Stander X 52\""],
+    "crossReferences": [
+      { "brand": "Stens", "partNumber": "265-564", "notes": "52\" Stander deck replacement" },
+      { "brand": "Rotary", "partNumber": "14891", "notes": "Commercial shock-load rated" }
+    ]
+  },
+  {
+    "slug": "wright-71460116",
+    "oemBrand": "Wright",
+    "oemPartNumber": "71460116",
+    "partType": "Cutter Deck Belt",
+    "specs": { "length": "163.0 in", "width": "5/8 in", "material": "Aramid Kevlar Cord" },
+    "compatibleModels": ["Wright Stander ZK 61\" Aero Core", "Wright ZTO 61\" Zero-Turn"],
+    "crossReferences": [
+      { "brand": "Stens", "partNumber": "265-568", "notes": "Stander ZK 61\" deck belt" },
+      { "brand": "Rotary", "partNumber": "15714", "notes": "High-tensile commercial cord" }
+    ]
+  },
+  {
+    "slug": "husqvarna-539117245",
+    "oemBrand": "Husqvarna",
+    "oemPartNumber": "539117245",
+    "partType": "Deck Drive Belt",
+    "specs": { "length": "123.0 in", "width": "5/8 in", "material": "Kevlar Cord" },
+    "compatibleModels": ["Husqvarna RZ4623 (46\" Deck)", "Husqvarna Z246 (46\" Deck)", "Husqvarna RZ46i"],
+    "crossReferences": [
+      { "brand": "Stens", "partNumber": "265-279", "notes": "46\" 2-blade zero-turn belt" },
+      { "brand": "Oregon", "partNumber": "175-704", "notes": "Aramid cord construction" }
+    ]
+  },
+  {
+    "slug": "husqvarna-539114557",
+    "oemBrand": "Husqvarna",
+    "oemPartNumber": "539114557",
+    "partType": "Deck Drive Belt",
+    "specs": { "length": "154.0 in", "width": "5/8 in", "material": "Aramid Reinforced" },
+    "compatibleModels": ["Husqvarna MZ54 (54\" Deck)", "Husqvarna RZ5424 (54\" Deck)", "Husqvarna Z254 / Z254F (54\" ClearCut Deck)"],
+    "crossReferences": [
+      { "brand": "Stens", "partNumber": "265-217", "notes": "54\" zero-turn deck replacement" },
+      { "brand": "Oregon", "partNumber": "75-922", "notes": "Heavy-duty Kevlar weave" }
+    ]
+  },
+  {
+    "slug": "husqvarna-574845603",
+    "oemBrand": "Husqvarna",
+    "oemPartNumber": "574845603",
+    "partType": "Deck Drive Belt",
+    "specs": { "length": "176.5 in", "width": "5/8 in", "material": "Double-Wrapped Kevlar" },
+    "compatibleModels": ["Husqvarna M-ZT 61 (61\" Deck)", "Husqvarna P-ZT 60 (60\" Commercial Deck)", "Husqvarna PZ60 (60\" Deck)"],
+    "crossReferences": [
+      { "brand": "Stens", "partNumber": "265-609", "notes": "Commercial M-ZT/P-ZT belt" },
+      { "brand": "Rotary", "partNumber": "14912", "notes": "High-tensile aramid" }
+    ]
+  },
+  {
+    "slug": "husqvarna-532405143",
+    "oemBrand": "Husqvarna",
+    "oemPartNumber": "532405143",
+    "partType": "Deck Drive Belt",
+    "specs": { "length": "105.75 in", "width": "1/2 in", "material": "Aramid Cord" },
+    "compatibleModels": ["Husqvarna YTH22V46 (46\" Lawn Tractor)", "Husqvarna YTH21K46", "Poulan Pro PB22H46YT"],
+    "crossReferences": [
+      { "brand": "Stens", "partNumber": "265-106", "notes": "46\" 2-blade tractor deck belt" },
+      { "brand": "Oregon", "partNumber": "175-531", "notes": "Kevlar reinforced" }
+    ]
+  },
+  {
+    "slug": "husqvarna-532197242",
+    "oemBrand": "Husqvarna",
+    "oemPartNumber": "532197242",
+    "partType": "Deck Drive Belt",
+    "specs": { "length": "138.75 in", "width": "5/8 in", "material": "Wrapped Kevlar" },
+    "compatibleModels": ["Husqvarna YTH24V48 (48\" 3-Blade Tractor)", "Husqvarna GTH26V48LS", "Craftsman 917.288520 (48\" Deck)"],
+    "crossReferences": [
+      { "brand": "Stens", "partNumber": "265-204", "notes": "48\" tractor deck replacement" },
+      { "brand": "Oregon", "partNumber": "75-905", "notes": "Aramid cord upgrade" }
+    ]
+  },
+  {
+    "slug": "husqvarna-587270101",
+    "oemBrand": "Husqvarna",
+    "oemPartNumber": "587270101",
+    "partType": "Deck Drive Belt",
+    "specs": { "length": "147.5 in", "width": "5/8 in", "material": "Double-Wrapped Kevlar" },
+    "compatibleModels": ["Husqvarna MZ52 (52\" Fabricated Deck)", "Husqvarna M-ZT 52 (52\" Deck)"],
+    "crossReferences": [
+      { "brand": "Stens", "partNumber": "265-607", "notes": "MZ52 / M-ZT 52 commercial belt" },
+      { "brand": "Rotary", "partNumber": "15422", "notes": "Exact OEM length" }
+    ]
+  },
+  {
+    "slug": "cub-cadet-954-05078",
+    "oemBrand": "Cub Cadet",
+    "oemPartNumber": "954-05078",
+    "partType": "Deck Drive Belt",
+    "specs": { "length": "143.5 in", "width": "5/8 in", "material": "Aramid Cord" },
+    "compatibleModels": ["Cub Cadet Ultima ZT1-50 (50\" AeroForce Deck)", "Cub Cadet Ultima ZT2-50 (50\" Deck)", "Craftsman Z550 (50\" Deck)"],
+    "crossReferences": [
+      { "brand": "Stens", "partNumber": "265-481", "notes": "Ultima 50\" direct replacement" },
+      { "brand": "Oregon", "partNumber": "75-218", "notes": "Kevlar reinforced" }
+    ]
+  },
+  {
+    "slug": "cub-cadet-954-04329a",
+    "oemBrand": "Cub Cadet",
+    "oemPartNumber": "954-04329A",
+    "partType": "Deck Drive Belt",
+    "specs": { "length": "148.25 in", "width": "5/8 in", "material": "Wrapped Kevlar" },
+    "compatibleModels": ["Cub Cadet RZT-L54 / RZT-S54 (54\" Deck)", "Cub Cadet Ultima ZT1-54 / ZT2-54 (54\" Deck)"],
+    "crossReferences": [
+      { "brand": "Stens", "partNumber": "265-469", "notes": "54\" fabricated deck belt" },
+      { "brand": "Rotary", "partNumber": "14883", "notes": "Aramid cord upgrade" }
+    ]
+  },
+  {
+    "slug": "cub-cadet-954-04060c",
+    "oemBrand": "Cub Cadet",
+    "oemPartNumber": "954-04060C",
+    "partType": "Deck Drive Belt",
+    "specs": { "length": "96.5 in", "width": "1/2 in", "material": "Aramid Cord" },
+    "compatibleModels": ["Cub Cadet LT1042 / LTX1040 / LTX1042 (42\" Deck)", "Troy-Bilt Pony / Bronco 42\" Lawn Tractor", "Craftsman T110 / LT2000 42\""],
+    "crossReferences": [
+      { "brand": "Stens", "partNumber": "265-203", "notes": "MTD 42\" 2-blade deck replacement" },
+      { "brand": "Oregon", "partNumber": "175-057", "notes": "Heavy-duty Kevlar cord" }
+    ]
+  },
+  {
+    "slug": "cub-cadet-954-05021",
+    "oemBrand": "Cub Cadet",
+    "oemPartNumber": "954-05021",
+    "partType": "Deck Drive Belt",
+    "specs": { "length": "100.0 in", "width": "1/2 in", "material": "Kevlar Cord" },
+    "compatibleModels": ["Cub Cadet XT1-LT42 (42\" Deck)", "Cub Cadet XT2-LX42 (42\" Deck)", "Troy-Bilt Super Bronco 42\""],
+    "crossReferences": [
+      { "brand": "Stens", "partNumber": "265-355", "notes": "XT1 / XT2 42\" Enduro series belt" },
+      { "brand": "Oregon", "partNumber": "75-212", "notes": "Direct OEM fit" }
+    ]
+  },
+  {
+    "slug": "cub-cadet-954-05022a",
+    "oemBrand": "Cub Cadet",
+    "oemPartNumber": "954-05022A",
+    "partType": "Deck Drive Belt",
+    "specs": { "length": "108.3 in", "width": "1/2 in", "material": "Aramid Reinforced" },
+    "compatibleModels": ["Cub Cadet XT1-LT46 (46\" Stamped / Fab Deck)", "Cub Cadet XT2-LX46 (46\" Deck)", "Craftsman T240 46\""],
+    "crossReferences": [
+      { "brand": "Stens", "partNumber": "265-356", "notes": "XT1/XT2 46\" 2-blade replacement" },
+      { "brand": "Rotary", "partNumber": "15140", "notes": "Kevlar cord construction" }
+    ]
+  },
+  {
+    "slug": "cub-cadet-954-04077a",
+    "oemBrand": "Cub Cadet",
+    "oemPartNumber": "954-04077A",
+    "partType": "Deck Drive Belt",
+    "specs": { "length": "134.0 in", "width": "5/8 in", "material": "Wrapped Kevlar" },
+    "compatibleModels": ["Cub Cadet XT1-LT50 / XT1-GT50 (50\" Deck)", "Cub Cadet LGT1050 / SLTX1050 (50\" Deck)", "Troy-Bilt Mustang XP 50\""],
+    "crossReferences": [
+      { "brand": "Stens", "partNumber": "265-213", "notes": "50\" 3-blade deck belt" },
+      { "brand": "Oregon", "partNumber": "175-064", "notes": "Aramid cord upgrade" }
+    ]
+  },
+  {
+    "slug": "cub-cadet-954-05156",
+    "oemBrand": "Cub Cadet",
+    "oemPartNumber": "954-05156",
+    "partType": "Deck Drive Belt",
+    "specs": { "length": "162.0 in", "width": "5/8 in", "material": "Double-Wrapped Kevlar" },
+    "compatibleModels": ["Cub Cadet Ultima ZT2-60 (60\" AeroForce Deck)", "Cub Cadet Ultima ZT3-60 (60\" Deck)", "Cub Cadet ZTX4-60"],
+    "crossReferences": [
+      { "brand": "Stens", "partNumber": "265-885", "notes": "Ultima 60\" commercial deck belt" },
+      { "brand": "Rotary", "partNumber": "16245", "notes": "Heavy-duty aramid core" }
+    ]
+  },
+  {
+    "slug": "spartan-461-0001-00",
+    "oemBrand": "Spartan",
+    "oemPartNumber": "461-0001-00",
+    "partType": "Deck Drive Belt",
+    "specs": { "length": "165.0 in", "width": "5/8 in", "material": "High-Modulus Kevlar" },
+    "compatibleModels": ["Spartan RZ 54\" Deck", "Spartan RT-Pro 54\" Deck", "Spartan SRT-XD 54\" Deck"],
+    "crossReferences": [
+      { "brand": "Stens", "partNumber": "265-781", "notes": "Spartan 54\" commercial belt" },
+      { "brand": "Rotary", "partNumber": "16091", "notes": "Heavy shock-load resistance" }
+    ]
+  },
+  {
+    "slug": "spartan-461-0002-00",
+    "oemBrand": "Spartan",
+    "oemPartNumber": "461-0002-00",
+    "partType": "Deck Drive Belt",
+    "specs": { "length": "178.0 in", "width": "5/8 in", "material": "Double-Wrapped Aramid" },
+    "compatibleModels": ["Spartan RZ-Pro 61\" Deck", "Spartan RT-HD 61\" Deck", "Spartan SRT-Pro 61\" Deck"],
+    "crossReferences": [
+      { "brand": "Stens", "partNumber": "265-782", "notes": "Spartan 61\" direct replacement" },
+      { "brand": "Rotary", "partNumber": "16092", "notes": "Commercial Kevlar weave" }
+    ]
+  },
+  {
+    "slug": "spartan-461-0004-00",
+    "oemBrand": "Spartan",
+    "oemPartNumber": "461-0004-00",
+    "partType": "Pump Drive Belt",
+    "specs": { "length": "69.5 in", "width": "1/2 in", "material": "Aramid Cord" },
+    "compatibleModels": ["Spartan RT Series (All Decks)", "Spartan SRT Series (All Decks)"],
+    "crossReferences": [
+      { "brand": "Stens", "partNumber": "265-784", "notes": "Spartan hydro transmission belt" },
+      { "brand": "Rotary", "partNumber": "16094", "notes": "Direct OEM equivalent" }
+    ]
+  },
+  {
+    "slug": "bobcat-4168470",
+    "oemBrand": "Bobcat",
+    "oemPartNumber": "4168470",
+    "partType": "Deck Drive Belt",
+    "specs": { "length": "151.0 in", "width": "5/8 in", "material": "Aramid Kevlar Cord" },
+    "compatibleModels": ["Bobcat ZT3000 (52\" TufDeck)", "Bobcat ZT3500 (52\" TufDeck)", "Bobcat XRZ Pro 52\""],
+    "crossReferences": [
+      { "brand": "Stens", "partNumber": "265-589", "notes": "52\" TufDeck replacement belt" },
+      { "brand": "Oregon", "partNumber": "75-862", "notes": "Commercial turf grade" }
+    ]
+  },
+  {
+    "slug": "bobcat-4163541",
+    "oemBrand": "Bobcat",
+    "oemPartNumber": "4163541",
+    "partType": "Deck Drive Belt",
+    "specs": { "length": "166.5 in", "width": "5/8 in", "material": "Double-Wrapped Kevlar" },
+    "compatibleModels": ["Bobcat ZT3000 / ZT3500 (61\" TufDeck)", "Bobcat ZT6000 / ZT6100 (61\" AirFX Deck)"],
+    "crossReferences": [
+      { "brand": "Stens", "partNumber": "265-591", "notes": "61\" TufDeck / AirFX commercial belt" },
+      { "brand": "Rotary", "partNumber": "15288", "notes": "Heavy-duty aramid cord" }
+    ]
+  },
+  {
+    "slug": "craftsman-144959",
+    "oemBrand": "Craftsman",
+    "oemPartNumber": "144959",
+    "partType": "Deck Drive Belt",
+    "specs": { "length": "95.5 in", "width": "1/2 in", "material": "Aramid Kevlar Cord" },
+    "compatibleModels": ["Craftsman LT1000 / LT2000 (42\" AYP Deck)", "Husqvarna YTH1542XP / YTH18542 (42\" Deck)", "Poulan Pro 42\" Riding Mower"],
+    "crossReferences": [
+      { "brand": "Stens", "partNumber": "265-006", "notes": "AYP 532144959 42\" deck belt" },
+      { "brand": "Oregon", "partNumber": "75-110", "notes": "Kevlar reinforced upgrade" }
+    ]
+  },
+  {
+    "slug": "craftsman-197253",
+    "oemBrand": "Craftsman",
+    "oemPartNumber": "197253",
+    "partType": "Deck Drive Belt",
+    "specs": { "length": "101.0 in", "width": "1/2 in", "material": "Wrapped Kevlar" },
+    "compatibleModels": ["Craftsman YT3000 / YT4000 (42\" Deck)", "Husqvarna YTH20K42 / YTH22V42 (42\" Deck)"],
+    "crossReferences": [
+      { "brand": "Stens", "partNumber": "265-202", "notes": "AYP 532197253 direct replacement" },
+      { "brand": "Oregon", "partNumber": "175-530", "notes": "Aramid cord construction" }
+    ]
+  },
+  {
+    "slug": "troy-bilt-954-04219",
+    "oemBrand": "Troy-Bilt",
+    "oemPartNumber": "954-04219",
+    "partType": "Deck Drive Belt",
+    "specs": { "length": "103.25 in", "width": "1/2 in", "material": "Aramid Cord" },
+    "compatibleModels": ["Troy-Bilt Horse XP 46\" Lawn Tractor", "Cub Cadet LTX1045 / LTX1046 (46\" 2-Blade Deck)"],
+    "crossReferences": [
+      { "brand": "Stens", "partNumber": "265-216", "notes": "MTD 46\" deck replacement" },
+      { "brand": "Oregon", "partNumber": "175-062", "notes": "Kevlar cord weave" }
+    ]
+  },
+  {
+    "slug": "snapper-pro-5100637",
+    "oemBrand": "Snapper Pro",
+    "oemPartNumber": "5100637",
+    "partType": "Deck Drive Belt",
+    "specs": { "length": "157.5 in", "width": "5/8 in", "material": "Double-Wrapped Kevlar" },
+    "compatibleModels": ["Snapper Pro S150XT (52\" Deck)", "Snapper Pro S200XT (52\" Deck)", "Ferris IS1500Z 52\""],
+    "crossReferences": [
+      { "brand": "Stens", "partNumber": "265-685", "notes": "S150XT / IS1500Z 52\" belt" },
+      { "brand": "Rotary", "partNumber": "14818", "notes": "Commercial aramid construction" }
+    ]
+  },
+  {
+    "slug": "grasshopper-382085",
+    "oemBrand": "Grasshopper",
+    "oemPartNumber": "382085",
+    "partType": "Deck Drive Belt",
+    "specs": { "length": "137.0 in", "width": "5/8 in", "material": "MaxLife Aramid Cord" },
+    "compatibleModels": ["Grasshopper 3461 (61\" FrontMount Deck)", "Grasshopper 9861 (61\" PowerFold Deck)", "Grasshopper 725DT 61\""],
+    "crossReferences": [
+      { "brand": "Stens", "partNumber": "265-512", "notes": "61\" DuraMax deck replacement" },
+      { "brand": "Oregon", "partNumber": "75-850", "notes": "Commercial high-shock Kevlar" }
+    ]
+  },
+  {
+    "slug": "grasshopper-382084",
+    "oemBrand": "Grasshopper",
+    "oemPartNumber": "382084",
+    "partType": "Deck Drive Belt",
+    "specs": { "length": "122.5 in", "width": "5/8 in", "material": "MaxLife Aramid Cord" },
+    "compatibleModels": ["Grasshopper 3452 (52\" DuraMax Deck)", "Grasshopper 225 / 226V (52\" MidMount Deck)"],
+    "crossReferences": [
+      { "brand": "Stens", "partNumber": "265-511", "notes": "52\" DuraMax commercial belt" },
+      { "brand": "Rotary", "partNumber": "14780", "notes": "Exact OEM fitment" }
+    ]
+  },
+  {
+    "slug": "country-clipper-d-3775-w",
+    "oemBrand": "Country Clipper",
+    "oemPartNumber": "D-3775-W",
+    "partType": "Deck Drive Belt",
+    "specs": { "length": "159.0 in", "width": "5/8 in", "material": "Wrapped Kevlar" },
+    "compatibleModels": ["Country Clipper Challenger 52\"", "Country Clipper Charger 52\"", "Country Clipper Jazee Pro 52\""],
+    "crossReferences": [
+      { "brand": "Stens", "partNumber": "265-575", "notes": "Country Clipper 52\" deck belt" },
+      { "brand": "Rotary", "partNumber": "15190", "notes": "Aramid cord construction" }
+    ]
+  },
+  {
+    "slug": "country-clipper-d-3776-w",
+    "oemBrand": "Country Clipper",
+    "oemPartNumber": "D-3776-W",
+    "partType": "Deck Drive Belt",
+    "specs": { "length": "173.0 in", "width": "5/8 in", "material": "Double-Wrapped Kevlar" },
+    "compatibleModels": ["Country Clipper Charger 60\"", "Country Clipper Boss XL 60\""],
+    "crossReferences": [
+      { "brand": "Stens", "partNumber": "265-576", "notes": "60\" Stand-Up deck replacement" },
+      { "brand": "Rotary", "partNumber": "15191", "notes": "Heavy commercial aramid" }
+    ]
+  },
+  {
+    "slug": "woods-18879",
+    "oemBrand": "Woods",
+    "oemPartNumber": "18879",
+    "partType": "Finish Mower Deck Belt",
+    "specs": { "length": "123.5 in", "width": "5/8 in", "material": "B-Section Kevlar Cord" },
+    "compatibleModels": ["Woods PRD7200 (72\" Rear-Discharge Finish Mower)", "Woods RD72 / RD7200 (6-Foot 3-Point Mower)"],
+    "crossReferences": [
+      { "brand": "Stens", "partNumber": "265-372", "notes": "Woods 72\" finish mower belt" },
+      { "brand": "Rotary", "partNumber": "12388", "notes": "Heavy-duty tractor PTO rated" }
+    ]
+  },
+  {
+    "slug": "woods-33652",
+    "oemBrand": "Woods",
+    "oemPartNumber": "33652",
+    "partType": "Finish Mower Deck Belt",
+    "specs": { "length": "110.5 in", "width": "5/8 in", "material": "B-Section Aramid Cord" },
+    "compatibleModels": ["Woods PRD6000 (60\" Rear-Discharge Finish Mower)", "Woods RD6000 (5-Foot 3-Point Finish Mower)"],
+    "crossReferences": [
+      { "brand": "Stens", "partNumber": "265-371", "notes": "Woods 60\" 3-point mower belt" },
+      { "brand": "Rotary", "partNumber": "12387", "notes": "Direct OEM replacement" }
+    ]
+  },
+  {
+    "slug": "land-pride-816-116c",
+    "oemBrand": "Land Pride",
+    "oemPartNumber": "816-116C",
+    "partType": "Grooming Mower Deck Belt",
+    "specs": { "length": "136.5 in", "width": "5/8 in", "material": "B-Section Wrapped Kevlar" },
+    "compatibleModels": ["Land Pride FDR1672 (72\" Rear Discharge Finish Mower)", "Land PrideFD2572 (72\" Grooming Mower)"],
+    "crossReferences": [
+      { "brand": "Stens", "partNumber": "265-398", "notes": "FDR1672 6-foot finish mower belt" },
+      { "brand": "Rotary", "partNumber": "14412", "notes": "Agricultural aramid cord" }
+    ]
+  },
+  {
+    "slug": "land-pride-816-308c",
+    "oemBrand": "Land Pride",
+    "oemPartNumber": "816-308C",
+    "partType": "Grooming Mower Deck Belt",
+    "specs": { "length": "119.5 in", "width": "5/8 in", "material": "B-Section Kevlar" },
+    "compatibleModels": ["Land Pride FDR1660 (60\" Rear Discharge Finish Mower)", "Land Pride FDR2560 (60\" Grooming Mower)"],
+    "crossReferences": [
+      { "brand": "Stens", "partNumber": "265-397", "notes": "FDR1660 5-foot finish mower belt" },
+      { "brand": "Rotary", "partNumber": "14411", "notes": "Direct OEM replacement" }
+    ]
+  },
+  {
+    "slug": "simplicity-1732956sm",
+    "oemBrand": "Simplicity",
+    "oemPartNumber": "1732956SM",
+    "partType": "Deck Drive Belt",
+    "specs": { "length": "138.0 in", "width": "1/2 in", "material": "Aramid Cord" },
+    "compatibleModels": ["Simplicity Regent 48\" Deck", "Simplicity Courier 48\" Zero-Turn", "Snapper NXT 48\""],
+    "crossReferences": [
+      { "brand": "Stens", "partNumber": "265-732", "notes": "Simplicity 48\" fabricated/stamped belt" },
+      { "brand": "Rotary", "partNumber": "15480", "notes": "Kevlar reinforced" }
+    ]
+  },
+  {
+    "slug": "simplicity-1722039sm",
+    "oemBrand": "Simplicity",
+    "oemPartNumber": "1722039SM",
+    "partType": "Deck Drive Belt",
+    "specs": { "length": "127.0 in", "width": "1/2 in", "material": "Wrapped Kevlar" },
+    "compatibleModels": ["Simplicity Broadmoor 44\" / 50\" Deck", "Simplicity Conquest 50\" Lawn Tractor"],
+    "crossReferences": [
+      { "brand": "Stens", "partNumber": "265-169", "notes": "Broadmoor / Conquest 50\" belt" },
+      { "brand": "Oregon", "partNumber": "75-205", "notes": "Aramid core construction" }
+    ]
+  },
+  {
+    "slug": "worldlawn-5201028",
+    "oemBrand": "Worldlawn",
+    "oemPartNumber": "5201028",
+    "partType": "Cutter Deck Belt",
+    "specs": { "length": "142.0 in", "width": "5/8 in", "material": "Aramid Kevlar Cord" },
+    "compatibleModels": ["Worldlawn Cobra 52\" Zero-Turn", "Worldlawn Viper 52\" Deck"],
+    "crossReferences": [
+      { "brand": "Stens", "partNumber": "265-790", "notes": "Cobra 52\" commercial deck belt" },
+      { "brand": "Rotary", "partNumber": "15998", "notes": "Direct OEM fit" }
+    ]
+  },
+  {
+    "slug": "altoz-2001053",
+    "oemBrand": "Altoz",
+    "oemPartNumber": "2001053",
+    "partType": "Deck Drive Belt",
+    "specs": { "length": "168.0 in", "width": "5/8 in", "material": "Double-Wrapped Kevlar" },
+    "compatibleModels": ["Altoz XR 61\" Aero Deck", "Altoz XC 61\" Commercial Zero-Turn", "Altoz TRX 61\" Tracked Mower"],
+    "crossReferences": [
+      { "brand": "Stens", "partNumber": "265-899", "notes": "Altoz 61\" commercial deck belt" },
+      { "brand": "Rotary", "partNumber": "16399", "notes": "Heavy shock-load rated" }
+    ]
+  },
+  {
+    "slug": "bradley-360112",
+    "oemBrand": "Bradley",
+    "oemPartNumber": "360112",
+    "partType": "Cutter Deck Belt",
+    "specs": { "length": "128.0 in", "width": "5/8 in", "material": "Aramid Cord" },
+    "compatibleModels": ["Bradley Stand-On 52\" Commercial Mower", "Bradley Walk-Behind Hydro 52\""],
+    "crossReferences": [
+      { "brand": "Stens", "partNumber": "265-485", "notes": "52\" commercial deck equivalent" },
+      { "brand": "Oregon", "partNumber": "75-840", "notes": "Kevlar reinforced" }
+    ]
+  },
+  {
+    "slug": "mean-green-mgb-60",
+    "oemBrand": "Mean Green",
+    "oemPartNumber": "MGB-60",
+    "partType": "Deck Drive Belt",
+    "specs": { "length": "140.0 in", "width": "5/8 in", "material": "Aramid Cord" },
+    "compatibleModels": ["Mean Green CXR-52 / CXR-60", "Mean Green Rival 60\" Impulse Drive"],
+    "crossReferences": [
+      { "brand": "Stens", "partNumber": "265-504", "notes": "5/8 x 140 commercial replacement" },
+      { "brand": "Oregon", "partNumber": "75-895", "notes": "Low-friction Kevlar wrap" }
     ]
   }
 ]
