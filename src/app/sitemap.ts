@@ -1,8 +1,8 @@
 import { MetadataRoute } from "next";
 import partsData from "@/data/parts.json";
 import modelsData from "@/data/models.json";
+import guidesData from "@/data/guides.json";
 import { getAllDimensionGroups } from "@/lib/dimensions";
-import { guidesData } from "@/lib/guides";
 import { PartRecord, ModelHubRecord } from "@/types/part";
 
 export default function sitemap(): MetadataRoute.Sitemap {
