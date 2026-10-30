@@ -1,3 +1,4 @@
+import guidesData from "@/data/guides.json";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import {
@@ -9,7 +10,6 @@ import {
   ShieldCheck,
 } from "lucide-react";
 import type { Metadata } from "next";
-import { guidesData } from "@/lib/guides";
 
 export async function generateStaticParams() {
   return guidesData.map((g) => ({
