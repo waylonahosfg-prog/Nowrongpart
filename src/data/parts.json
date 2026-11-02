@@ -1297,5 +1297,90 @@
       { "brand": "Stens", "partNumber": "265-504", "notes": "5/8 x 140 commercial replacement" },
       { "brand": "Oregon", "partNumber": "75-895", "notes": "Low-friction Kevlar wrap" }
     ]
+  },
+  {
+    "slug": "scag-spindle-assembly-461662",
+    "oemBrand": "Scag",
+    "oemPartNumber": "461662",
+    "partType": "Spindle Assembly",
+    "specs": { "length": "Standard Deck", "width": "4-Bolt Mount", "material": "Cast Aluminum / Heat-Treated Shaft" },
+    "compatibleModels": ["Scag Turf Tiger", "Scag Cheetah", "Scag Tiger Cat II (52\" & 61\" Decks)"],
+    "crossReferences": [
+      { "brand": "Stens", "partNumber": "285-589", "notes": "Includes bearings and grease zerk" },
+      { "brand": "Oregon", "partNumber": "82-402", "notes": "Complete pre-assembled unit" },
+      { "brand": "Rotary", "partNumber": "14521", "notes": "Direct OEM replacement" }
+    ]
+  },
+  {
+    "slug": "exmark-spindle-assembly-116-3343",
+    "oemBrand": "Exmark",
+    "oemPartNumber": "116-3343",
+    "partType": "Spindle Assembly",
+    "specs": { "length": "Heavy-Duty Shaft", "width": "6-Bolt Flange", "material": "Forged Aluminum / High-Speed Bearings" },
+    "compatibleModels": ["Exmark Lazer Z E-Series, S-Series, X-Series (2010+)"],
+    "crossReferences": [
+      { "brand": "Stens", "partNumber": "285-912", "notes": "Heavy duty commercial spec" },
+      { "brand": "Oregon", "partNumber": "82-510", "notes": "Greasable top and bottom bearings" }
+    ]
+  },
+  {
+    "slug": "kawasaki-carburetor-fh721v",
+    "oemBrand": "Kawasaki",
+    "oemPartNumber": "15004-7061",
+    "partType": "Carburetor Assembly",
+    "specs": { "length": "V-Twin Engine Spec", "width": "25 HP", "material": "Cast Alloy / Brass Jets" },
+    "compatibleModels": ["Kawasaki FH721V, FH680V, FH641V V-Twin Engines", "Scag / Exmark / Hustler Commercial Mowers"],
+    "crossReferences": [
+      { "brand": "Realray", "partNumber": "15004-7058", "notes": "Complete replacement carb kit with gaskets" },
+      { "brand": "Javical", "partNumber": "FH721V-CARB", "notes": "Direct bolt-on aftermarket replacement" }
+    ]
+  },
+  {
+    "slug": "pto-clutch-warner-5218-201",
+    "oemBrand": "Warner",
+    "oemPartNumber": "5218-201",
+    "partType": "Electric PTO Clutch",
+    "specs": { "length": "1.125 in Crankshaft", "width": "6.3 in Pulley", "material": "High-Torque Electromagnetic" },
+    "compatibleModels": ["Exmark Lazer Z", "Scag Turf Tiger", "Toro Z-Master Commercial Series"],
+    "crossReferences": [
+      { "brand": "Ogura", "partNumber": "GT2.5-WR01", "notes": "High torque commercial clutch" },
+      { "brand": "Stens", "partNumber": "255-554", "notes": "Direct replacement electric PTO" }
+    ]
+  },
+  {
+    "slug": "hustler-deck-belt-603332",
+    "oemBrand": "Hustler",
+    "oemPartNumber": "603332",
+    "partType": "Cutter Deck Belt",
+    "specs": { "length": "144.5 in", "width": "5/8 in", "material": "Aramid Cord / Wrapped" },
+    "compatibleModels": ["Hustler Super Z (60\" Deck)", "Hustler Z (60\" Deck Series)"],
+    "crossReferences": [
+      { "brand": "Stens", "partNumber": "265-345", "notes": "Heavy duty aramid wrap" },
+      { "brand": "Oregon", "partNumber": "75-388", "notes": "Commercial grade belt" }
+    ]
+  },
+  {
+    "slug": "scag-mulch-blade-set-482879",
+    "oemBrand": "Scag",
+    "oemPartNumber": "482879",
+    "partType": "Mulching Blade Set",
+    "specs": { "length": "21.0 in (3-Pack)", "width": "2.5 in", "material": "Heat-Treated Boron Steel" },
+    "compatibleModels": ["Scag Turf Tiger, Cheetah, Tiger Cat (61\" Cutter Deck)"],
+    "crossReferences": [
+      { "brand": "Oregon", "partNumber": "91-621", "notes": "Fusion gator mulch blade (Pack of 3)" },
+      { "brand": "Stens", "partNumber": "340-312", "notes": "Standard high-lift commercial blade" }
+    ]
+  },
+  {
+    "slug": "kohler-fuel-pump-24-393-16",
+    "oemBrand": "Kohler",
+    "oemPartNumber": "24-393-16-S",
+    "partType": "Fuel Pump & Filter Kit",
+    "specs": { "length": "Command Pro Spec", "width": "12V Electric", "material": "High-Pressure Diaphragm" },
+    "compatibleModels": ["Kohler Command Pro CH18-CH25, CV18-CV25 V-Twin Engines"],
+    "crossReferences": [
+      { "brand": "Stens", "partNumber": "520-220", "notes": "Replacement fuel pump assembly" },
+      { "brand": "RopShop", "partNumber": "FP-KOH-24", "notes": "Direct fit aftermarket pump" }
+    ]
   }
 ]
