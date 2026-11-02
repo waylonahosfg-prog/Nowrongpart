@@ -352,5 +352,115 @@
     "hydroFilterOem": "HHK70-14070",
     "hydroFilterCross": "Wix 57098",
     "maintenanceNotes": "PTO is shaft-driven from the diesel engine to the deck gearbox; K5677-34710 links the three deck spindles."
+  },
+  {
+    "slug": "scag-patriot-52",
+    "brand": "Scag",
+    "modelName": "Patriot / Freedom Z Pro 52\"",
+    "deckSize": "52 Inch Fabricated Cutter Deck",
+    "machineCategory": "Zero-Turn",
+    "engineOptions": ["Kawasaki FX730V", "Briggs Vanguard 26HP"],
+    "deckBeltSlug": "scag-484128",
+    "deckBeltOem": "484128",
+    "deckBeltDimensions": "142.5 in × 5/8 in",
+    "bladeSpecs": {
+      "oemPartNumber": "482878",
+      "aftermarketCross": "Stens 340-166 / Oregon 91-622",
+      "quantityRequired": 3,
+      "length": "18 in",
+      "centerHole": "5/8 in",
+      "width": "2.5 in"
+    },
+    "hydroFilterOem": "HG-21496",
+    "hydroFilterCross": "Stens 120-738",
+    "maintenanceNotes": "Utilizes double-wrapped aramid cord 142.5-inch belt designed for residential/commercial acreage mowing."
+  },
+  {
+    "slug": "exmark-pioneer-48",
+    "brand": "Exmark",
+    "modelName": "Pioneer E/S-Series 48\"",
+    "deckSize": "48 Inch UltraCut Deck",
+    "machineCategory": "Zero-Turn",
+    "engineOptions": ["Kawasaki FX651V", "Exmark 708cc V-Twin"],
+    "deckBeltSlug": "exmark-116-3455",
+    "deckBeltOem": "116-3455",
+    "deckBeltDimensions": "154.0 in × 5/8 in",
+    "bladeSpecs": {
+      "oemPartNumber": "103-6401",
+      "aftermarketCross": "Stens 355-221 / Oregon 92-207",
+      "quantityRequired": 3,
+      "length": "16.25 in",
+      "centerHole": "15/16 in",
+      "width": "2.5 in"
+    },
+    "hydroFilterOem": "109-3321",
+    "hydroFilterCross": "Stens 120-410",
+    "maintenanceNotes": "Designed with a high-durability UltraCut cutter deck requiring precision 154-inch aramid routing."
+  },
+  {
+    "slug": "toro-titan-60",
+    "brand": "Toro",
+    "modelName": "Titan ZX6000 / MX6080 60\"",
+    "deckSize": "60 Inch Fabricated Steel Deck",
+    "machineCategory": "Zero-Turn",
+    "engineOptions": ["Kawasaki FX730V 24HP", "Kohler 7000 Series Pro 26HP"],
+    "deckBeltSlug": "toro-115-5300",
+    "deckBeltOem": "115-5300",
+    "deckBeltDimensions": "160.0 in × 5/8 in",
+    "bladeSpecs": {
+      "oemPartNumber": "105-7718-03",
+      "aftermarketCross": "Stens 350-212 / Oregon 94-061",
+      "quantityRequired": 3,
+      "length": "20.5 in",
+      "centerHole": "1/2 in",
+      "width": "2.5 in"
+    },
+    "hydroFilterOem": "Hydro-Gear ZT-2800 (Sealed)",
+    "hydroFilterCross": "N/A - Internal Filter System",
+    "maintenanceNotes": "Heavy-duty acreage zero-turn; verify idler pulley alignment when replacing the 160-inch deck belt."
+  },
+  {
+    "slug": "john-deere-x350-48",
+    "brand": "John Deere",
+    "modelName": "X350 / X370 / X380 48\"",
+    "deckSize": "48 Inch Accel Deep Mower Deck",
+    "machineCategory": "Lawn Tractor",
+    "engineOptions": ["Kawasaki FS600V 18.5HP", "Kawasaki FS730V 24HP"],
+    "deckBeltSlug": "john-deere-m169485",
+    "deckBeltOem": "M169485",
+    "deckBeltDimensions": "169.0 in × 5/8 in",
+    "bladeSpecs": {
+      "oemPartNumber": "UC22037 / M170643",
+      "aftermarketCross": "Stens 330-612 / Oregon 92-111",
+      "quantityRequired": 3,
+      "length": "16.9 in",
+      "centerHole": "7-Point Star",
+      "width": "2.5 in"
+    },
+    "hydroFilterOem": "Tuff Torq K58 (Sealed)",
+    "hydroFilterCross": "AM125424 (Engine Filter)",
+    "maintenanceNotes": "Select Series garden/lawn tractor utilizing the deep-shell Accel Deep 48-inch deck system."
+  },
+  {
+    "slug": "wright-stander-52",
+    "brand": "Wright",
+    "modelName": "Stander 52\" / Intensity",
+    "machineCategory": "Stand-On",
+    "deckSize": "52 Inch Aero Core Deck",
+    "engineOptions": ["Kawasaki FX730V", "Kohler Command Pro EFI"],
+    "deckBeltSlug": "wright-71460036",
+    "deckBeltOem": "71460036",
+    "deckBeltDimensions": "85.0 in × 5/8 in",
+    "bladeSpecs": {
+      "oemPartNumber": "71440002",
+      "aftermarketCross": "Stens 340-202 / Oregon 91-320",
+      "quantityRequired": 3,
+      "length": "18 in",
+      "centerHole": "5/8 in",
+      "width": "2.5 in"
+    },
+    "hydroFilterOem": "Hydro-Gear ZT-3400 Filter",
+    "hydroFilterCross": "Stens 120-410",
+    "maintenanceNotes": "Compact stand-on configuration uses a shorter 85-inch double-wrapped Kevlar deck belt."
   }
 ]
