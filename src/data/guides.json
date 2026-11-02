@@ -2,126 +2,138 @@
   {
     "slug": "mower-keeps-throwing-deck-belt",
     "category": "Deck Diagnostics & Repair",
-    "title": "5 Reasons Your Zero-Turn Keeps Throwing, Rolling, or Shredding Its Deck Belt",
-    "metaDescription": "Replacing a mower belt only for it to pop off or shred again? Learn how mechanics inspect seized idler pulleys, bent spindle housings, weak tensioner springs, and belt routing.",
-    "summary": "When a mower throws or shreds a brand-new Kevlar belt within the first hour of cutting, the belt itself is rarely the culprit. Walk through this 5-point shop inspection before installing your next replacement belt.",
+    "title": "The Master Shop Guide: Why Your Zero-Turn Keeps Throwing, Rolling, or Shredding Its Deck Belt",
+    "metaDescription": "Tired of snapping or throwing brand-new Kevlar mower belts? Master professional shop diagnostics covering idler bearing failure, weak tension springs, misaligned pulleys, and spindle runout.",
+    "summary": "When a zero-turn or commercial riding mower throws or shreds a brand-new Kevlar belt within the first hour of operation, replacing the belt alone is treating the symptom, not the disease. This comprehensive shop guide walks professional mechanics and DIYers through a rigorous 6-point inspection protocol to permanently eliminate belt slippage, heat buildup, and premature failure.",
     "sections": [
       {
-        "heading": "1. Seized or Wobbling Flat Idler Pulley Bearings",
-        "body": "With the deck belt removed, spin every flat idler and V-groove pulley by hand. A healthy pulley spins silently and coasts to a stop without lateral play. If a pulley feels gritty, stops immediately, or tilts more than 2 degrees when rocked, its sealed bearing is failing\u2014creating extreme friction heat that melts belt sidewalls and rolls the belt out of the groove.",
+        "heading": "1. Seized, Gritty, or Wobbling Flat Idler Pulley Bearings",
+        "body": "The single most common culprit behind shredded belt sidewalls is a failing idler pulley bearing. With the deck belt completely removed, spin every flat idler and V-groove pulley firmly by hand. A healthy, serviceable pulley will spin completely silently and coast smoothly to a gradual stop without lateral play or axial slop. If a pulley feels gritty, stops immediately upon release, or tilts more than 2 degrees when rocked side-to-side, its internal sealed ball bearing has failed. As the bearing seizes under load, extreme rotational friction heat is generated instantly—often exceeding 400°F. This intense heat melts the outer rubber and fabric matrix of the belt, causing it to grab, roll over within the pulley groove, and snap.",
         "checklist": [
-          "Spin each idler pulley by hand and listen for dry bearing growl",
-          "Check the backside flat idler for melted rubber buildup",
-          "Verify the stationary idler bolt is torqued flat against the deck reinforcement plate"
+          "Spin every idler pulley manually; listen closely for a dry, growling bearing sound",
+          "Inspect the backside flat idler surface for melted black rubber deposits or glazed shiny spots",
+          "Check that the stationary idler retaining bolt is torqued dead flat against the deck reinforcement plate without a cocked washer"
         ],
-        "amazonQuery": "zero turn mower flat idler pulley replacement",
-        "amazonCta": "Shop Replacement Deck Idler Pulleys on Amazon"
+        "amazonQuery": "zero turn mower flat idler pulley replacement heavy duty",
+        "amazonCta": "Shop Heavy-Duty Replacement Deck Idler Pulleys on Amazon"
       },
       {
-        "heading": "2. Weak or Fatigued Deck Tensioner Spring",
-        "body": "Zero-turn cutter decks rely on a heavy coil spring attached to the pivoting idler arm to maintain constant tension when the electric PTO clutch slams into engagement. Over hundreds of heat cycles, tension springs lose their tempered recoil, allowing the belt to whip violently and jump over the lip of the left-hand spindle pulley.",
+        "heading": "2. Fatigued, Stretched, or Broken Deck Tensioner Springs",
+        "body": "Zero-turn cutter decks rely on heavy-duty extension or torsion springs attached to a pivoting idler arm to maintain constant, calibrated tension against the belt. When an electric PTO clutch slams into engagement at 3,600 RPM, the belt experiences instantaneous shock loading. Over hundreds of operating hours and extreme seasonal heat cycles, these tempered steel springs lose their structural memory, stretching out and failing to retract with adequate force. A weak spring allows the belt to whip violently back and forth, creating harmonic vibration that causes the belt to climb the pulley flanges and jump off entirely.",
         "checklist": [
-          "Inspect the spring hook ends for deep wear grooves or elongated loops",
-          "Make sure the pivoting idler arm swings freely and isn't rusted at the brass bushing",
-          "Grease the idler pivot fitting until fresh grease purges"
+          "Inspect the spring hook ends for deep wear grooves, metal thinning, or elongated attachment loops",
+          "Verify that the pivoting idler arm swings freely across its full arc without binding or rusting at the bronze bushing",
+          "Grease the idler pivot zerk fitting with high-temp lithium grease until fresh grease purges past the seal"
         ],
-        "amazonQuery": "mower deck belt tension spring heavy duty",
+        "amazonQuery": "heavy duty mower deck belt tension spring replacement",
         "amazonCta": "Find Heavy-Duty Deck Tension Springs on Amazon"
       },
       {
-        "heading": "3. Tilted Deck Spindle Housing or Cracked Deck Shell",
-        "body": "Striking a tree root or curb with a mower blade transfers massive leverage into the cast-iron or aluminum spindle housing. Even a 3-degree bend in the spindle mounting ring tips the top pulley out of plane, forcing the belt to climb the pulley flange every revolution.",
+        "heading": "3. Misaligned Pulleys, Tilted Spindles, and Deck Shell Cracks",
+        "body": "Striking hidden tree roots, concrete curbs, or buried rocks transfers massive kinetic shock directly into the cast-iron or forged aluminum spindle housings. Even a microscopic 2-to-3-degree bend in the spindle mounting flange or a hairline fracture in the deck top-plate will tilt the spindle pulley completely out of plane. When top pulleys are misaligned, the belt is forced to flex at an unnatural compound angle every revolution, causing it to climb the sidewall and roll off the sheave under high load.",
         "checklist": [
-          "Place a straightedge across the top of all three spindle pulleys to confirm they sit level",
-          "Grab the blade tip and push up/down to check for worn internal spindle bearings",
-          "Inspect the steel deck stamping around the 4 spindle mounting bolts for hairline cracks"
+          "Place a precision long straightedge across the top of all three spindle pulleys to confirm they sit perfectly coplanar",
+          "Grab the outer tip of the mower blade and push up and down aggressively to detect internal spindle bearing play",
+          "Inspect the steel deck stamping immediately surrounding the 4 spindle mounting bolts for hairline stress cracks"
         ],
-        "amazonQuery": "zero turn mower deck spindle assembly replacement",
-        "amazonCta": "Check Complete Deck Spindle Assemblies on Amazon"
+        "amazonQuery": "commercial zero turn mower deck spindle assembly replacement",
+        "amazonCta": "Check Complete Commercial Deck Spindle Assemblies on Amazon"
       },
       {
-        "heading": "4. Using Automotive Rubber Belts Instead of Dry-Wrapped Kevlar",
-        "body": "Standard black industrial or automotive belts have high-tack rubber exteriors designed to wedge tightly into two pulleys. Mower decks use backside idler pulleys and clutch engagement\u2014requiring a dry fabric cover over an Aramid (Kevlar) tensile cord so the belt can handle shock loads without stretching or grabbing.",
+        "heading": "4. Using Standard Automotive Rubber Belts vs. Dry-Wrapped Aramid (Kevlar)",
+        "body": "Many budget-conscious operators make the critical mistake of installing standard black industrial or automotive rubber V-belts purchased from local auto parts stores. Automotive belts feature high-tack rubber exterior surfaces designed to wedge tightly into standard two-pulley automotive setups. Mower decks, however, require complex multi-pulley routing paths involving backside flat idlers and aggressive clutch engagement. They demand a dry fabric-wrapped cover over a high-tensile Aramid (Kevlar) cord core that can handle reverse-bending friction without stretching or melting.",
         "checklist": [
-          "Always verify your replacement belt specifies Aramid or Kevlar cord construction",
-          "Confirm exact 1/2-inch (A-section) vs. 5/8-inch (B-section) top width",
-          "Check belt routing guides and keeper pins to ensure the pin sits 1/8\" from the pulley"
+          "Always verify your replacement belt specification explicitly calls out Aramid, Kevlar, or MaxLife cord construction",
+          "Confirm exact cross-section dimensions: 1/2-inch (A-section / 4L) vs. 5/8-inch (B-section / 5L) top width",
+          "Inspect all belt routing keeper pins and ensure they maintain an exact 1/8-inch clearance gap from the spinning belt edge"
         ],
-        "amazonQuery": "kevlar aramid lawn mower deck belt",
+        "amazonQuery": "kevlar aramid wrapped heavy duty lawn mower deck belt",
         "amazonCta": "Browse OEM-Spec Kevlar Deck Belts on Amazon"
+      },
+      {
+        "heading": "5. Electric PTO Clutch Air-Gap & Voltage Drop Issues",
+        "body": "An electric PTO clutch that engages sluggishly or chatters can introduce severe rotational shock into the belt drive system. If the electromagnetic coil air-gap is worn out of specification (typically exceeding 0.018 to 0.022 inches) due to heat warping, or if your mower's charging system suffers from voltage drop, the clutch disc slips during startup. This friction spike heats up the primary drive pulley and bakes the inner belt cord.",
+        "checklist": [
+          "Measure the PTO clutch air-gap using a feeler gauge at three distinct points around the housing",
+          "Check battery voltage under load to ensure the alternator and voltage regulator output is clean 13.5V to 14.2V",
+          "Inspect the PTO wire harness plug for burned pins or corrosion caused by moisture intrusion"
+        ],
+        "amazonQuery": "electric pto clutch replacement heavy duty",
+        "amazonCta": "Shop Replacement Electric PTO Clutches on Amazon"
       }
     ]
   },
   {
     "slug": "hydro-gear-transaxle-service-chart",
     "category": "Transmission Maintenance",
-    "title": "Hydro-Gear EZT vs. ZT-2800, ZT-3100 & ZT-3400 Filter & Fluid Cross-Reference Guide",
-    "metaDescription": "Complete Hydro-Gear transaxle service chart: OEM 52114 filter cross-references (Stens, Wix), 20W-50 fluid capacities, and air-purging bleed procedures for zero-turn mowers.",
-    "summary": "Hydrostatic transaxles are the single most expensive component on a zero-turn mower ($800\u2013$1,600 per side). Changing the 20W-50 fluid and spin-on filter at the initial 75-hour break-in and every 250\u2013300 hours thereafter doubles the life of your wheel motors.",
+    "title": "The Ultimate Hydro-Gear Transaxle Service & Filter Cross-Reference Guide (EZT to ZT-5400)",
+    "metaDescription": "Complete Hydro-Gear transaxle maintenance manual: OEM 52114 filter cross-references (Stens, Wix), 20W-50 synthetic fluid capacities, and step-by-step air-purging bleed procedures.",
+    "summary": "Hydrostatic transaxles are easily the single most expensive mechanical assembly on a zero-turn mower, with replacement units ranging from $800 to $1,800 per side. Most manufacturers market residential EZT transaxles as 'sealed for life', but commercial ZT-2800, ZT-3100, ZT-3200, and ZT-3400 units require strict fluid and filter changes. This master guide covers fluid capacities, filter cross-reference matrices, and air-purging techniques to double your wheel motor lifespan.",
     "sections": [
       {
-        "heading": "1. Identify Your Hydro-Gear Model Tier (EZT vs. ZT-2800/3100/3400/5400)",
-        "body": "Look under the rear frame of your mower for the white barcode tag riveted to the aluminum transaxle casing. Residential EZT (ZT-2100 / ZT-2200) drives are sealed at the factory without external filters, whereas commercial ZT-2800, ZT-3100, ZT-3200, and ZT-3400 drives feature a black spin-on hydraulic filter underneath or beside each unit.",
+        "heading": "1. Hydro-Gear Model Hierarchy & Maintenance Intervals",
+        "body": "Before servicing your mower, you must identify your specific transaxle family by locating the white stamped barcode serial tag on the rear transaxle housing. Residential EZT (ZT-2100 / ZT-2200) units lack external filters and rely on internal expansion chambers, whereas commercial ZT-2800 through ZT-3400 units feature spin-on hydraulic filters. Initial break-in fluid and filter replacement must occur precisely at the 75-hour mark, followed by complete services every 250 to 300 operating hours under heavy commercial turf conditions.",
         "checklist": [
-          "ZT-2800 / ZT-3100 / ZT-3400: Uses external spin-on filter Hydro-Gear #52114",
-          "Fluid Spec: SAE 20W-50 Full Synthetic or Conventional Motor Oil (approx. 2 to 2.5 quarts per side)",
-          "ZT-5400 Powertrain: Uses cartridge filter #71943"
+          "Residential EZT (ZT-2100/2200): Sealed units requiring complete fluid extraction and refill via top ports",
+          "Commercial ZT-2800 / ZT-3100 / ZT-3200 / ZT-3400: Equipped with spin-on hydraulic filters",
+          "Fluid Requirement: SAE 20W-50 Full Synthetic Motor Oil or Hydro-Gear approved commercial hydraulic fluid"
         ],
-        "amazonQuery": "Hydro-Gear 52114 filter 20W-50 hydro oil service kit",
-        "amazonCta": "View Complete Hydro-Gear 52114 Oil & Filter Kits on Amazon"
+        "amazonQuery": "Hydro-Gear 52114 filter 20W-50 synthetic oil service kit",
+        "amazonCta": "View Complete Hydro-Gear Oil & Filter Maintenance Kits on Amazon"
       },
       {
-        "heading": "2. Hydro-Gear #52114 Spin-On Filter Cross-Reference Matrix",
-        "body": "Every major mower manufacturer re-boxes the exact same Parker/Hydro-Gear #52114 spin-on filter under their own OEM part number at a 200% dealer markup. All of the numbers below are 100% identical in thread pitch, micron rating, and anti-drainback valve pressure:",
+        "heading": "2. The Complete Hydro-Gear #52114 Spin-On Filter Cross-Reference Matrix",
+        "body": "Equipment manufacturers like Scag, Exmark, Toro, Hustler, Bad Boy, and Ferris re-box the exact same Hydro-Gear/Parker #52114 spin-on hydraulic oil filter under their own custom OEM part numbers, marking up prices by over 200%. Every single aftermarket equivalent listed below shares identical micron filtration ratings (typically 10-25 micron), thread pitch (3/4\"-16), and internal bypass valve release pressure.",
         "checklist": [
-          "Hydro-Gear OEM: #52114 | Stens Aftermarket: #120-410 | Wix: #57103",
+          "Hydro-Gear OEM: #52114 | Stens Aftermarket: #120-410 | Wix Filters: #57103",
           "Exmark / Toro OEM: #109-3321 | Scag OEM: #HG52114 | Hustler OEM: #600976",
-          "Bad Boy OEM: #063-1050-00 | Ferris OEM: #5101026X1 | Gravely: #21545100"
+          "Bad Boy OEM: #063-1050-00 | Ferris OEM: #5101026X1 | Gravely OEM: #21545100"
         ],
-        "amazonQuery": "Hydro-Gear 52114 replacement filter 2 pack",
-        "amazonCta": "Buy 2-Pack 52114 Hydro Filters on Amazon"
+        "amazonQuery": "Hydro-Gear 52114 replacement hydraulic filter 2 pack",
+        "amazonCta": "Buy 2-Pack Hydro-Gear 52114 Filters on Amazon"
       },
       {
-        "heading": "3. Post-Change Air Purging (Bleeding) Procedure",
-        "body": "After refilling both transaxles to the cold-fill line on the overflow expansion tank (or top check plug), you MUST purge trapped air from the hydraulic charge pumps before putting weight on the tires, or the mower will whine and jerk.",
+        "heading": "3. Step-by-Step Air Purging & Transaxle Bleeding Procedure",
+        "body": "Failing to properly purge trapped air from the internal hydraulic charge pumps immediately after an oil change will cause catastrophic cavitation, excessive transaxle whine, and complete loss of drive power. Follow this mandatory shop bleeding sequence before putting rubber on the ground.",
         "checklist": [
-          "Jack up the rear of the mower so both rear drive tires are safely off the ground",
-          "Pull both bypass release rods (tow valves) OUT and cycle the lap bars forward and reverse 6 times",
-          "Push the bypass rods back IN, cycle the lap bars again until the wheels spin smoothly, then top off the expansion tank"
+          "Securely jack up the rear frame of the mower so both drive wheels hang completely off the ground on jack stands",
+          "Locate the manual bypass release rods (tow valves) on each transaxle and pull them outward into the bypass position",
+          "Start the engine, disengage the parking brake, and cycle the operator lap bars smoothly back and forth from full forward to full reverse 6 times",
+          "Push both bypass rods back inward to engage the drive, continue cycling the lap bars until wheel rotation is smooth and responsive, then top off the expansion reservoir to the cold line"
         ],
-        "amazonQuery": "20W-50 hydrostatic transmission oil zero turn",
-        "amazonCta": "Check 20W-50 Hydrostatic Fluid Prices on Amazon"
+        "amazonQuery": "20W-50 full synthetic hydrostatic transmission oil zero turn",
+        "amazonCta": "Check 20W-50 Synthetic Transaxle Fluid Prices on Amazon"
       }
     ]
   },
   {
     "slug": "how-to-measure-broken-mower-belt",
     "category": "Fitment & Measurement",
-    "title": "How to Measure a Broken or Stretched Lawn Mower Belt (OD vs. ID Formula)",
-    "metaDescription": "Part number worn off your mower belt? Learn how to measure top width (1/2\" vs 5/8\") and outside length accurately, account for belt stretch, and convert ID to OD.",
-    "summary": "When an old mower belt snaps and the printed OEM part number is rubbed off, measuring it directly with a tape measure often leads to ordering a belt that is 2 inches too long. Use this shop formula to find the exact factory belt size.",
+    "title": "The Professional Mechanic's Guide to Measuring Broken, Stretched, or Unreadable Mower Belts",
+    "metaDescription": "Part number rubbed off your mower belt? Learn professional shop formulas to measure top width (1/2\" vs 5/8\"), outside circumference, account for belt stretch, and match exact OEM sizes.",
+    "summary": "When an old mower belt snaps and the printed OEM part number has completely worn away, measuring it directly with a standard tape measure often results in ordering a replacement that is 1.5 to 2 inches too long. Because rubber and aramid belts stretch significantly over their operating lifespan, professional mechanics use a precise shop measurement formula to determine exact factory dimensions.",
     "sections": [
       {
-        "heading": "1. Measure Top Width First (1/2\" vs. 5/8\" Profile)",
-        "body": "Measure across the widest flat top face of the V-belt\u2014never the bottom narrow edge that rides in the bottom of the pulley V-groove. Almost 95% of outdoor power equipment belts fall into two widths: 1/2-inch (A-section / 4L) or 5/8-inch (B-section / 5L).",
+        "heading": "1. Verifying Top Width Profile: 1/2-Inch vs. 5/8-Inch",
+        "body": "Always measure the belt top width across its widest flat top surface using precision digital calipers—never measure the bottom narrow edge that rides in the base of the pulley groove. Over 95% of all outdoor power equipment drive belts fall strictly into two standard industrial profile categories: 1/2-inch (A-section / 4L) or 5/8-inch (B-section / 5L). If your old commercial belt measures 9/16-inch, it began its service life as a heavy 5/8-inch belt that has worn down on its sidewalls from friction.",
         "checklist": [
-          "1/2 Inch (0.50\"): Standard on 42\"\u201350\" residential decks and hydro pump drives",
-          "5/8 Inch (0.625\"): Standard on 48\"\u201372\" commercial zero-turn cutter decks",
-          "If your worn belt measures 9/16\", it started life as a 5/8\" belt with worn sidewalls"
+          "1/2-Inch Top Width (0.50 in): Standard for residential 38\"–50\" mower decks and hydrostatic pump drive systems",
+          "5/8-Inch Top Width (0.625 in): Standard for commercial 48\"–72\" zero-turn cutter decks and high-load PTO drives",
+          "Use digital calipers to measure the unworn section of the belt near an internal corner"
         ],
-        "amazonQuery": "v belt measuring tool gauge",
-        "amazonCta": "View Belt Measuring Gauges & Tools on Amazon"
+        "amazonQuery": "digital caliper measuring tool stainless steel",
+        "amazonCta": "View Precision Digital Calipers on Amazon"
       },
       {
-        "heading": "2. Subtract 1.5\" to 2.0\" from Stretched Broken Belts",
-        "body": "If your belt snapped in one place, lay it flat on the shop floor without pulling on it and measure from end to end. Because a worn belt stretches 1 to 2 inches over its lifespan\u2014and laying a curved V-belt flat adds another 0.5 inches\u2014a broken belt that measures 143.5 inches flat almost always corresponds to a 141.5-inch or 142-inch factory belt.",
+        "heading": "2. The Shop Formula: Accounting for Belt Stretch",
+        "body": "If your belt has snapped into a single piece, lay it completely flat on a workbench without applying any physical pulling tension. Because operating heat and tension stretch aramid and rubber cords by 1 to 2 inches over time—and laying a curved V-belt flat adds another 0.5 inches of apparent length—a broken belt measuring 143.5 inches flat almost certainly corresponds to a 141.5-inch or 142-inch factory replacement belt. Subtracting 1.5 to 2.0 inches from a severely stretched, broken belt prevents you from buying a replacement that slips on the idler arm.",
         "checklist": [
-          "Never pull or stretch the broken belt while measuring",
-          "If the belt is still in one piece, wrap a cloth tailor's tape around the OUTSIDE face (Outside CircumFERENCE)",
-          "Cross-check your measurement against our Exact Belt Size Lookup directory below"
+          "Lay the broken belt flat on a rigid workshop table without stretching or pulling",
+          "Measure total end-to-end length, then subtract 1.5 to 2.0 inches to account for operational heat stretch",
+          "Cross-reference your calculated pitch length against our exact part lookup directory on NoWrongPart.com"
         ],
-        "amazonQuery": "cloth tape measure sewing tailor",
-        "amazonCta": "Get a Flexible Belt Measuring Tape on Amazon"
+        "amazonQuery": "heavy duty flexible tape measure 150 inch",
+        "amazonCta": "Get a Professional Workshop Measuring Tape on Amazon"
       }
     ]
   },
@@ -129,30 +141,30 @@
     "slug": "how-to-cross-reference-lawn-mower-deck-belt",
     "category": "Belt Cross-Reference & Sizing",
     "title": "The Ultimate Lawn Mower Deck Belt Cross-Reference Guide: OEM vs. Aramid Aftermarket",
-    "metaDescription": "Stuck with a snapped mower belt and no part number? Learn how to measure effective length and top width, and cross-reference OEM belts to Stens, Oregon, and Rotary.",
-    "summary": "When a commercial zero-turn or residential riding mower snaps a belt in the middle of a job, waiting days for an expensive OEM-boxed belt isn't an option. This guide breaks down exact sizing rules, cross-reference charts, and why standard rubber belts fail on mower decks.",
+    "metaDescription": "Stuck with a snapped mower belt and no part number? Master how to measure effective length and top width, and cross-reference OEM belts to Stens, Oregon, Rotary, and Gates.",
+    "summary": "When a commercial zero-turn or residential riding mower snaps a belt during peak mowing season, waiting 4 days for an overpriced OEM-boxed belt from a dealership is not an option. This master cross-reference guide breaks down exact belt sizing rules, cross-reference matrices, and why standard rubber utility belts fail instantly on high-horsepower mower decks.",
     "sections": [
       {
         "heading": "1. Understanding Mower Belt Profiles: A-Section vs. B-Section",
-        "body": "Unlike automotive serpentine belts, lawn mower deck and pump drive belts rely on heavy industrial wedge profiles designed to handle high shock loads when electric PTO clutches engage at full throttle. Using the wrong top width or cord material will result in slippage, overheating, and rapid sidewall shredding.",
+        "body": "Unlike automotive serpentine belts, lawn mower deck and pump drive belts rely on heavy industrial wedge profiles designed to handle extreme shock loads when electric PTO clutches slam into engagement at 3,600 RPM. Using the incorrect top width or substandard cord material will result in immediate slippage, frictional overheating, and catastrophic sidewall shredding within minutes of operation.",
         "checklist": [
-          "A-Section (4L): 1/2-inch top width. Standard on residential lawn tractors, hydro pumps, and small 38\" to 42\" decks.",
-          "B-Section (5L / 21/32\"): 5/8-inch top width. Standard on commercial zero-turns (Scag, Exmark, Toro, Hustler) and heavy-duty 54\" to 72\" cutter decks.",
-          "Always measure top width using digital calipers across the widest part of the V."
+          "A-Section (4L Profile): 1/2-inch top width. Standard on residential lawn tractors, hydro pumps, and compact 38\" to 42\" decks.",
+          "B-Section (5L / 21/32\" Profile): 5/8-inch top width. Standard on commercial zero-turns (Scag, Exmark, Toro, Hustler) and heavy-duty 54\" to 72\" cutter decks.",
+          "Always measure top width using digital calipers across the widest flat portion of the V."
         ],
-        "amazonQuery": "heavy duty aramid lawn mower belt 5/8 inch",
+        "amazonQuery": "heavy duty aramid lawn mower belt 5/8 inch width",
         "amazonCta": "Browse Commercial 5/8-Inch Kevlar Deck Belts on Amazon"
       },
       {
         "heading": "2. How to Measure an Old, Broken, or Unreadable Belt",
-        "body": "If your belt is snapped or the part number rubbed off, you cannot simply measure the flat circumference with a cloth tape measure because V-belts ride inside the pulley sheaves along their pitch line. Instead, use the string method or a professional belt measuring tool.",
+        "body": "If your belt has snapped or the printed part number has rubbed off completely, you cannot simply measure flat outer circumference with a standard cloth tape because V-belts ride inside the pulley sheaves along their pitch line. Instead, use the shop string method or a professional belt measuring tool.",
         "checklist": [
-          "Loop a non-stretchy cord tightly around the outside of all pulleys following the exact routing path.",
-          "Mark where the string overlaps, then measure the total length on a rigid workbench ruler.",
-          "For 1/2\" belts, subtract 1/2 inch from the total outer circumference to approximate the effective inside/pitch length.",
-          "For 5/8\" heavy commercial belts, subtract 3/4 inch to 1 inch from the outer circumference."
+          "Loop a non-stretchy mason's cord tightly around the outside of all pulleys following the exact routing diagram path.",
+          "Mark where the string overlaps, then measure the total length against a rigid workbench ruler.",
+          "For 1/2\" belts, subtract 0.50 inches from total outer circumference to approximate effective pitch length.",
+          "For 5/8\" heavy commercial belts, subtract 0.75 to 1.00 inch from total outer circumference."
         ],
-        "amazonQuery": "belt measuring tape tool for lawn mower",
+        "amazonQuery": "belt measuring tool for outdoor power equipment",
         "amazonCta": "Check Belt Measuring Tools on Amazon"
       },
       {
@@ -171,196 +183,30 @@
   {
     "slug": "kawasaki-v-twin-carburetor-surge-fix",
     "category": "Engine & Fuel System Diagnostics",
-    "title": "Diagnosing & Fixing a Surging, Hunting Kawasaki V-Twin Mower Engine",
-    "metaDescription": "Does your Scag, Exmark, or John Deere zero-turn surge up and down at high idle? Learn how to clean clogged pilot jets, replace fuel pumps, and eliminate vacuum leaks.",
-    "summary": "A Kawasaki V-twin engine (like the FH721V or FX series) that hunts, surges, or stumbles at full throttle is almost always suffering from restricted fuel delivery through the tiny idle/pilot jets or a failing mechanical/electric fuel pump.",
+    "title": "Diagnosing & Fixing a Surging, Hunting Kawasaki V-Twin Mower Engine (FH & FX Series)",
+    "metaDescription": "Does your Scag, Exmark, or John Deere zero-turn surge up and down at high idle? Master how to clean clogged pilot jets, test fuel pumps, and eliminate intake vacuum leaks.",
+    "summary": "A Kawasaki V-twin engine (such as the popular FH721V, FH680V, or FX series) that hunts, surges, or stumbles rhythmically at high idle is almost always suffering from restricted fuel delivery through tiny idle/pilot jets or a failing mechanical/electric fuel pump caused by ethanol-blended gasoline varnish.",
     "sections": [
       {
-        "heading": "1. The Root Cause: Ethanol Gums and Tiny Pilot Jets",
-        "body": "Modern ethanol-blended gasoline attracts ambient moisture, leaving behind a hard, varnish-like white crust inside the carburetor float bowl over the winter storage months. Because emission regulations require ultra-small pilot jet orifices, even microscopic varnish rings disrupt the air-fuel ratio at idle and mid-throttle, causing the governor to overcorrect and 'hunt'.",
+        "heading": "1. The Root Cause: Ethanol Gums and Microscopic Pilot Jets",
+        "body": "Modern ethanol-blended gasoline attracts ambient atmospheric moisture, leaving behind a hard, amber-colored varnish crust inside the carburetor float bowl over extended storage. Because federal emissions regulations require ultra-small pilot jet orifices, even microscopic varnish rings disrupt the precise air-fuel ratio at idle and mid-throttle. This lean condition causes the engine governor to overcorrect, resulting in the classic rhythmic 'hunting and surging' symptom.",
         "checklist": [
-          "Shut off the fuel valve and remove the carburetor float bowl.",
-          "Use a fine wire (like a guitar string or torch tip cleaner) and professional carb dip to clear the main and pilot brass jets.",
-          "Never push oversized drill bits into brass jets, as this permanently alters fuel metering."
+          "Shut off the fuel fuel shutoff valve and remove the carburetor float bowl carefully.",
+          "Use a fine wire (such as a guitar string or torch tip cleaner) and professional carb dip to clear the main and pilot brass jets.",
+          "Never push oversized steel drill bits into brass jets, as this permanently ruins fuel metering."
         ],
-        "amazonQuery": "kawasaki v-twin carburetor replacement assembly fh721v",
+        "amazonQuery": "kawasaki v-twin carburetor replacement assembly fh721v fx730v",
         "amazonCta": "Shop Replacement Kawasaki Carburetors on Amazon"
       },
       {
-        "heading": "2. Testing Fuel Pump Pressure & Vacuum Lines",
-        "body": "If your Kawasaki engine surges specifically under heavy cutting loads or when going up inclines, the fuel pump is likely failing to deliver consistent volume. Puls vacuum pumps driven by the crankcase can develop pinhole tears in their internal rubber diaphragms.",
+        "heading": "2. Testing Fuel Pump Pressure and Intake Vacuum Leaks",
+        "body": "If your Kawasaki V-twin surges specifically under heavy cutting loads or when climbing inclines, the fuel pump is likely failing to deliver consistent volume. Puls vacuum pumps driven by crankcase pressure can develop pinhole tears in their internal rubber diaphragms. Additionally, cracked plastic intake insulator blocks or loose carburetor mounting gaskets allow unmetered air to enter the combustion chamber.",
         "checklist": [
           "Disconnect the fuel line feeding the carburetor, place it into a catch container, and crank the engine to test pulse flow.",
           "Check the rubber pulse hose running from the crankcase to the pump for oil saturation or dry-rot cracks.",
-          "Replace inline fuel filters annually; restricted paper elements starve high-horsepower V-twins."
+          "Spray a small amount of carb cleaner around the intake manifold gaskets while idling; if RPM changes, you have a vacuum leak."
         ],
-        "amazonQuery": "kawasaki kohler fuel pump replacement kit",
-        "amazonCta": "Find Heavy-Duty Fuel Pumps on Amazon"
-      }
-    ]
-  }
-]
-          "Inspect the steel deck stamping around the 4 spindle mounting bolts for hairline cracks"
-        ],
-        "amazonQuery": "zero turn mower deck spindle assembly replacement",
-        "amazonCta": "Check Complete Deck Spindle Assemblies on Amazon"
-      },
-      {
-        "heading": "4. Using Automotive Rubber Belts Instead of Dry-Wrapped Kevlar",
-        "body": "Standard black industrial or automotive belts have high-tack rubber exteriors designed to wedge tightly into two pulleys. Mower decks use backside idler pulleys and clutch engagement\u2014requiring a dry fabric cover over an Aramid (Kevlar) tensile cord so the belt can handle shock loads without stretching or grabbing.",
-        "checklist": [
-          "Always verify your replacement belt specifies Aramid or Kevlar cord construction",
-          "Confirm exact 1/2-inch (A-section) vs. 5/8-inch (B-section) top width",
-          "Check belt routing guides and keeper pins to ensure the pin sits 1/8\" from the pulley"
-        ],
-        "amazonQuery": "kevlar aramid lawn mower deck belt",
-        "amazonCta": "Browse OEM-Spec Kevlar Deck Belts on Amazon"
-      }
-    ]
-  },
-  {
-    "slug": "hydro-gear-transaxle-service-chart",
-    "category": "Transmission Maintenance",
-    "title": "Hydro-Gear EZT vs. ZT-2800, ZT-3100 & ZT-3400 Filter & Fluid Cross-Reference Guide",
-    "metaDescription": "Complete Hydro-Gear transaxle service chart: OEM 52114 filter cross-references (Stens, Wix), 20W-50 fluid capacities, and air-purging bleed procedures for zero-turn mowers.",
-    "summary": "Hydrostatic transaxles are the single most expensive component on a zero-turn mower ($800\u2013$1,600 per side). Changing the 20W-50 fluid and spin-on filter at the initial 75-hour break-in and every 250\u2013300 hours thereafter doubles the life of your wheel motors.",
-    "sections": [
-      {
-        "heading": "1. Identify Your Hydro-Gear Model Tier (EZT vs. ZT-2800/3100/3400/5400)",
-        "body": "Look under the rear frame of your mower for the white barcode tag riveted to the aluminum transaxle casing. Residential EZT (ZT-2100 / ZT-2200) drives are sealed at the factory without external filters, whereas commercial ZT-2800, ZT-3100, ZT-3200, and ZT-3400 drives feature a black spin-on hydraulic filter underneath or beside each unit.",
-        "checklist": [
-          "ZT-2800 / ZT-3100 / ZT-3400: Uses external spin-on filter Hydro-Gear #52114",
-          "Fluid Spec: SAE 20W-50 Full Synthetic or Conventional Motor Oil (approx. 2 to 2.5 quarts per side)",
-          "ZT-5400 Powertrain: Uses cartridge filter #71943"
-        ],
-        "amazonQuery": "Hydro-Gear 52114 filter 20W-50 hydro oil service kit",
-        "amazonCta": "View Complete Hydro-Gear 52114 Oil & Filter Kits on Amazon"
-      },
-      {
-        "heading": "2. Hydro-Gear #52114 Spin-On Filter Cross-Reference Matrix",
-        "body": "Every major mower manufacturer re-boxes the exact same Parker/Hydro-Gear #52114 spin-on filter under their own OEM part number at a 200% dealer markup. All of the numbers below are 100% identical in thread pitch, micron rating, and anti-drainback valve pressure:",
-        "checklist": [
-          "Hydro-Gear OEM: #52114 | Stens Aftermarket: #120-410 | Wix: #57103",
-          "Exmark / Toro OEM: #109-3321 | Scag OEM: #HG52114 | Hustler OEM: #600976",
-          "Bad Boy OEM: #063-1050-00 | Ferris OEM: #5101026X1 | Gravely: #21545100"
-        ],
-        "amazonQuery": "Hydro-Gear 52114 replacement filter 2 pack",
-        "amazonCta": "Buy 2-Pack 52114 Hydro Filters on Amazon"
-      },
-      {
-        "heading": "3. Post-Change Air Purging (Bleeding) Procedure",
-        "body": "After refilling both transaxles to the cold-fill line on the overflow expansion tank (or top check plug), you MUST purge trapped air from the hydraulic charge pumps before putting weight on the tires, or the mower will whine and jerk.",
-        "checklist": [
-          "Jack up the rear of the mower so both rear drive tires are safely off the ground",
-          "Pull both bypass release rods (tow valves) OUT and cycle the lap bars forward and reverse 6 times",
-          "Push the bypass rods back IN, cycle the lap bars again until the wheels spin smoothly, then top off the expansion tank"
-        ],
-        "amazonQuery": "20W-50 hydrostatic transmission oil zero turn",
-        "amazonCta": "Check 20W-50 Hydrostatic Fluid Prices on Amazon"
-      }
-    ]
-  },
-  {
-    "slug": "how-to-measure-broken-mower-belt",
-    "category": "Fitment & Measurement",
-    "title": "How to Measure a Broken or Stretched Lawn Mower Belt (OD vs. ID Formula)",
-    "metaDescription": "Part number worn off your mower belt? Learn how to measure top width (1/2\" vs 5/8\") and outside length accurately, account for belt stretch, and convert ID to OD.",
-    "summary": "When an old mower belt snaps and the printed OEM part number is rubbed off, measuring it directly with a tape measure often leads to ordering a belt that is 2 inches too long. Use this shop formula to find the exact factory belt size.",
-    "sections": [
-      {
-        "heading": "1. Measure Top Width First (1/2\" vs. 5/8\" Profile)",
-        "body": "Measure across the widest flat top face of the V-belt\u2014never the bottom narrow edge that rides in the bottom of the pulley V-groove. Almost 95% of outdoor power equipment belts fall into two widths: 1/2-inch (A-section / 4L) or 5/8-inch (B-section / 5L).",
-        "checklist": [
-          "1/2 Inch (0.50\"): Standard on 42\"\u201350\" residential decks and hydro pump drives",
-          "5/8 Inch (0.625\"): Standard on 48\"\u201372\" commercial zero-turn cutter decks",
-          "If your worn belt measures 9/16\", it started life as a 5/8\" belt with worn sidewalls"
-        ],
-        "amazonQuery": "v belt measuring tool gauge",
-        "amazonCta": "View Belt Measuring Gauges & Tools on Amazon"
-      },
-      {
-        "heading": "2. Subtract 1.5\" to 2.0\" from Stretched Broken Belts",
-        "body": "If your belt snapped in one place, lay it flat on the shop floor without pulling on it and measure from end to end. Because a worn belt stretches 1 to 2 inches over its lifespan\u2014and laying a curved V-belt flat adds another 0.5 inches\u2014a broken belt that measures 143.5 inches flat almost always corresponds to a 141.5-inch or 142-inch factory belt.",
-        "checklist": [
-          "Never pull or stretch the broken belt while measuring",
-          "If the belt is still in one piece, wrap a cloth tailor's tape around the OUTSIDE face (Outside CircumFERENCE)",
-          "Cross-check your measurement against our Exact Belt Size Lookup directory below"
-        ],
-        "amazonQuery": "cloth tape measure sewing tailor",
-        "amazonCta": "Get a Flexible Belt Measuring Tape on Amazon"
-      }
-    ]
-  },
-  {
-    "slug": "how-to-cross-reference-lawn-mower-deck-belt",
-    "category": "Belt Cross-Reference & Sizing",
-    "title": "The Ultimate Lawn Mower Deck Belt Cross-Reference Guide: OEM vs. Aramid Aftermarket",
-    "metaDescription": "Stuck with a snapped mower belt and no part number? Learn how to measure effective length and top width, and cross-reference OEM belts to Stens, Oregon, and Rotary.",
-    "summary": "When a commercial zero-turn or residential riding mower snaps a belt in the middle of a job, waiting days for an expensive OEM-boxed belt isn't an option. This guide breaks down exact sizing rules, cross-reference charts, and why standard rubber belts fail on mower decks.",
-    "sections": [
-      {
-        "heading": "1. Understanding Mower Belt Profiles: A-Section vs. B-Section",
-        "body": "Unlike automotive serpentine belts, lawn mower deck and pump drive belts rely on heavy industrial wedge profiles designed to handle high shock loads when electric PTO clutches engage at full throttle. Using the wrong top width or cord material will result in slippage, overheating, and rapid sidewall shredding.",
-        "checklist": [
-          "A-Section (4L): 1/2-inch top width. Standard on residential lawn tractors, hydro pumps, and small 38\" to 42\" decks.",
-          "B-Section (5L / 21/32\"): 5/8-inch top width. Standard on commercial zero-turns (Scag, Exmark, Toro, Hustler) and heavy-duty 54\" to 72\" cutter decks.",
-          "Always measure top width using digital calipers across the widest part of the V."
-        ],
-        "amazonQuery": "heavy duty aramid lawn mower belt 5/8 inch",
-        "amazonCta": "Browse Commercial 5/8-Inch Kevlar Deck Belts on Amazon"
-      },
-      {
-        "heading": "2. How to Measure an Old, Broken, or Unreadable Belt",
-        "body": "If your belt is snapped or the part number rubbed off, you cannot simply measure the flat circumference with a cloth tape measure because V-belts ride inside the pulley sheaves along their pitch line. Instead, use the string method or a professional belt measuring tool.",
-        "checklist": [
-          "Loop a non-stretchy cord tightly around the outside of all pulleys following the exact routing path.",
-          "Mark where the string overlaps, then measure the total length on a rigid workbench ruler.",
-          "For 1/2\" belts, subtract 1/2 inch from the total outer circumference to approximate the effective inside/pitch length.",
-          "For 5/8\" heavy commercial belts, subtract 3/4 inch to 1 inch from the outer circumference."
-        ],
-        "amazonQuery": "belt measuring tape tool for lawn mower",
-        "amazonCta": "Check Belt Measuring Tools on Amazon"
-      },
-      {
-        "heading": "3. Why You Must Always Choose Aramid (Kevlar) Corded Belts",
-        "body": "Never install a standard black automotive rubber belt on a commercial mower deck. Mower decks utilize backside idler pulleys that bend the belt in reverse, generating immense friction heat. Aramid (Kevlar) tensile cords resist stretching under shock loads and feature a dry, wrapped fabric cover that withstands idler pulley heat without melting.",
-        "checklist": [
-          "Look for 'Aramid', 'Kevlar', or 'MaxLife' in the aftermarket part specification.",
-          "Inspect brand equivalents: Stens (blue/black wrapped), Oregon (heavy-duty green label), Rotary (commercial grade).",
-          "Ensure belt keepers and guide pins are adjusted to 1/8\" clearance from the pulley edge."
-        ],
-        "amazonQuery": "kevlar aramid replacement mower belt stens oregon",
-        "amazonCta": "Find Stens & Oregon Kevlar Belts on Amazon"
-      }
-    ]
-  },
-  {
-    "slug": "kawasaki-v-twin-carburetor-surge-fix",
-    "category": "Engine & Fuel System Diagnostics",
-    "title": "Diagnosing & Fixing a Surging, Hunting Kawasaki V-Twin Mower Engine",
-    "metaDescription": "Does your Scag, Exmark, or John Deere zero-turn surge up and down at high idle? Learn how to clean clogged pilot jets, replace fuel pumps, and eliminate vacuum leaks.",
-    "summary": "A Kawasaki V-twin engine (like the FH721V or FX series) that hunts, surges, or stumbles at full throttle is almost always suffering from restricted fuel delivery through the tiny idle/pilot jets or a failing mechanical/electric fuel pump.",
-    "sections": [
-      {
-        "heading": "1. The Root Cause: Ethanol Gums and Tiny Pilot Jets",
-        "body": "Modern ethanol-blended gasoline attracts ambient moisture, leaving behind a hard, varnish-like white crust inside the carburetor float bowl over the winter storage months. Because emission regulations require ultra-small pilot jet orifices, even microscopic varnish rings disrupt the air-fuel ratio at idle and mid-throttle, causing the governor to overcorrect and 'hunt'.",
-        "checklist": [
-          "Shut off the fuel valve and remove the carburetor float bowl.",
-          "Use a fine wire (like a guitar string or torch tip cleaner) and professional carb dip to clear the main and pilot brass jets.",
-          "Never push oversized drill bits into brass jets, as this permanently alters fuel metering."
-        ],
-        "amazonQuery": "kawasaki v-twin carburetor replacement assembly fh721v",
-        "amazonCta": "Shop Replacement Kawasaki Carburetors on Amazon"
-      },
-      {
-        "heading": "2. Testing Fuel Pump Pressure & Vacuum Lines",
-        "body": "If your Kawasaki engine surges specifically under heavy cutting loads or when going up inclines, the fuel pump is likely failing to deliver consistent volume. Puls vacuum pumps driven by the crankcase can develop pinhole tears in their internal rubber diaphragms.",
-        "checklist": [
-          "Disconnect the fuel line feeding the carburetor, place it into a catch container, and crank the engine to test pulse flow.",
-          "Check the rubber pulse hose running from the crankcase to the pump for oil saturation or dry-rot cracks.",
-          "Replace inline fuel filters annually; restricted paper elements starve high-horsepower V-twins."
-        ],
-        "amazonQuery": "kawasaki kohler fuel pump replacement kit",
+        "amazonQuery": "kawasaki kohler fuel pump replacement kit heavy duty",
         "amazonCta": "Find Heavy-Duty Fuel Pumps on Amazon"
       }
     ]
