@@ -2,6 +2,7 @@ import { MetadataRoute } from "next";
 import partsData from "@/data/parts.json";
 import modelsData from "@/data/models.json";
 import guidesData from "@/data/guides.json";
+import enginesData from "@/data/engines.json";
 import { getAllDimensionGroups } from "@/lib/dimensions";
 import { PartRecord, ModelHubRecord } from "@/types/part";
 
@@ -23,6 +24,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     lastModified: new Date(),
     changeFrequency: "weekly",
     priority: 0.9,
+  }));
+
+  const engineUrls: MetadataRoute.Sitemap = enginesData.map((engine) => ({
+    url: `${baseUrl}/engines/${engine.slug}`,
+    lastModified: new Date(),
+    changeFrequency: "weekly",
+    priority: 0.85,
   }));
 
   const sizeUrls: MetadataRoute.Sitemap = dimensions.map((dim) => ({
@@ -52,7 +60,20 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "weekly",
       priority: 0.9,
     },
+    {
+      url: `${baseUrl}/tools/belt-calculator`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/tools/blade-speed-calculator`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.9,
+    },
     ...guideUrls,
+    ...engineUrls,
     ...modelUrls,
     ...sizeUrls,
     ...partUrls,
