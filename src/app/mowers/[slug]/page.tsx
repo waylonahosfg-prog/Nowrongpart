@@ -155,20 +155,20 @@ export default async function MowerModelPage({
       <main className="max-w-4xl mx-auto px-4 py-6 sm:py-8 flex-1 w-full">
         {/* Visible Breadcrumbs */}
         <nav aria-label="Breadcrumb" className="mb-4">
-          <ol className="flex items-center gap-1.5 text-xs text-slate-500">
-            <li>
+          <ol className="flex items-center gap-1.5 text-xs text-slate-500 overflow-x-auto no-scrollbar">
+            <li className="shrink-0">
               <Link href="/" className="hover:text-slate-900 inline-flex items-center gap-1">
                 <Home className="h-3 w-3" />
                 <span>Home</span>
               </Link>
             </li>
             <ChevronRight className="h-3 w-3 text-slate-300 shrink-0" />
-            <li>
-              <span className="font-medium text-slate-700">Mower Models</span>
+            <li className="shrink-0">
+              <span className="font-medium text-slate-700">Mowers</span>
             </li>
             <ChevronRight className="h-3 w-3 text-slate-300 shrink-0" />
-            <li>
-              <span className="font-semibold text-slate-900 truncate">{model.modelName}</span>
+            <li className="shrink-0">
+              <span className="font-semibold text-slate-900">{model.brand} {model.modelName}</span>
             </li>
           </ol>
         </nav>
