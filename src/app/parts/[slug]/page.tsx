@@ -10,9 +10,12 @@ import {
   Zap,
   Truck,
   AlertTriangle,
+  Home,
+  ChevronRight,
 } from "lucide-react";
 import type { Metadata } from "next";
 import { PartRecord, ModelHubRecord } from "@/types/part";
+import { SITE_URL } from "@/lib/site";
 
 export async function generateStaticParams() {
   const parts: PartRecord[] = partsData;
@@ -39,7 +42,7 @@ export async function generateMetadata({
     openGraph: {
       title: `${part.oemBrand} ${part.oemPartNumber} Deck Belt Spec Sheet`,
       description: `Verified aftermarket cross-references and exact dimensions for ${part.oemBrand} ${part.oemPartNumber}. Fits ${part.compatibleModels.join(", ")}.`,
-      url: `https://nowrongpart.com/parts/${part.slug}`,
+      url: `${SITE_URL}/parts/${part.slug}`,
       siteName: "NoWrongPart",
       type: "website",
     },
@@ -65,9 +68,41 @@ export default async function PartDetailPage({
   );
 
   const primaryModel = part.compatibleModels[0] || `${part.oemBrand} Mower`;
+  const baseUrl = SITE_URL;
+
+  // BreadcrumbList JSON-LD Schema
+  const breadcrumbJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": baseUrl,
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Parts",
+        "item": `${baseUrl}/parts`,
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": `${part.oemBrand} #${part.oemPartNumber}`,
+        "item": `${baseUrl}/parts/${part.slug}`,
+      },
+    ],
+  };
 
   return (
     <div className="min-h-screen bg-slate-50 text-slate-900 flex flex-col justify-between font-sans pb-16 sm:pb-0">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+      />
+
       <header className="border-b border-slate-200 bg-white sticky top-0 z-20 shadow-xs">
         <div className="max-w-4xl mx-auto px-4 py-3 flex items-center justify-between">
           <Link href="/" className="text-xl font-black tracking-tight text-slate-900">
@@ -83,6 +118,26 @@ export default async function PartDetailPage({
       </header>
 
       <main className="max-w-4xl mx-auto px-4 py-6 sm:py-8 flex-1 w-full">
+        {/* Visible Breadcrumbs */}
+        <nav aria-label="Breadcrumb" className="mb-4">
+          <ol className="flex items-center gap-1.5 text-xs text-slate-500 overflow-x-auto no-scrollbar">
+            <li className="shrink-0">
+              <Link href="/" className="hover:text-slate-900 inline-flex items-center gap-1">
+                <Home className="h-3 w-3" />
+                <span>Home</span>
+              </Link>
+            </li>
+            <ChevronRight className="h-3 w-3 text-slate-300 shrink-0" />
+            <li className="shrink-0">
+              <span className="font-medium text-slate-700">Parts</span>
+            </li>
+            <ChevronRight className="h-3 w-3 text-slate-300 shrink-0" />
+            <li className="shrink-0">
+              <span className="font-semibold text-slate-900">{part.oemBrand} #{part.oemPartNumber}</span>
+            </li>
+          </ol>
+        </nav>
+
         {/* Main Spec Card */}
         <div className="bg-white border border-slate-200 rounded-xl p-6 sm:p-8 shadow-xs mb-6">
           <div className="flex flex-wrap items-center justify-between gap-2">
