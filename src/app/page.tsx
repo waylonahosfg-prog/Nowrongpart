@@ -14,6 +14,7 @@ import {
   Sparkles,
   Ruler,
   BookOpen,
+  Calculator,
 } from "lucide-react";
 import { PartRecord, ModelHubRecord } from "@/types/part";
 
@@ -139,6 +140,42 @@ export default function HomePage() {
           })}
         </div>
 
+        {/* Interactive Tools Callout Section */}
+        <section className="mb-10">
+          <div className="flex items-center gap-2 mb-3">
+            <Calculator className="h-4 w-4 text-amber-600" />
+            <h2 className="text-xs font-extrabold uppercase tracking-wider text-slate-500">
+              Free Interactive Turf Mechanics Tools
+            </h2>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+            <Link
+              href="/tools/belt-calculator"
+              className="bg-white border border-slate-200 hover:border-amber-400 p-4 rounded-xl shadow-xs transition group"
+            >
+              <span className="text-[11px] font-bold uppercase text-amber-600">Belt Pitch Calculator</span>
+              <h3 className="text-sm font-extrabold text-slate-900 mt-0.5 group-hover:text-amber-600">
+                Calculate V-Belt Outside Length from Pulley Diameters →
+              </h3>
+              <p className="text-xs text-slate-500 mt-1">
+                Find exact OD specs and match replacement Kevlar belts in seconds.
+              </p>
+            </Link>
+            <Link
+              href="/tools/blade-speed-calculator"
+              className="bg-white border border-slate-200 hover:border-amber-400 p-4 rounded-xl shadow-xs transition group"
+            >
+              <span className="text-[11px] font-bold uppercase text-amber-600">Tip Speed Calculator</span>
+              <h3 className="text-sm font-extrabold text-slate-900 mt-0.5 group-hover:text-amber-600">
+                Calculate Blade Tip Speed (FPM) & ANSI Limits →
+              </h3>
+              <p className="text-xs text-slate-500 mt-1">
+                Verify cutter deck vacuum performance and safety velocity limits.
+              </p>
+            </Link>
+          </div>
+        </section>
+
         {/* Mechanic Troubleshooting Guides Bar */}
         <section className="mb-10">
           <div className="flex items-center gap-2 mb-3">
@@ -228,6 +265,19 @@ export default function HomePage() {
             </div>
           </section>
         )}
+
+        {/* Where to Find Model Tag Helper Card */}
+        <section className="bg-white border border-slate-200 rounded-xl p-5 shadow-xs mb-12">
+          <h3 className="text-sm font-extrabold text-slate-900 flex items-center gap-2">
+            <ShieldCheck className="h-4 w-4 text-emerald-600" />
+            Where to Find Your Frame Model & Deck Stamping Tags
+          </h3>
+          <ul className="mt-2 text-xs text-slate-600 space-y-1.5">
+            <li>• <strong>Zero-Turn Mowers:</strong> Printed on a silver/white barcode sticker located under the flip-up seat or on the left rear frame rail.</li>
+            <li>• <strong>Lawn Tractors:</strong> Stamped underneath the rear fender draft arm or near the battery compartment under the hood.</li>
+            <li>• <strong>Cutter Deck Belts:</strong> Printed directly on the outer fabric wrap (e.g., <em>Scag 48265</em> or <em>Stens 265-247</em>).</li>
+          </ul>
+        </section>
 
         {/* Buyer's Guide Promotional Callout */}
         <div className="mb-12 bg-gradient-to-r from-slate-900 to-slate-800 rounded-2xl p-5 sm:p-6 text-white shadow-sm flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
@@ -346,6 +396,8 @@ export default function HomePage() {
           <div className="flex flex-wrap justify-center items-center gap-4 font-medium text-slate-600">
             <Link href="/" className="hover:text-slate-900">Part Lookup</Link>
             <Link href="/buyers-guide" className="hover:text-slate-900">Mower Buyer&apos;s Guide</Link>
+            <Link href="/tools/belt-calculator" className="hover:text-slate-900">Belt Calculator</Link>
+            <Link href="/tools/blade-speed-calculator" className="hover:text-slate-900">Tip Speed Calculator</Link>
             <Link href="/guides/mower-keeps-throwing-deck-belt" className="hover:text-slate-900">Repair Guides</Link>
             <Link href="/sitemap.xml" className="hover:text-slate-900">Sitemap</Link>
           </div>
