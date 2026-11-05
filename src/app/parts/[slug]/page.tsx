@@ -7,10 +7,11 @@ import {
   ShieldCheck,
   CheckCircle2,
   ArrowLeft,
-  Ruler,
   Zap,
   Truck,
-  CopyButton,
+  Wrench,
+  AlertTriangle,
+  HelpCircle,
 } from "lucide-react";
 import type { Metadata } from "next";
 import { PartRecord, ModelHubRecord } from "@/types/part";
@@ -32,12 +33,14 @@ export async function generateMetadata({
   const part = parts.find((p) => p.slug === slug);
   if (!part) return { title: "Part Not Found" };
 
+  const crossText = part.crossReferences.map((c) => `${c.brand} ${c.partNumber}`).join(", ");
+
   return {
-    title: `${part.oemBrand} ${part.oemPartNumber} Deck Belt Cross-Reference & Specs | NoWrongPart`,
-    description: `Looking for ${part.oemBrand} #${part.oemPartNumber}? Dimensions: ${part.specs.width} x ${part.specs.length}. Stens/Oregon cross references and compatible mowers.`,
+    title: `${part.oemBrand} ${part.oemPartNumber} Deck Belt Size (${part.specs.length} x ${part.specs.width}) & Cross Reference | NoWrongPart`,
+    description: `Exact dimensions for ${part.oemBrand} #${part.oemPartNumber}: ${part.specs.length} long x ${part.specs.width} wide (${part.specs.material}). Direct cross-reference for ${crossText}.`,
     openGraph: {
-      title: `${part.oemBrand} ${part.oemPartNumber} Deck Belt Compatibility & Cross Reference`,
-      description: `Exact specs: ${part.specs.width} wide x ${part.specs.length} long (${part.specs.material}). Fits ${part.compatibleModels.join(", ")}.`,
+      title: `${part.oemBrand} ${part.oemPartNumber} Deck Belt Spec Sheet`,
+      description: `Verified aftermarket cross-references and exact dimensions for ${part.oemBrand} ${part.oemPartNumber}. Fits ${part.compatibleModels.join(", ")}.`,
       url: `https://nowrongpart.com/parts/${part.slug}`,
       siteName: "NoWrongPart",
       type: "website",
@@ -57,15 +60,16 @@ export default async function PartDetailPage({
 
   if (!part) return notFound();
 
-  // Cross-reference compatible model hubs
   const matchedModelHubs = models.filter((m) =>
     part.compatibleModels.some(
       (cm) => cm.toLowerCase().includes(m.modelName.toLowerCase()) || m.deckBeltOem === part.oemPartNumber
     )
   );
 
+  const primaryModel = part.compatibleModels[0] || `${part.oemBrand} Mower`;
+
   return (
-    <div className="min-h-screen bg-slate-50 text-slate-900 flex flex-col justify-between font-sans">
+    <div className="min-h-screen bg-slate-50 text-slate-900 flex flex-col justify-between font-sans pb-16 sm:pb-0">
       <header className="border-b border-slate-200 bg-white sticky top-0 z-20 shadow-xs">
         <div className="max-w-4xl mx-auto px-4 py-3 flex items-center justify-between">
           <Link href="/" className="text-xl font-black tracking-tight text-slate-900">
@@ -81,14 +85,14 @@ export default async function PartDetailPage({
       </header>
 
       <main className="max-w-4xl mx-auto px-4 py-6 sm:py-8 flex-1 w-full">
-        {/* Main Part Card */}
+        {/* Main Spec Card */}
         <div className="bg-white border border-slate-200 rounded-xl p-6 sm:p-8 shadow-xs mb-6">
           <div className="flex flex-wrap items-center justify-between gap-2">
             <span className="px-2.5 py-0.5 rounded-full text-xs font-bold uppercase tracking-wider bg-amber-100 text-amber-900 border border-amber-200">
               {part.oemBrand} OEM Specification
             </span>
             <span className="text-xs text-slate-400 font-mono">
-              SKU: {part.oemPartNumber}
+              SKU: #{part.oemPartNumber}
             </span>
           </div>
 
@@ -111,24 +115,23 @@ export default async function PartDetailPage({
               <span className="font-extrabold text-slate-900 text-base">{part.specs.length}</span>
             </div>
             <div>
-              <span className="text-[11px] font-semibold text-slate-400 uppercase block">Material</span>
+              <span className="text-[11px] font-semibold text-slate-400 uppercase block">Cord Spec</span>
               <span className="font-extrabold text-slate-900 text-base">{part.specs.material}</span>
             </div>
             <div>
-              <span className="text-[11px] font-semibold text-slate-400 uppercase block">Belt Type</span>
+              <span className="text-[11px] font-semibold text-slate-400 uppercase block">Category</span>
               <span className="font-extrabold text-amber-700 text-base">{part.partType}</span>
             </div>
           </div>
 
-          {/* High-Converting CTA Box with Trust Badges */}
+          {/* Primary High-Converting CTA Box */}
           <div className="p-4 bg-gradient-to-r from-amber-50 to-amber-100/50 border border-amber-200 rounded-xl space-y-3">
-            {/* Urgency & Prime Trust Badges */}
             <div className="flex flex-wrap items-center gap-3 text-xs font-bold text-slate-700">
               <span className="inline-flex items-center gap-1 text-emerald-700 bg-emerald-50 border border-emerald-200 px-2 py-0.5 rounded">
                 <Zap className="h-3.5 w-3.5 fill-emerald-600" /> In-Stock Verified
               </span>
               <span className="inline-flex items-center gap-1 text-slate-700 bg-white border border-slate-200 px-2 py-0.5 rounded">
-                <Truck className="h-3.5 w-3.5 text-amber-600" /> Fast 1-Day / 2-Day Prime Available
+                <Truck className="h-3.5 w-3.5 text-amber-600" /> Fast Prime Delivery Available
               </span>
             </div>
 
@@ -138,7 +141,7 @@ export default async function PartDetailPage({
                   Ready to replace #{part.oemPartNumber}?
                 </div>
                 <p className="text-xs text-slate-600 mt-0.5">
-                  Direct Kevlar aramid cord upgrade for long life and heavy clutching.
+                  High-tensile Aramid/Kevlar cord upgrade for severe clutching load.
                 </p>
               </div>
               <a
@@ -154,6 +157,81 @@ export default async function PartDetailPage({
           </div>
         </div>
 
+        {/* Day 2 Feature: High-Ticket Companion Wear Parts Bundle Matrix */}
+        <section className="mb-6 bg-white border border-slate-200 rounded-xl p-6 shadow-xs">
+          <div className="flex items-center gap-2 text-amber-600 font-bold text-xs uppercase tracking-wider mb-1">
+            <AlertTriangle className="h-4 w-4" /> Prevent Repeat Belt Shredding
+          </div>
+          <h2 className="text-base sm:text-lg font-extrabold text-slate-900">
+            Shredded or Thrown Belt? Inspect These {part.oemBrand} Deck Components
+          </h2>
+          <p className="text-xs text-slate-600 mt-1 mb-4">
+            A new belt will burn or jump off within hours if an idler pulley bearing is dragging or a spindle housing is tilted.
+          </p>
+
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
+            <a
+              href={`/api/out?q=${encodeURIComponent(`${primaryModel} deck idler pulley`)}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-3.5 rounded-lg border border-slate-200 hover:border-amber-400 bg-slate-50 hover:bg-amber-50/30 transition flex flex-col justify-between group"
+            >
+              <div>
+                <span className="text-[11px] font-bold uppercase text-amber-700">Check #1: Pulley Bearings</span>
+                <div className="text-sm font-bold text-slate-900 mt-0.5 group-hover:text-amber-700">
+                  {part.oemBrand} Idler Pulleys
+                </div>
+                <p className="text-xs text-slate-500 mt-1">
+                  Seized or grinding idler pulleys heat up and snap new Kevlar belts.
+                </p>
+              </div>
+              <span className="text-xs font-bold text-slate-900 mt-3 inline-flex items-center gap-1">
+                View Pulleys on Amazon <ExternalLink className="h-3 w-3 text-amber-600" />
+              </span>
+            </a>
+
+            <a
+              href={`/api/out?q=${encodeURIComponent(`${primaryModel} deck spindle assembly`)}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-3.5 rounded-lg border border-slate-200 hover:border-amber-400 bg-slate-50 hover:bg-amber-50/30 transition flex flex-col justify-between group"
+            >
+              <div>
+                <span className="text-[11px] font-bold uppercase text-amber-700">Check #2: Spindle Play</span>
+                <div className="text-sm font-bold text-slate-900 mt-0.5 group-hover:text-amber-700">
+                  {part.oemBrand} Spindles
+                </div>
+                <p className="text-xs text-slate-500 mt-1">
+                  Bent housing shafts throw belts off under heavy cutting loads.
+                </p>
+              </div>
+              <span className="text-xs font-bold text-slate-900 mt-3 inline-flex items-center gap-1">
+                View Spindles on Amazon <ExternalLink className="h-3 w-3 text-amber-600" />
+              </span>
+            </a>
+
+            <a
+              href={`/api/out?q=${encodeURIComponent(`${primaryModel} mower blades`)}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-3.5 rounded-lg border border-slate-200 hover:border-amber-400 bg-slate-50 hover:bg-amber-50/30 transition flex flex-col justify-between group"
+            >
+              <div>
+                <span className="text-[11px] font-bold uppercase text-amber-700">Check #3: While Deck is Off</span>
+                <div className="text-sm font-bold text-slate-900 mt-0.5 group-hover:text-amber-700">
+                  High-Lift Blade Sets
+                </div>
+                <p className="text-xs text-slate-500 mt-1">
+                  Replace dull or bent blades while servicing your deck belt.
+                </p>
+              </div>
+              <span className="text-xs font-bold text-slate-900 mt-3 inline-flex items-center gap-1">
+                View Blades on Amazon <ExternalLink className="h-3 w-3 text-amber-600" />
+              </span>
+            </a>
+          </div>
+        </section>
+
         {/* Aftermarket Cross References */}
         <section className="bg-white border border-slate-200 rounded-xl p-6 sm:p-8 shadow-xs mb-6">
           <h2 className="text-base sm:text-lg font-extrabold text-slate-900 mb-1 flex items-center gap-2">
@@ -161,7 +239,7 @@ export default async function PartDetailPage({
             Aftermarket Equivalent Part Numbers
           </h2>
           <p className="text-xs text-slate-500 mb-4">
-            These aftermarket brands offer exact physical dimensions and specs to match OEM #{part.oemPartNumber}:
+            These aftermarket brands offer exact physical dimensions to match OEM #{part.oemPartNumber}:
           </p>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
@@ -185,7 +263,7 @@ export default async function PartDetailPage({
         </section>
 
         {/* Model Compatibility & Hub Links */}
-        <section className="bg-white border border-slate-200 rounded-xl p-6 sm:p-8 shadow-xs">
+        <section className="bg-white border border-slate-200 rounded-xl p-6 sm:p-8 shadow-xs mb-6">
           <h2 className="text-base sm:text-lg font-extrabold text-slate-900 mb-1">
             Confirmed Mower Compatibility
           </h2>
@@ -221,7 +299,38 @@ export default async function PartDetailPage({
             </div>
           )}
         </section>
+
+        {/* Diagnostic Repair Guide Teaser */}
+        <div className="bg-slate-900 text-white rounded-xl p-5 flex flex-col sm:flex-row items-center justify-between gap-4">
+          <div>
+            <div className="text-xs font-bold text-amber-400 uppercase tracking-wider">Troubleshooting Guide</div>
+            <div className="text-sm font-extrabold mt-0.5">5 Reasons Mowers Keep Throwing Deck Belts</div>
+            <p className="text-xs text-slate-400 mt-1">Learn how to check pulley alignment, tension spring stretch, and spindle play.</p>
+          </div>
+          <Link
+            href="/guides/mower-keeps-throwing-deck-belt"
+            className="px-4 py-2 bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold text-xs rounded-lg transition shrink-0"
+          >
+            Read Repair Guide
+          </Link>
+        </div>
       </main>
+
+      {/* Sticky Mobile Buy Bar */}
+      <div className="sm:hidden fixed bottom-0 left-0 right-0 bg-white border-t border-slate-200 p-3 z-30 shadow-lg flex items-center justify-between gap-2">
+        <div className="truncate">
+          <div className="text-xs font-bold text-slate-900 truncate">{part.oemBrand} #{part.oemPartNumber}</div>
+          <div className="text-[10px] text-slate-500">{part.specs.length} × {part.specs.width}</div>
+        </div>
+        <a
+          href={`/api/out?q=${encodeURIComponent(`${part.oemBrand} ${part.oemPartNumber} kevlar belt`)}`}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center gap-1 px-4 py-2 bg-amber-500 text-slate-950 font-extrabold text-xs rounded-lg shadow-xs shrink-0"
+        >
+          Check Amazon <ExternalLink className="h-3 w-3" />
+        </a>
+      </div>
 
       <footer className="border-t border-slate-200 bg-white py-6 mt-12">
         <div className="max-w-4xl mx-auto px-4 text-center text-xs text-slate-500 space-y-1">
