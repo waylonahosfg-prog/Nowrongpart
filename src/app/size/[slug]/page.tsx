@@ -2,13 +2,12 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import partsData from "@/data/parts.json";
 import modelsData from "@/data/models.json";
-import { getDimensionGroupBySlug, getAllDimensionGroups } from "@/lib/dimensions";
+import { getAllDimensionGroups } from "@/lib/dimensions";
 import {
   ExternalLink,
   ArrowLeft,
   Ruler,
   ShieldCheck,
-  CheckCircle2,
   Wrench,
   AlertTriangle,
   ChevronRight,
@@ -33,7 +32,8 @@ export async function generateMetadata({
   params: Promise<{ slug: string }>;
 }): Promise<Metadata> {
   const { slug } = await params;
-  const group = getDimensionGroupBySlug(slug);
+  const groups = getAllDimensionGroups();
+  const group = groups.find((g) => g.slug === slug);
 
   if (!group) return { title: "Size Group Not Found" };
 
@@ -59,7 +59,8 @@ export default async function DimensionGroupPage({
   params: Promise<{ slug: string }>;
 }) {
   const { slug } = await params;
-  const group = getDimensionGroupBySlug(slug);
+  const groups = getAllDimensionGroups();
+  const group = groups.find((g) => g.slug === slug);
 
   if (!group) return notFound();
 
@@ -223,7 +224,7 @@ export default async function DimensionGroupPage({
           </div>
         </div>
 
-        {/* High-Ticket "Deck Overhaul & Maintenance Bundle" Matrix */}
+        {/* High-Ticket Deck Overhaul & Maintenance Bundle Matrix */}
         <section className="mb-6 bg-white border border-slate-200 rounded-xl p-6 shadow-xs">
           <div className="flex items-center gap-2 text-amber-600 font-bold text-xs uppercase tracking-wider mb-1">
             <AlertTriangle className="h-4 w-4" /> Prevent Repeat Belt Failure
