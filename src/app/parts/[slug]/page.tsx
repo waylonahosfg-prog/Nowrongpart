@@ -9,9 +9,7 @@ import {
   ArrowLeft,
   Zap,
   Truck,
-  Wrench,
   AlertTriangle,
-  HelpCircle,
 } from "lucide-react";
 import type { Metadata } from "next";
 import { PartRecord, ModelHubRecord } from "@/types/part";
@@ -157,7 +155,7 @@ export default async function PartDetailPage({
           </div>
         </div>
 
-        {/* Day 2 Feature: High-Ticket Companion Wear Parts Bundle Matrix */}
+        {/* High-Ticket Companion Wear Parts Bundle Matrix */}
         <section className="mb-6 bg-white border border-slate-200 rounded-xl p-6 shadow-xs">
           <div className="flex items-center gap-2 text-amber-600 font-bold text-xs uppercase tracking-wider mb-1">
             <AlertTriangle className="h-4 w-4" /> Prevent Repeat Belt Shredding
